@@ -15,8 +15,9 @@ DeepSeek 的智能体。
 产率，也不改变优化器排序。
 
 > 本仓库保存个人最终提交的完整数据、代码、DFT 快照、优化轨迹、结果和文档。
-> 两份超过 GitHub 普通 Git 单文件上限的离线运行时压缩包
-> （Linux 和 Windows 的 `catalystflow-*.tar.gz`）需通过 Git LFS 获取；其余内容可直接克隆。
+> 两份超过 GitHub 普通 Git 单文件上限的离线运行时压缩包已作为
+> [CatalystFlow 2026 最终提交 Release 附件](https://github.com/xiangjing-source/BO/releases/tag/catalystflow-final-submission-2026)
+> 发布。下载后请分别放回 `runtime/` 与 `runtime/windows-x86_64/`，其余内容可直接克隆。
 
 评委无需修改源码、配置文件或数据路径。将提交包完整解压到可写目录后，按操作系统
 执行下述零参数命令即可重新生成数值轨迹；完整智能体复现还要求赛事 DeepSeek API
