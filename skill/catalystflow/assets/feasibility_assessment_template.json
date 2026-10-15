@@ -1,0 +1,182 @@
+{
+  "schema_version": "2.1",
+  "assessment_scope": {
+    "target": "queried Top-5 conditions only",
+    "ranking_effect": "none"
+  },
+  "assessment_context": {
+    "target_scale": "not_provided",
+    "location": "not_provided",
+    "assessment_date": "YYYY-MM-DD"
+  },
+  "allowed_values": {
+    "level": ["low", "medium", "high", "unknown"],
+    "basis": ["verified_evidence", "llm_inference", "unknown"],
+    "confidence": ["low", "medium", "high"]
+  },
+  "source_schema": {
+    "required_fields": ["type", "title", "locator", "retrieved_at", "claim"],
+    "allowed_types": [
+      "official_sds_or_ghs",
+      "primary_literature",
+      "chemical_registry",
+      "supplier_catalog",
+      "project_artifact"
+    ],
+    "claim": "Concise statement supported by this source for the assessed dimension"
+  },
+  "dimension_definitions": {
+    "budget": {
+      "low": "Common reagents and routine operations; low expected cost burden at the stated scale",
+      "medium": "One or more specialized or moderately costly items",
+      "high": "Multiple costly, scarce, or specialized items",
+      "unknown": "Scale or price evidence is insufficient"
+    },
+    "procurement_difficulty": {
+      "low": "Routine catalog availability from multiple suppliers",
+      "medium": "Specialized item; stock or lead time requires confirmation",
+      "high": "Custom synthesis, limited sources, or likely long lead time",
+      "unknown": "Identity, availability, or lead time cannot be established"
+    },
+    "hazard": {
+      "low": "No material issue identified beyond routine laboratory controls",
+      "medium": "Additional containment, inert handling, or controlled addition may be required",
+      "high": "Serious toxicity, reactivity, flammability, pressure, or process-hazard concern",
+      "unknown": "Reliable hazard information is insufficient"
+    },
+    "operational_complexity": {
+      "low": "Routine apparatus, addition, work-up, and isolation",
+      "medium": "Requires inert atmosphere, controlled temperature, or additional handling steps",
+      "high": "Narrow operating window or complex addition, monitoring, work-up, or isolation",
+      "unknown": "Operating conditions are insufficiently specified"
+    },
+    "scale_up_risk": {
+      "low": "No material heat-transfer, mass-transfer, gas, or pressure concern identified",
+      "medium": "One or more scale-dependent factors require experimental confirmation",
+      "high": "Material exotherm, gas evolution, pressure, mixing, or heat-removal concern",
+      "unknown": "Scale-up evidence is insufficient"
+    },
+    "waste_disposal_burden": {
+      "low": "Compatible with established routine waste streams",
+      "medium": "Requires segregated collection or specialized treatment",
+      "high": "High-hazard, metal-containing, reactive, or otherwise difficult waste stream",
+      "unknown": "The disposal route cannot be established"
+    }
+  },
+  "scoring_policy": {
+    "computed_by": "program",
+    "score_direction": "higher_is_more_feasible",
+    "level_to_score": {
+      "low": 3,
+      "medium": 2,
+      "high": 1,
+      "unknown": null
+    },
+    "weights": {
+      "budget": 1,
+      "procurement_difficulty": 1,
+      "hazard": 1,
+      "operational_complexity": 1,
+      "scale_up_risk": 1,
+      "waste_disposal_burden": 1
+    },
+    "complete_score_range": [6, 18],
+    "unknown_handling": "If any dimension is unknown, feasibility_total_score is null and score_coverage is reported",
+    "excluded_from_score": [
+      "optimizer_rank",
+      "observed_yield",
+      "predicted_yield",
+      "uncertainty",
+      "acquisition_value",
+      "dft_context"
+    ],
+    "interpretation": "The score summarizes feasibility evidence and does not create or modify an optimizer ranking"
+  },
+  "safety_gate_policy": {
+    "computed_by": "program",
+    "statuses": ["eligible", "conditional", "blocked"],
+    "blocked_when": "critical_safety_flags is non-empty, or hazard or scale_up_risk is high",
+    "conditional_when": "not blocked and any dimension is unknown, waste_disposal_burden is high, or safety-relevant evidence is not verified",
+    "eligible_when": "all dimensions are known, neither hazard nor scale_up_risk is high, waste_disposal_burden is not high, and safety-relevant evidence is verified",
+    "selection_rule": "A blocked condition cannot be selected; if all five conditions are blocked, return no_condition_recommended",
+    "approval_boundary": "eligible does not replace current SDS, laboratory SOP, or EHS review"
+  },
+  "candidate_assessments": [
+    {
+      "dataset": "Suzuki | Buchwald_sub4",
+      "optimizer_rank": 1,
+      "budget": {
+        "level": "low | medium | high | unknown",
+        "basis": "verified_evidence | llm_inference | unknown",
+        "confidence": "low | medium | high",
+        "rationale": "Concise condition-specific rationale",
+        "sources": []
+      },
+      "procurement_difficulty": {
+        "level": "low | medium | high | unknown",
+        "basis": "verified_evidence | llm_inference | unknown",
+        "confidence": "low | medium | high",
+        "rationale": "Concise sourcing and lead-time rationale",
+        "sources": []
+      },
+      "hazard": {
+        "level": "low | medium | high | unknown",
+        "basis": "verified_evidence | llm_inference | unknown",
+        "confidence": "low | medium | high",
+        "rationale": "Preliminary handling- and process-hazard rationale",
+        "sources": []
+      },
+      "operational_complexity": {
+        "level": "low | medium | high | unknown",
+        "basis": "verified_evidence | llm_inference | unknown",
+        "confidence": "low | medium | high",
+        "rationale": "Concise apparatus, control, work-up, and isolation rationale",
+        "sources": []
+      },
+      "scale_up_risk": {
+        "level": "low | medium | high | unknown",
+        "basis": "verified_evidence | llm_inference | unknown",
+        "confidence": "low | medium | high",
+        "rationale": "Concise heat, mass-transfer, gas, pressure, and mixing rationale",
+        "sources": []
+      },
+      "waste_disposal_burden": {
+        "level": "low | medium | high | unknown",
+        "basis": "verified_evidence | llm_inference | unknown",
+        "confidence": "low | medium | high",
+        "rationale": "Concise waste segregation and disposal rationale",
+        "sources": []
+      },
+      "candidate_summary": "One or two sentences stating the main practical advantage, limitation, and evidence basis",
+      "critical_safety_flags": []
+    }
+  ],
+  "program_computed_output": {
+    "dimension_scores": "Derived from level_to_score",
+    "feasibility_total_score": "Integer from 6 to 18 when complete; otherwise null",
+    "score_coverage": "Known dimensions / 6",
+    "safety_gate": "eligible | conditional | blocked"
+  },
+  "final_recommendations": [
+    {
+      "dataset": "Suzuki | Buchwald_sub4",
+      "selected_optimizer_rank": "1..5 | null",
+      "recommendation_status": "recommended | no_condition_recommended",
+      "rationale": "Why this queried Top-5 condition has the best practical balance, including comparison with optimizer rank 1",
+      "tradeoffs": [
+        "Explicit practical benefit and corresponding numerical or operational cost"
+      ],
+      "alternative_optimizer_rank": "1..5 | null",
+      "alternative_rationale": "Why the alternative is useful, or why no safe alternative is available",
+      "unresolved_information": [
+        "Current price, stock, SDS, process-safety, or waste information still requiring verification"
+      ],
+      "required_checks": [
+        "Verify current supplier availability, quotation, and lead time",
+        "Review current SDS and laboratory SOP",
+        "Confirm scale-up controls and waste-disposal route",
+        "Obtain EHS approval before execution"
+      ]
+    }
+  ]
+}

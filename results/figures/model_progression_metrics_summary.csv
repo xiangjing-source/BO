@@ -1,0 +1,25 @@
+dataset,method,metric,n,mean,std,ci95_lower,ci95_upper
+Suzuki,Random search,initial_round_found_best,20,75.7385,7.540361065625436,72.20950239167952,79.26749760832048
+Suzuki,Random search,best_found,20,94.55850000000001,2.588383513030153,93.34709922656212,95.7699007734379
+Suzuki,Random search,round_to_95_global_best,20,29.7,13.231143484020452,23.507634236069514,35.892365763930485
+Suzuki,Random search,AUC_best_so_far,20,89.4640125,4.345947945981134,87.4300462517298,91.49797874827019
+Suzuki,Conventional mixed-kernel Bayesian optimization,initial_round_found_best,20,81.92450000000001,7.742949577382946,78.30068804960185,85.54831195039817
+Suzuki,Conventional mixed-kernel Bayesian optimization,best_found,20,98.0665,1.794304659339188,97.2267395699229,98.90626043007711
+Suzuki,Conventional mixed-kernel Bayesian optimization,round_to_95_global_best,20,10.95,9.870077054037196,6.330661746236013,15.569338253763986
+Suzuki,Conventional mixed-kernel Bayesian optimization,AUC_best_so_far,20,95.61128750000002,1.421855959733709,94.94583842699063,96.2767365730094
+Suzuki,Role-wise categorical-kernel Bayesian optimization,initial_round_found_best,20,84.04249999999999,8.69367578669751,79.97373448708161,88.11126551291837
+Suzuki,Role-wise categorical-kernel Bayesian optimization,best_found,20,97.36250000000001,1.3957260890982432,96.70928008288591,98.01571991711411
+Suzuki,Role-wise categorical-kernel Bayesian optimization,round_to_95_global_best,20,4.4,8.732275280758582,0.3131693677805245,8.486830632219476
+Suzuki,Role-wise categorical-kernel Bayesian optimization,AUC_best_so_far,20,95.883975,1.1439740746855418,95.34857865247629,96.41937134752372
+Buchwald_sub4,Random search,initial_round_found_best,20,51.625871683499994,11.454589609622857,46.26495872656869,56.986784640431296
+Buchwald_sub4,Random search,best_found,20,81.8369032135,2.3262396598975026,80.74818953988262,82.92561688711737
+Buchwald_sub4,Random search,round_to_95_global_best,20,32.65,13.39393028282037,26.381447669056172,38.918552330943825
+Buchwald_sub4,Random search,AUC_best_so_far,20,76.85122677837501,3.375998179539116,75.27121099430332,78.4312425624467
+Buchwald_sub4,Fused forest with random exploration,initial_round_found_best,20,71.20942937449999,9.170550503233471,66.91747962418538,75.5013791248146
+Buchwald_sub4,Fused forest with random exploration,best_found,20,85.47296282299999,1.6733784919026018,84.68979758139635,86.25612806460363
+Buchwald_sub4,Fused forest with random exploration,round_to_95_global_best,20,17.0,8.162816851269445,13.179684116638697,20.820315883361303
+Buchwald_sub4,Fused forest with random exploration,AUC_best_so_far,20,81.22708661585001,2.098223612192463,80.24508773745352,82.20908549424651
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,initial_round_found_best,20,74.387710065,1.7672791130271637,73.56059797993828,75.2148221500617
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,best_found,20,86.06695613000001,1.2051682296099926,85.50292003638296,86.63099222361706
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,round_to_95_global_best,20,12.5,5.13501908980206,10.096737088731386,14.903262911268614
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,AUC_best_so_far,20,82.53504510117502,1.4948030338460496,81.83545574657488,83.23463445577515

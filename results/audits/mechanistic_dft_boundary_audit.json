@@ -1,0 +1,190 @@
+{
+  "passed": true,
+  "snapshot": {
+    "path": "results/audits/mechanistic_dft_component_features.csv",
+    "records": 87,
+    "sha256": "7e09ae01811d7b04f8bdc2b5362cd779a9dd3f504b9a7fff6f126ed6fb1e45db",
+    "expected_sha256": "7e09ae01811d7b04f8bdc2b5362cd779a9dd3f504b9a7fff6f126ed6fb1e45db",
+    "forbidden_outcome_columns": [],
+    "duplicate_lookup_rows": 0,
+    "numeric_columns_checked": [
+      "homo_ev",
+      "lumo_ev",
+      "homo_lumo_gap_ev",
+      "dipole_debye",
+      "donor_hirshfeld_min",
+      "donor_mayer_charge_min",
+      "donor_free_valence_max",
+      "donor_count",
+      "additive_n_hirshfeld",
+      "additive_o_hirshfeld",
+      "additive_c3_hirshfeld",
+      "additive_c5_hirshfeld",
+      "additive_n_o_mayer_bond_order",
+      "additive_n_o_distance_angstrom",
+      "phosphorus_hirshfeld_mean",
+      "phosphorus_mayer_charge_mean",
+      "phosphorus_total_valence_mean",
+      "phosphorus_count",
+      "electrophile_c_hirshfeld",
+      "electrophile_c_mayer_charge",
+      "leaving_group_hirshfeld",
+      "leaving_group_mayer_charge",
+      "c_leaving_mayer_bond_order",
+      "c_leaving_distance_angstrom",
+      "heteroaryl_n_min_hirshfeld",
+      "palladium_hirshfeld_mean",
+      "palladium_mayer_charge_mean",
+      "palladium_total_valence_mean",
+      "palladium_free_valence_mean",
+      "palladium_count",
+      "pd_pd_mayer_bond_order_mean",
+      "pd_pd_distance_angstrom_mean",
+      "pd_o_mayer_bond_order_mean",
+      "pd_o_distance_angstrom_mean",
+      "boron_hirshfeld",
+      "boron_mayer_charge",
+      "transfer_c_hirshfeld",
+      "transfer_c_mayer_charge",
+      "c_b_mayer_bond_order",
+      "c_b_distance_angstrom",
+      "b_hetero_mayer_bond_order_mean"
+    ],
+    "infinite_numeric_values": 0
+  },
+  "source_hashes": {
+    "calculation_index.csv": {
+      "expected": "1b97791afc608ce37c3a6abd277c5975ab5e3e3cafb804008c2590aa9cd38a9f",
+      "actual": "1b97791afc608ce37c3a6abd277c5975ab5e3e3cafb804008c2590aa9cd38a9f",
+      "matches": true
+    },
+    "molecular_features.csv": {
+      "expected": "a2652df449007728dec552e8caddaf6eb6ce351e245c5affc0ebb8b7c700a37e",
+      "actual": "a2652df449007728dec552e8caddaf6eb6ce351e245c5affc0ebb8b7c700a37e",
+      "matches": true
+    },
+    "atomic_features.csv": {
+      "expected": "b86517b473170869e71b689e857ef467ff6b2a924f58d8bea46d413c66881a18",
+      "actual": "b86517b473170869e71b689e857ef467ff6b2a924f58d8bea46d413c66881a18",
+      "matches": true
+    },
+    "mayer_bond_orders.csv": {
+      "expected": "744cd3ca3040d3866e902192db4791f72cc855a01e8e1d765710006d429a88de",
+      "actual": "744cd3ca3040d3866e902192db4791f72cc855a01e8e1d765710006d429a88de",
+      "matches": true
+    }
+  },
+  "public_information_boundary": {
+    "Suzuki": {
+      "candidate_has_yield": false,
+      "train_has_yield": true
+    },
+    "Buchwald_sub4": {
+      "candidate_has_yield": false,
+      "train_has_yield": true
+    }
+  },
+  "coverage": {
+    "Suzuki": {
+      "dataset": "Suzuki",
+      "rows": 5760,
+      "roles": {
+        "Electrophile": {
+          "rows": 5760,
+          "covered_rows": 5760,
+          "row_fraction": 1.0,
+          "unique_values": 5,
+          "covered_unique_values": 5
+        },
+        "Nucleophile": {
+          "rows": 5760,
+          "covered_rows": 5760,
+          "row_fraction": 1.0,
+          "unique_values": 6,
+          "covered_unique_values": 6
+        },
+        "Ligand": {
+          "rows": 5760,
+          "covered_rows": 5280,
+          "row_fraction": 0.9166666666666666,
+          "unique_values": 12,
+          "covered_unique_values": 11
+        },
+        "Base": {
+          "rows": 5760,
+          "covered_rows": 5040,
+          "row_fraction": 0.875,
+          "unique_values": 8,
+          "covered_unique_values": 7
+        },
+        "Solvent": {
+          "rows": 5760,
+          "covered_rows": 5760,
+          "row_fraction": 1.0,
+          "unique_values": 4,
+          "covered_unique_values": 4
+        }
+      },
+      "complete_rows": 4620,
+      "complete_row_fraction": 0.8020833333333334,
+      "mean_components_available": 4.791666666666667,
+      "profile": "compact",
+      "transformed_shape": [
+        5760,
+        19
+      ],
+      "transformed_all_finite": true
+    },
+    "Buchwald_sub4": {
+      "dataset": "Buchwald_sub4",
+      "rows": 818,
+      "roles": {
+        "Reactant2": {
+          "rows": 818,
+          "covered_rows": 818,
+          "row_fraction": 1.0,
+          "unique_values": 15,
+          "covered_unique_values": 15
+        },
+        "Ligand": {
+          "rows": 818,
+          "covered_rows": 818,
+          "row_fraction": 1.0,
+          "unique_values": 4,
+          "covered_unique_values": 4
+        },
+        "Additive": {
+          "rows": 818,
+          "covered_rows": 818,
+          "row_fraction": 1.0,
+          "unique_values": 22,
+          "covered_unique_values": 22
+        },
+        "Base": {
+          "rows": 818,
+          "covered_rows": 818,
+          "row_fraction": 1.0,
+          "unique_values": 3,
+          "covered_unique_values": 3
+        },
+        "Product": {
+          "rows": 818,
+          "covered_rows": 818,
+          "row_fraction": 1.0,
+          "unique_values": 5,
+          "covered_unique_values": 5
+        }
+      },
+      "complete_rows": 818,
+      "complete_row_fraction": 1.0,
+      "mean_components_available": 5.0,
+      "profile": "compact",
+      "transformed_shape": [
+        818,
+        19
+      ],
+      "transformed_all_finite": true
+    }
+  },
+  "test_outcome_tables_opened": false
+}

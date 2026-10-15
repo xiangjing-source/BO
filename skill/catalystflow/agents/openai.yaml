@@ -1,0 +1,6 @@
+interface:
+  display_name: "CatalystFlow"
+  short_description: "Reproduce and audit reaction-condition optimization"
+  default_prompt: "Use $catalystflow with the packaged data to run the 2 × 20 × 40 reproduction, freeze the queried Top-5, retrieve directly supporting external evidence, use labelled LLM fallback only for remaining gaps, and select one non-blocked final recommended reaction condition per dataset."
+policy:
+  allow_implicit_invocation: true

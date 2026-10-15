@@ -1,0 +1,125 @@
+CatalystFlow final numerical reproduction verification
+Date: 2026-08-14
+Command: bash runtime/run_reproduction.sh
+Input: project-relative data/
+Output: newly generated reproduced_results/ (removed from submission after comparison)
+Reference: results/optimization_trajectories/
+
+Protocol
+- datasets: Suzuki, Buchwald_sub4
+- seeds per dataset: 100, 200, ..., 2000
+- rounds per seed: 40
+- candidates queried per round: 1
+- model initialization: independent and from scratch for every seed
+- production configuration sha256: 4e5a48398181390c5a94e2ca5df417a40e679865401405249a85bad5f83e09b8
+
+Audit result
+- trajectory files: 40/40 valid
+- sequential query records: 1600/1600 complete
+- reference comparison: 40 identical, 0 different
+- unqueried outcome use: rejected by production data boundary
+- DeepSeek effect on numerical ranking: none
+- DFT effect on numerical ranking: none
+
+Core metrics
+Suzuki,initial_round_found_best,mean=84.042500,std=8.693676,ci95=[80.232329,87.852671]
+Suzuki,best_found,mean=97.362500,std=1.395726,ci95=[96.750796,97.974204]
+Suzuki,round_to_95_global_best,mean=4.400000,std=8.732275,ci95=[0.572912,8.227088]
+Suzuki,AUC_best_so_far,mean=95.883975,std=1.143974,ci95=[95.382606,96.385344]
+Buchwald_sub4,initial_round_found_best,mean=74.387710,std=1.767279,ci95=[73.613166,75.162254]
+Buchwald_sub4,best_found,mean=86.066956,std=1.205168,ci95=[85.538768,86.595144]
+Buchwald_sub4,round_to_95_global_best,mean=12.500000,std=5.135019,ci95=[10.249479,14.750521]
+Buchwald_sub4,AUC_best_so_far,mean=82.535045,std=1.494803,ci95=[81.879919,83.190171]
+
+Environment
+- Python 3.11.15
+- NumPy 1.26.4
+- SciPy 1.11.4
+- pandas 2.1.4
+- scikit-learn 1.3.2
+- RDKit 2026.03.4
+
+Status: PASS
+
+Open Science CLI two-stage verification
+- date: 2026-08-14
+- model: deepseek/deepseek-v4-flash
+- numerical job id: 20260814T135509Z-1b7639cd
+- numerical stage: 40/40 trajectories, 1600/1600 query records, reference comparison identical
+- bounded feasibility-review payload: 11171 bytes; full deterministic DFT context retained in report.json
+- report stage: process exit code 0
+- incremental feasibility assessments: 10/10 complete
+- final practical recommendations: 2/2 complete
+- complete report: enriched_report.json and enriched_report.md generated
+- optimizer ranking preserved: true
+- DeepSeek effect on numerical ranking: none
+- DFT effect on numerical ranking: none
+- offline mode was used only to verify CLI report-stage completion; the default submitted
+  workflow remains database-first and uses LLM inference only where direct evidence is absent
+
+Status: PASS
+
+Final unified-report package verification
+- report consolidation: results/results_and_analysis.{md,docx,pdf,json}
+- duplicate agent_analysis_report publication files: removed
+- command from clean expanded-cache state: bash runtime/run_reproduction.sh
+- packaged numerical environment re-extraction and smoke test: PASS
+- packaged Open Science 2.0.23 re-extraction and agent discovery: PASS
+- fresh Suzuki trajectories: 20/20 valid
+- fresh Buchwald_sub4 trajectories: 20/20 valid
+- fresh sequential query records: 1600/1600 complete
+- fresh-versus-submitted comparison: identical
+- external evidence snapshot: 20 traceable sources, ranking_effect=none
+- generated caches and reproduced_results: excluded before final packaging
+
+Status: PASS
+
+Open Science offline runtime verification
+- official package: @synsci/openscience-linux-x64@2.0.23
+- platform: Linux x86_64
+- archive SHA-256: d3b0e541e2a08579243694509e2141eb56fee1825f33b7c6ecaf62a823b3278e
+- extracted binary SHA-256: 733132330d9e0e7e48ca93bc370b7734e7c1920e5773e8514c690753cc65836e
+- bundled engine version: 2.0.23
+- catalystflow primary agent discovery: PASS
+- web workspace startup from submission root: PASS
+- DeepSeek provider discovery: PASS
+- DeepSeek inference: not part of offline verification; requires evaluator key, network, and quota
+
+Open Science + DeepSeek end-to-end evaluator verification
+- session title: evaluator-final-single-session-20260814
+- Open Science version: 2.0.23 (submission-bundled runtime)
+- model: deepseek/deepseek-v4-flash (evaluator-provided user credential)
+- input: project-relative data/ only
+- new job id: 20260814T072411Z-1d800c62
+- numerical execution: inline, from scratch, compare_reference=true
+- trajectory files: 40/40 valid
+- sequential query records: 1600/1600 complete
+- reference comparison: identical
+- independent report_builder audit: valid, 40 trajectories, 1600 records, identical
+- incremental feasibility assessments: 10/10 complete
+- final practical recommendations: 2/2 complete
+- complete report: enriched_report.json and enriched_report.md generated
+- optimizer ranking preserved: true
+- DeepSeek effect on numerical ranking: none
+- DFT effect on numerical ranking: none
+- initial end-to-end evidence mode: llm_inference, low confidence, no fabricated sources
+- submitted unified report: post-selection database enhancement with 20 traceable sources;
+  unsupported dimensions remain llm_inference or unknown
+- API key handling: read from the evaluator's Open Science user credential store; never copied into the submission
+
+Status: PASS
+
+Bounded official-metrics interface verification
+- date: 2026-08-14
+- CatalystFlow Skill version: 2.2.1
+- source: deterministic report built from the submitted 40 trajectories
+- returned metrics: B1, B40, t95, AUC for Suzuki and Buchwald_sub4
+- statistics per metric: 20-run mean, sample standard deviation, t-based 95% confidence interval
+- arbitrary file access: not granted
+- candidate-pool global optimum and unqueried outcomes: not returned
+- fresh report audit: valid, 40 trajectories, 1600 records, identical
+- Skill workflow tests: 27/27 PASS
+- Agent/MCP tests: 7/7 PASS
+- Skill structure validation: PASS
+
+Status: PASS

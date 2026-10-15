@@ -1,0 +1,3 @@
+dataset,initial_train_rows,target_initial_train_rows,candidate_rows,initial_train_yield_min,initial_train_yield_max,target_initial_train_yield_max,candidate_yield_min,candidate_global_best,global_best_candidate_count,global_best_candidate_indices
+Suzuki,29,29,5731,0.0,71.51,71.51,0.0,99.9,3,4203;5018;5369
+Buchwald_sub4,35,7,783,0.602239969,81.78695125,45.3883139,0.0,86.59757822,1,200

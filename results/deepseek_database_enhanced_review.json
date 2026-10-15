@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "framework": "Open Science 2.0.23",
+  "model": "deepseek/deepseek-v4-flash",
+  "session_id": "ses_000598409ffeNYeaje4OwKDGJD",
+  "review_date": "2026-08-14",
+  "input_scope": "frozen queried Top-5, packaged DFT context, external evidence snapshot; no numerical rerun",
+  "ranking_effect": "none",
+  "review_status": "completed",
+  "database_checks": [
+    {
+      "target": "PubMed 27928513",
+      "status": "failed",
+      "detail": "PubMed connection failed in this session; Europe PMC fallback succeeded."
+    },
+    {
+      "target": "PubMed 29449509",
+      "status": "failed",
+      "detail": "PubMed connection failed in this session; Europe PMC fallback succeeded."
+    },
+    {
+      "target": "Crossref 10.1021/om060380i",
+      "status": "failed",
+      "detail": "Crossref connection failed in this session; the DOI was independently checked against the publisher record."
+    },
+    {
+      "target": "Crossref 10.1039/C9SC03095F",
+      "status": "failed",
+      "detail": "Crossref connection failed in this session; the DOI was independently checked against the publisher record."
+    },
+    {
+      "target": "Europe PMC 27928513",
+      "status": "success",
+      "locator": "https://europepmc.org/article/MED/27928513",
+      "detail": "Unique record for Suzuki-Miyaura cross-coupling optimization enabled by automated feedback; method context only."
+    },
+    {
+      "target": "Europe PMC 29449509",
+      "status": "success",
+      "locator": "https://europepmc.org/article/MED/29449509",
+      "detail": "Unique record for Predicting reaction performance in C-N cross-coupling using machine learning; method context only."
+    },
+    {
+      "target": "OpenAlex DOI fallback",
+      "status": "interrupted",
+      "detail": "Two OpenAlex calls did not complete and were stopped; no result was cited from them."
+    }
+  ],
+  "recommendations": {
+    "Suzuki": {
+      "selected_optimizer_rank": 3,
+      "verdict": "consistent",
+      "summary": "Rank 3 exchanges 0.85 percentage points of observed yield for removal of the LiOtBu self-heating Category 1 flag and avoids the triethylamine/acetonitrile burden in rank 5."
+    },
+    "Buchwald_sub4": {
+      "selected_optimizer_rank": 1,
+      "verdict": "consistent_with_conditions",
+      "summary": "Rank 1 retains the highest observed yield and the retrieved tBuXPhos catalog price is substantially below AdBrettPhos for rank 2; all candidates remain conditional because scale, location, complete SDS and scale-up evidence are incomplete."
+    }
+  },
+  "dft_post_interpretation": {
+    "Suzuki": {
+      "source_id": "DFT-SUZ-001",
+      "scope": "General oxidative-addition, isomerization, transmetalation and reductive-elimination context only."
+    },
+    "Buchwald_sub4": {
+      "source_id": "DFT-BCH-001",
+      "scope": "General ligand steric-response and chemoselectivity context only."
+    },
+    "boundary": "External literature does not validate candidate-specific yields or packaged ORCA descriptors and cannot change DFT values, coverage, status or optimizer rank."
+  },
+  "new_data_boundary": {
+    "allowed": "Use databases and DeepSeek to resolve identity, synonyms, structures, reaction family, variable roles and units; reviewed outcome-free structures and metadata may enter features.",
+    "forbidden": "External or literature yields, activities, optimum conditions, unqueried candidate results and outcome-derived preferences may not enter fitting, tuning, prompting, EI or ranking."
+  },
+  "llm_fallback": [
+    "Cross-evidence synthesis across cost, procurement, hazard, operation, scale-up and waste dimensions.",
+    "Clearly labelled practical trade-off summaries when no direct source covers the combined claim.",
+    "OOD semantic explanation and manual-review checklist when databases do not resolve an ambiguity."
+  ],
+  "required_checks": [
+    "Confirm target scale, laboratory location and current SDS for every component.",
+    "Recheck supplier price, stock and delivery for the intended region and date.",
+    "Complete SOP, calorimetry or process-safety review and waste-vendor acceptance before execution.",
+    "Retry unavailable literature databases when network access is restored and retain direct records actually used."
+  ]
+}

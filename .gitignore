@@ -1,0 +1,17 @@
+.catalystflow-agent/
+.openscience/handoffs/*.md
+.git/
+runtime/.portable_env/
+runtime/.portable_env_windows/
+runtime/.platform_env_*/
+runtime/.openscience_runtime/
+runtime/.openscience_runtime.tmp.*/
+reproduced_results/
+.pytest_cache/
+__pycache__/
+*.pyc
+
+# 离线运行时包超过 GitHub 普通 Git 的单文件 100 MB 限制；源码环境定义保留。
+runtime/catalystflow-linux-x86_64.tar.gz
+runtime/windows-x86_64/catalystflow-windows-x86_64.tar.gz
+

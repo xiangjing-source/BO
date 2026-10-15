@@ -1,0 +1,121 @@
+dataset,method,seed,initial_round_found_best,best_found,round_to_95_global_best,AUC_best_so_far
+Suzuki,Random search,100,71.51,90.69,41.0,88.89949999999999
+Suzuki,Random search,200,71.51,95.34,25.0,91.37174999999999
+Suzuki,Random search,300,90.92,96.3,6.0,95.6275
+Suzuki,Random search,400,71.51,93.06,41.0,87.23724999999999
+Suzuki,Random search,500,89.09,89.09,41.0,89.09
+Suzuki,Random search,600,71.51,95.36,39.0,90.33200000000001
+Suzuki,Random search,700,91.35,93.3,41.0,93.10499999999999
+Suzuki,Random search,800,71.51,99.9,8.0,92.88425
+Suzuki,Random search,900,71.51,96.3,30.0,82.902
+Suzuki,Random search,1000,71.51,95.34,20.0,90.08125000000001
+Suzuki,Random search,1100,71.51,97.32,8.0,95.85274999999999
+Suzuki,Random search,1200,81.51,96.74,8.0,94.07475000000001
+Suzuki,Random search,1300,71.51,93.55,41.0,84.524
+Suzuki,Random search,1400,73.27,93.31,41.0,80.526
+Suzuki,Random search,1500,71.51,95.29,35.0,85.55199999999999
+Suzuki,Random search,1600,71.51,95.18,37.0,84.549
+Suzuki,Random search,1700,71.51,95.29,24.0,92.415
+Suzuki,Random search,1800,87.49,90.05,41.0,89.66600000000001
+Suzuki,Random search,1900,71.51,93.27,41.0,86.64099999999999
+Suzuki,Random search,2000,71.51,96.49,26.0,93.94925
+Suzuki,Conventional mixed-kernel Bayesian optimization,100,84.98,99.9,3.0,96.9865
+Suzuki,Conventional mixed-kernel Bayesian optimization,200,71.51,99.9,10.0,95.9125
+Suzuki,Conventional mixed-kernel Bayesian optimization,300,84.04,99.05,2.0,97.891
+Suzuki,Conventional mixed-kernel Bayesian optimization,400,71.51,99.15,8.0,96.99849999999999
+Suzuki,Conventional mixed-kernel Bayesian optimization,500,89.63,99.9,2.0,97.93825000000001
+Suzuki,Conventional mixed-kernel Bayesian optimization,600,81.74,99.9,3.0,97.43825000000001
+Suzuki,Conventional mixed-kernel Bayesian optimization,700,84.98,96.2,3.0,95.639
+Suzuki,Conventional mixed-kernel Bayesian optimization,800,92.43,96.97,14.0,95.29925
+Suzuki,Conventional mixed-kernel Bayesian optimization,900,71.51,93.81,41.0,92.5145
+Suzuki,Conventional mixed-kernel Bayesian optimization,1000,81.74,99.15,3.0,96.56899999999999
+Suzuki,Conventional mixed-kernel Bayesian optimization,1100,84.98,96.2,5.0,95.078
+Suzuki,Conventional mixed-kernel Bayesian optimization,1200,81.74,96.97,14.0,93.8905
+Suzuki,Conventional mixed-kernel Bayesian optimization,1300,81.74,99.9,25.0,93.67349999999999
+Suzuki,Conventional mixed-kernel Bayesian optimization,1400,71.72,96.97,4.0,95.16525000000001
+Suzuki,Conventional mixed-kernel Bayesian optimization,1500,71.51,98.69,15.0,95.2055
+Suzuki,Conventional mixed-kernel Bayesian optimization,1600,92.43,96.97,18.0,95.1785
+Suzuki,Conventional mixed-kernel Bayesian optimization,1700,73.7,99.15,22.0,94.14875
+Suzuki,Conventional mixed-kernel Bayesian optimization,1800,92.43,96.04,13.0,95.15750000000001
+Suzuki,Conventional mixed-kernel Bayesian optimization,1900,92.43,96.61,6.0,95.81075
+Suzuki,Conventional mixed-kernel Bayesian optimization,2000,81.74,99.9,8.0,95.73074999999999
+Suzuki,Role-wise categorical-kernel Bayesian optimization,100,80.63,99.05,2.0,97.44025000000002
+Suzuki,Role-wise categorical-kernel Bayesian optimization,200,80.63,99.15,3.0,96.29625000000001
+Suzuki,Role-wise categorical-kernel Bayesian optimization,300,96.2,96.74,1.0,96.227
+Suzuki,Role-wise categorical-kernel Bayesian optimization,400,80.63,96.74,2.0,95.99975
+Suzuki,Role-wise categorical-kernel Bayesian optimization,500,80.63,97.98,5.0,95.71100000000001
+Suzuki,Role-wise categorical-kernel Bayesian optimization,600,80.63,96.2,4.0,95.03225
+Suzuki,Role-wise categorical-kernel Bayesian optimization,700,96.2,96.2,1.0,96.2
+Suzuki,Role-wise categorical-kernel Bayesian optimization,800,80.63,96.2,2.0,95.81075
+Suzuki,Role-wise categorical-kernel Bayesian optimization,900,71.51,97.98,4.0,94.84875
+Suzuki,Role-wise categorical-kernel Bayesian optimization,1000,80.63,98.69,2.0,96.122
+Suzuki,Role-wise categorical-kernel Bayesian optimization,1100,96.2,99.05,1.0,97.33975000000001
+Suzuki,Role-wise categorical-kernel Bayesian optimization,1200,96.2,99.9,1.0,97.4985
+Suzuki,Role-wise categorical-kernel Bayesian optimization,1300,80.63,96.2,2.0,95.81075
+Suzuki,Role-wise categorical-kernel Bayesian optimization,1400,80.63,97.09,3.0,95.466
+Suzuki,Role-wise categorical-kernel Bayesian optimization,1500,71.51,96.74,2.0,95.78525
+Suzuki,Role-wise categorical-kernel Bayesian optimization,1600,80.63,96.2,5.0,94.643
+Suzuki,Role-wise categorical-kernel Bayesian optimization,1700,73.7,94.82,41.0,92.29775
+Suzuki,Role-wise categorical-kernel Bayesian optimization,1800,80.63,99.15,5.0,96.33924999999999
+Suzuki,Role-wise categorical-kernel Bayesian optimization,1900,96.2,96.2,1.0,96.2
+Suzuki,Role-wise categorical-kernel Bayesian optimization,2000,96.2,96.97,1.0,96.61125000000001
+Buchwald_sub4,Random search,100,76.98654081,80.71099803,41.0,79.79488380299999
+Buchwald_sub4,Random search,200,45.3883139,80.9780499,41.0,66.963324291
+Buchwald_sub4,Random search,300,45.3883139,81.22830675,41.0,75.77438719775
+Buchwald_sub4,Random search,400,74.62438876,80.90409924,41.0,76.589257863
+Buchwald_sub4,Random search,500,45.3883139,86.59757822,33.0,74.852992296
+Buchwald_sub4,Random search,600,45.3883139,79.45834404,41.0,75.3098749385
+Buchwald_sub4,Random search,700,45.3883139,86.59757822,4.0,84.53384588225
+Buchwald_sub4,Random search,800,45.3883139,85.89473594,11.0,79.48977228800001
+Buchwald_sub4,Random search,900,45.3883139,83.29437838,17.0,77.52560552225
+Buchwald_sub4,Random search,1000,45.3883139,83.05466982,3.0,81.171352024
+Buchwald_sub4,Random search,1100,45.3883139,78.80108905,41.0,76.90765540425
+Buchwald_sub4,Random search,1200,67.48065191,79.73976585,41.0,77.10513758049999
+Buchwald_sub4,Random search,1300,45.3883139,80.71099803,41.0,79.23232987774999
+Buchwald_sub4,Random search,1400,45.3883139,80.68492948,41.0,76.02707891550001
+Buchwald_sub4,Random search,1500,61.04819615,80.71099803,41.0,75.80293270624999
+Buchwald_sub4,Random search,1600,45.3883139,80.78664078,41.0,76.16787438775
+Buchwald_sub4,Random search,1700,71.55294754,83.29437838,26.0,76.46128643
+Buchwald_sub4,Random search,1800,45.3883139,82.63071562,26.0,74.674564412
+Buchwald_sub4,Random search,1900,45.3883139,79.18190676,41.0,74.909852594
+Buchwald_sub4,Random search,2000,45.3883139,81.47790375,41.0,77.73052715374999
+Buchwald_sub4,Fused forest with random exploration,100,74.97052076,86.59757822,15.0,81.95488341675
+Buchwald_sub4,Fused forest with random exploration,200,74.97052076,83.29437838,12.0,81.2940287115
+Buchwald_sub4,Fused forest with random exploration,300,74.97052076,86.59757822,11.0,83.04763398225
+Buchwald_sub4,Fused forest with random exploration,400,74.97052076,85.89473594,15.0,82.0829853415
+Buchwald_sub4,Fused forest with random exploration,500,74.97052076,86.59757822,14.0,82.61899522125
+Buchwald_sub4,Fused forest with random exploration,600,71.55294754,81.02094948,41.0,77.93549865775
+Buchwald_sub4,Fused forest with random exploration,700,75.97219172,86.59757822,14.0,82.76410901375
+Buchwald_sub4,Fused forest with random exploration,800,74.97052076,86.59757822,12.0,83.07478226949999
+Buchwald_sub4,Fused forest with random exploration,900,45.3883139,86.59757822,11.0,82.01675715775
+Buchwald_sub4,Fused forest with random exploration,1000,74.97052076,86.59757822,11.0,83.54881767725001
+Buchwald_sub4,Fused forest with random exploration,1100,74.97052076,85.89473594,22.0,80.5807533105
+Buchwald_sub4,Fused forest with random exploration,1200,74.97052076,86.59757822,10.0,83.89405747974999
+Buchwald_sub4,Fused forest with random exploration,1300,74.97052076,85.89473594,20.0,79.9362412115
+Buchwald_sub4,Fused forest with random exploration,1400,74.97052076,85.89473594,13.0,80.70694802599999
+Buchwald_sub4,Fused forest with random exploration,1500,45.3883139,86.59757822,9.0,82.468044117
+Buchwald_sub4,Fused forest with random exploration,1600,74.97052076,83.3036144,27.0,79.364745855
+Buchwald_sub4,Fused forest with random exploration,1700,65.44832937,83.09647392,28.0,75.72133130525
+Buchwald_sub4,Fused forest with random exploration,1800,74.97052076,86.59757822,10.0,82.7254755655
+Buchwald_sub4,Fused forest with random exploration,1900,75.97219172,83.29437838,25.0,80.041100182
+Buchwald_sub4,Fused forest with random exploration,2000,69.84952946,85.89473594,20.0,78.76454381525
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,100,74.97052076,86.59757822,7.0,84.08821086175001
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,200,74.97052076,86.59757822,13.0,82.44993395325
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,300,74.97052076,86.59757822,11.0,83.207074404
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,400,74.97052076,83.29437838,10.0,81.5968028335
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,500,74.97052076,86.59757822,14.0,82.61899522125
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,600,71.55294754,83.29437838,15.0,79.47583053625002
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,700,75.97219172,86.59757822,12.0,83.45076583425
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,800,74.97052076,86.59757822,12.0,82.960040923
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,900,74.97052076,86.59757822,7.0,83.94521688525
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,1000,74.97052076,86.59757822,11.0,83.60153084825001
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,1100,74.97052076,86.59757822,12.0,83.52818514949999
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,1200,74.97052076,86.59757822,10.0,83.71834690975
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,1300,74.97052076,86.59757822,10.0,83.42187543425
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,1400,74.97052076,86.59757822,9.0,83.17724297875
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,1500,74.97052076,86.59757822,16.0,81.649167702
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,1600,74.97052076,86.59757822,7.0,83.2077863385
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,1700,69.84952946,85.89473594,26.0,78.89888091200001
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,1800,74.97052076,86.59757822,14.0,82.2190655255
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,1900,75.97219172,83.29437838,25.0,80.041100182
+Buchwald_sub4,Identity–knowledge–structure Bayesian optimization,2000,69.84952946,86.59757822,9.0,83.44484859050002

@@ -1,0 +1,8 @@
+{
+  "source_case_id": "bis_diphenylphosphino_ferrocene",
+  "calculated_species_formula": "C34H28FeP2",
+  "representation": "reviewed_molecular_metal_complex",
+  "solvent_model": "none",
+  "source_job": "optimization array 240849 task 9 (actual job 240960); single-point array 241695 task 9 (actual job 241696)",
+  "representation_note": "采用人工复核后的完整 1,1'-双（二苯基膦基）二茂铁三维配位结构；保留二茂铁夹心配位关系，而不是按断开的离子片段计算。"
+}

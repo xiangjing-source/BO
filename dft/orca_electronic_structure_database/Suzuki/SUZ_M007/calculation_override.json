@@ -1,0 +1,8 @@
+{
+  "source_case_id": "sodium_hydroxide",
+  "calculated_species_formula": "HNaO",
+  "representation": "contact_ion_pair",
+  "solvent_model": "SMD/Water",
+  "source_job": "optimization array 240849; single-point array 241695",
+  "representation_note": "以完整中性接触离子对建模，并在结构优化和单点计算中使用 SMD 水溶剂模型；不是把阳离子和阴离子分别作为最终特征。"
+}

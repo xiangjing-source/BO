@@ -1,0 +1,3953 @@
+{
+  "analysis_phase": "post_hoc_after_model_and_trajectories_were_frozen",
+  "ranking_effect": "none",
+  "feature_table": "mechanistic_dft_component_features_20260730_86plus1alias.csv",
+  "examples": {
+    "Suzuki": {
+      "first_recommendation": {
+        "model_record": {
+          "step": 1,
+          "query_index": 193,
+          "predicted_yield": 52.07436118894726,
+          "uncertainty": 25.65173752101786,
+          "acquisition_value": 3.3202779835167755,
+          "selection_mode": "expected_improvement",
+          "observed_yield_post_query": 80.63,
+          "best_so_far_post_query": 80.63
+        },
+        "condition": {
+          "Electrophile": "6-iodoquinoline",
+          "Nucleophile": "[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid",
+          "Ligand": "1,1'-Bis(diphenylphosphino)ferrocene",
+          "Base": "sodium hydrogen carbonate",
+          "Solvent": "N,N-dimethylformamide"
+        },
+        "dft_explanation": {
+          "dataset": "Suzuki",
+          "condition": {
+            "Electrophile": "6-iodoquinoline",
+            "Nucleophile": "[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid",
+            "Ligand": "1,1'-Bis(diphenylphosphino)ferrocene",
+            "Base": "sodium hydrogen carbonate",
+            "Solvent": "N,N-dimethylformamide"
+          },
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 4
+          },
+          "components": [
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "c_leaving_mayer_bond_order",
+                  "field_label": "C–离去基团 Mayer 键级",
+                  "raw_value": 2.4339,
+                  "percentile": 90.0,
+                  "robust_z": 0.5354284369114876,
+                  "reference_n": 5
+                },
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "electrophile_c_hirshfeld",
+                  "field_label": "反应碳 Hirshfeld 电荷",
+                  "raw_value": 0.012403,
+                  "percentile": 10.0,
+                  "robust_z": -0.46504157218442926,
+                  "reference_n": 5
+                },
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "lumo_ev",
+                  "field_label": "LUMO 能量",
+                  "raw_value": -2.0159,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 5
+                }
+              ]
+            },
+            {
+              "role": "Nucleophile",
+              "role_label": "有机硼试剂",
+              "component": "[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid",
+                  "field": "c_b_mayer_bond_order",
+                  "field_label": "C–B Mayer 键级",
+                  "raw_value": 0.6203,
+                  "percentile": 25.0,
+                  "robust_z": -0.6371770891259291,
+                  "reference_n": 6
+                },
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid",
+                  "field": "boron_hirshfeld",
+                  "field_label": "硼位点 Hirshfeld 电荷",
+                  "raw_value": 0.214151,
+                  "percentile": 75.0,
+                  "robust_z": 0.414169244320626,
+                  "reference_n": 6
+                },
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid",
+                  "field": "transfer_c_hirshfeld",
+                  "field_label": "转移碳 Hirshfeld 电荷",
+                  "raw_value": -0.078755,
+                  "percentile": 58.333333333333336,
+                  "robust_z": 0.01359689956048277,
+                  "reference_n": 6
+                }
+              ]
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "1,1'-Bis(diphenylphosphino)ferrocene",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "1,1'-Bis(diphenylphosphino)ferrocene",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -5.6142,
+                  "percentile": 31.818181818181817,
+                  "robust_z": -0.04900601017105939,
+                  "reference_n": 11
+                },
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "1,1'-Bis(diphenylphosphino)ferrocene",
+                  "field": "phosphorus_hirshfeld_mean",
+                  "field_label": "磷位点 Hirshfeld 电荷",
+                  "raw_value": 0.109291,
+                  "percentile": 77.27272727272727,
+                  "robust_z": 0.5704687185676921,
+                  "reference_n": 11
+                }
+              ]
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "sodium hydrogen carbonate",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "sodium hydrogen carbonate",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.496049,
+                  "percentile": 78.57142857142857,
+                  "robust_z": 0.4038369778041033,
+                  "reference_n": 7
+                },
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "sodium hydrogen carbonate",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 12.171173529,
+                  "percentile": 92.85714285714286,
+                  "robust_z": 1.1143016642557793,
+                  "reference_n": 7
+                }
+              ]
+            },
+            {
+              "role": "Solvent",
+              "role_label": "溶剂",
+              "component": "N,N-dimethylformamide",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Solvent",
+                  "role_label": "溶剂",
+                  "component": "N,N-dimethylformamide",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 4.172454721,
+                  "percentile": 87.5,
+                  "robust_z": 0.5511397648036941,
+                  "reference_n": 4
+                },
+                {
+                  "role": "Solvent",
+                  "role_label": "溶剂",
+                  "component": "N,N-dimethylformamide",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.32213,
+                  "percentile": 12.5,
+                  "robust_z": -2.332249579042934,
+                  "reference_n": 4
+                }
+              ]
+            }
+          ],
+          "support_evidence": [
+            {
+              "role": "Nucleophile",
+              "role_label": "有机硼试剂",
+              "component": "[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid",
+              "field": "c_b_mayer_bond_order",
+              "field_label": "C–B Mayer 键级",
+              "raw_value": 0.6203,
+              "percentile": 25.0,
+              "robust_z": -0.6371770891259291,
+              "reference_n": 6,
+              "kind": "support",
+              "text": "C–B 键级处于较低水平，与转移基团相对易活化的方向一致"
+            },
+            {
+              "role": "Nucleophile",
+              "role_label": "有机硼试剂",
+              "component": "[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid",
+              "field": "boron_hirshfeld",
+              "field_label": "硼位点 Hirshfeld 电荷",
+              "raw_value": 0.214151,
+              "percentile": 75.0,
+              "robust_z": 0.414169244320626,
+              "reference_n": 6,
+              "kind": "support",
+              "text": "硼位点相对更缺电子，可能更容易接受碱/杂原子作用而进入活化态"
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "sodium hydrogen carbonate",
+              "field": "dipole_debye",
+              "field_label": "偶极矩",
+              "raw_value": 12.171173529,
+              "percentile": 92.85714285714286,
+              "robust_z": 1.1143016642557793,
+              "reference_n": 7,
+              "kind": "support",
+              "text": "偶极矩较高，显示较明显的电荷分离，可为硼物种活化提供间接背景证据"
+            }
+          ],
+          "risk_flags": [
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "c_leaving_mayer_bond_order",
+              "field_label": "C–离去基团 Mayer 键级",
+              "raw_value": 2.4339,
+              "percentile": 90.0,
+              "robust_z": 0.5354284369114876,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "C–离去基团键级处于较高水平，可能增加氧化加成活化要求"
+            },
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "electrophile_c_hirshfeld",
+              "field_label": "反应碳 Hirshfeld 电荷",
+              "raw_value": 0.012403,
+              "percentile": 10.0,
+              "robust_z": -0.46504157218442926,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "反应碳相对不缺电子，氧化加成的电子效应支持较弱"
+            }
+          ],
+          "context_notes": [],
+          "evidence_consistency": "混合",
+          "confidence": "中",
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      },
+      "trajectory_best": {
+        "model_record": {
+          "step": 25,
+          "query_index": 4161,
+          "predicted_yield": 93.35433339354351,
+          "uncertainty": 4.347648431430436,
+          "acquisition_value": 0.3202224238236855,
+          "selection_mode": "expected_improvement",
+          "observed_yield_post_query": 99.05,
+          "best_so_far_post_query": 99.05
+        },
+        "condition": {
+          "Electrophile": "6-iodoquinoline",
+          "Nucleophile": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+          "Ligand": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+          "Base": "potassium hydroxide",
+          "Solvent": "acetonitrile"
+        },
+        "dft_explanation": {
+          "dataset": "Suzuki",
+          "condition": {
+            "Electrophile": "6-iodoquinoline",
+            "Nucleophile": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+            "Ligand": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+            "Base": "potassium hydroxide",
+            "Solvent": "acetonitrile"
+          },
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 4
+          },
+          "components": [
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "c_leaving_mayer_bond_order",
+                  "field_label": "C–离去基团 Mayer 键级",
+                  "raw_value": 2.4339,
+                  "percentile": 90.0,
+                  "robust_z": 0.5354284369114876,
+                  "reference_n": 5
+                },
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "electrophile_c_hirshfeld",
+                  "field_label": "反应碳 Hirshfeld 电荷",
+                  "raw_value": 0.012403,
+                  "percentile": 10.0,
+                  "robust_z": -0.46504157218442926,
+                  "reference_n": 5
+                },
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "lumo_ev",
+                  "field_label": "LUMO 能量",
+                  "raw_value": -2.0159,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 5
+                }
+              ]
+            },
+            {
+              "role": "Nucleophile",
+              "role_label": "有机硼试剂",
+              "component": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+                  "field": "c_b_mayer_bond_order",
+                  "field_label": "C–B Mayer 键级",
+                  "raw_value": 1.27,
+                  "percentile": 75.0,
+                  "robust_z": 0.6766088670946868,
+                  "reference_n": 6
+                },
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+                  "field": "boron_hirshfeld",
+                  "field_label": "硼位点 Hirshfeld 电荷",
+                  "raw_value": 0.195127,
+                  "percentile": 58.333333333333336,
+                  "robust_z": 0.024468935002150628,
+                  "reference_n": 6
+                },
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+                  "field": "transfer_c_hirshfeld",
+                  "field_label": "转移碳 Hirshfeld 电荷",
+                  "raw_value": -0.079069,
+                  "percentile": 41.666666666666664,
+                  "robust_z": -0.013596899560481568,
+                  "reference_n": 6
+                }
+              ]
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -5.2788,
+                  "percentile": 95.45454545454545,
+                  "robust_z": 3.0522422561257443,
+                  "reference_n": 11
+                },
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+                  "field": "phosphorus_hirshfeld_mean",
+                  "field_label": "磷位点 Hirshfeld 电荷",
+                  "raw_value": 0.077054,
+                  "percentile": 13.636363636363637,
+                  "robust_z": -0.7265338966002813,
+                  "reference_n": 11
+                }
+              ]
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "potassium hydroxide",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "potassium hydroxide",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.705622,
+                  "percentile": 21.428571428571427,
+                  "robust_z": -0.7455726124465942,
+                  "reference_n": 7
+                },
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "potassium hydroxide",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 9.465422078,
+                  "percentile": 64.28571428571429,
+                  "robust_z": 0.3999449838329295,
+                  "reference_n": 7
+                }
+              ]
+            },
+            {
+              "role": "Solvent",
+              "role_label": "溶剂",
+              "component": "acetonitrile",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Solvent",
+                  "role_label": "溶剂",
+                  "component": "acetonitrile",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 4.014480323,
+                  "percentile": 62.5,
+                  "robust_z": 0.48041341083429806,
+                  "reference_n": 4
+                },
+                {
+                  "role": "Solvent",
+                  "role_label": "溶剂",
+                  "component": "acetonitrile",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.249352,
+                  "percentile": 37.5,
+                  "robust_z": -0.0733435242447984,
+                  "reference_n": 4
+                }
+              ]
+            }
+          ],
+          "support_evidence": [
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -5.2788,
+              "percentile": 95.45454545454545,
+              "robust_z": 3.0522422561257443,
+              "reference_n": 11,
+              "kind": "support",
+              "text": "HOMO 能量处于较高水平，提示相对较强的电子给予能力"
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+              "field": "phosphorus_hirshfeld_mean",
+              "field_label": "磷位点 Hirshfeld 电荷",
+              "raw_value": 0.077054,
+              "percentile": 13.636363636363637,
+              "robust_z": -0.7265338966002813,
+              "reference_n": 11,
+              "kind": "support",
+              "text": "磷位点相对富电子，与较强供电子配位位点一致"
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "potassium hydroxide",
+              "field": "donor_hirshfeld_min",
+              "field_label": "最富电子供体位点电荷",
+              "raw_value": -0.705622,
+              "percentile": 21.428571428571427,
+              "robust_z": -0.7455726124465942,
+              "reference_n": 7,
+              "kind": "support",
+              "text": "局部供体位点相对富电子，可作为硼物种活化能力的间接支持"
+            }
+          ],
+          "risk_flags": [
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "c_leaving_mayer_bond_order",
+              "field_label": "C–离去基团 Mayer 键级",
+              "raw_value": 2.4339,
+              "percentile": 90.0,
+              "robust_z": 0.5354284369114876,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "C–离去基团键级处于较高水平，可能增加氧化加成活化要求"
+            },
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "electrophile_c_hirshfeld",
+              "field_label": "反应碳 Hirshfeld 电荷",
+              "raw_value": 0.012403,
+              "percentile": 10.0,
+              "robust_z": -0.46504157218442926,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "反应碳相对不缺电子，氧化加成的电子效应支持较弱"
+            }
+          ],
+          "context_notes": [],
+          "evidence_consistency": "混合",
+          "confidence": "中",
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      },
+      "representative_low_observation": {
+        "model_record": {
+          "step": 20,
+          "query_index": 4200,
+          "predicted_yield": 55.63208887053022,
+          "uncertainty": 26.964639791970775,
+          "acquisition_value": 0.6716270598181775,
+          "selection_mode": "expected_improvement",
+          "observed_yield_post_query": 15.09,
+          "best_so_far_post_query": 97.98
+        },
+        "condition": {
+          "Electrophile": "6-iodoquinoline",
+          "Nucleophile": "potassium trifluoro(5-methyl-1-(tetrahydro-2H-pyran-2-yl)-1H-indazol-4-yl)borate",
+          "Ligand": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+          "Base": "sodium hydrogen carbonate",
+          "Solvent": "acetonitrile"
+        },
+        "dft_explanation": {
+          "dataset": "Suzuki",
+          "condition": {
+            "Electrophile": "6-iodoquinoline",
+            "Nucleophile": "potassium trifluoro(5-methyl-1-(tetrahydro-2H-pyran-2-yl)-1H-indazol-4-yl)borate",
+            "Ligand": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+            "Base": "sodium hydrogen carbonate",
+            "Solvent": "acetonitrile"
+          },
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 4
+          },
+          "components": [
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "c_leaving_mayer_bond_order",
+                  "field_label": "C–离去基团 Mayer 键级",
+                  "raw_value": 2.4339,
+                  "percentile": 90.0,
+                  "robust_z": 0.5354284369114876,
+                  "reference_n": 5
+                },
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "electrophile_c_hirshfeld",
+                  "field_label": "反应碳 Hirshfeld 电荷",
+                  "raw_value": 0.012403,
+                  "percentile": 10.0,
+                  "robust_z": -0.46504157218442926,
+                  "reference_n": 5
+                },
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "lumo_ev",
+                  "field_label": "LUMO 能量",
+                  "raw_value": -2.0159,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 5
+                }
+              ]
+            },
+            {
+              "role": "Nucleophile",
+              "role_label": "有机硼试剂",
+              "component": "potassium trifluoro(5-methyl-1-(tetrahydro-2H-pyran-2-yl)-1H-indazol-4-yl)borate",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "potassium trifluoro(5-methyl-1-(tetrahydro-2H-pyran-2-yl)-1H-indazol-4-yl)borate",
+                  "field": "c_b_mayer_bond_order",
+                  "field_label": "C–B Mayer 键级",
+                  "raw_value": 0.9499,
+                  "percentile": 58.333333333333336,
+                  "robust_z": 0.0293210656690763,
+                  "reference_n": 6
+                },
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "potassium trifluoro(5-methyl-1-(tetrahydro-2H-pyran-2-yl)-1H-indazol-4-yl)borate",
+                  "field": "boron_hirshfeld",
+                  "field_label": "硼位点 Hirshfeld 电荷",
+                  "raw_value": 0.149858,
+                  "percentile": 25.0,
+                  "robust_z": -0.9028514656779404,
+                  "reference_n": 6
+                },
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "potassium trifluoro(5-methyl-1-(tetrahydro-2H-pyran-2-yl)-1H-indazol-4-yl)borate",
+                  "field": "transfer_c_hirshfeld",
+                  "field_label": "转移碳 Hirshfeld 电荷",
+                  "raw_value": -0.093818,
+                  "percentile": 8.333333333333334,
+                  "robust_z": -1.290926018143633,
+                  "reference_n": 6
+                }
+              ]
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -5.2788,
+                  "percentile": 95.45454545454545,
+                  "robust_z": 3.0522422561257443,
+                  "reference_n": 11
+                },
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+                  "field": "phosphorus_hirshfeld_mean",
+                  "field_label": "磷位点 Hirshfeld 电荷",
+                  "raw_value": 0.077054,
+                  "percentile": 13.636363636363637,
+                  "robust_z": -0.7265338966002813,
+                  "reference_n": 11
+                }
+              ]
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "sodium hydrogen carbonate",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "sodium hydrogen carbonate",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.496049,
+                  "percentile": 78.57142857142857,
+                  "robust_z": 0.4038369778041033,
+                  "reference_n": 7
+                },
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "sodium hydrogen carbonate",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 12.171173529,
+                  "percentile": 92.85714285714286,
+                  "robust_z": 1.1143016642557793,
+                  "reference_n": 7
+                }
+              ]
+            },
+            {
+              "role": "Solvent",
+              "role_label": "溶剂",
+              "component": "acetonitrile",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Solvent",
+                  "role_label": "溶剂",
+                  "component": "acetonitrile",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 4.014480323,
+                  "percentile": 62.5,
+                  "robust_z": 0.48041341083429806,
+                  "reference_n": 4
+                },
+                {
+                  "role": "Solvent",
+                  "role_label": "溶剂",
+                  "component": "acetonitrile",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.249352,
+                  "percentile": 37.5,
+                  "robust_z": -0.0733435242447984,
+                  "reference_n": 4
+                }
+              ]
+            }
+          ],
+          "support_evidence": [
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -5.2788,
+              "percentile": 95.45454545454545,
+              "robust_z": 3.0522422561257443,
+              "reference_n": 11,
+              "kind": "support",
+              "text": "HOMO 能量处于较高水平，提示相对较强的电子给予能力"
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+              "field": "phosphorus_hirshfeld_mean",
+              "field_label": "磷位点 Hirshfeld 电荷",
+              "raw_value": 0.077054,
+              "percentile": 13.636363636363637,
+              "robust_z": -0.7265338966002813,
+              "reference_n": 11,
+              "kind": "support",
+              "text": "磷位点相对富电子，与较强供电子配位位点一致"
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "sodium hydrogen carbonate",
+              "field": "dipole_debye",
+              "field_label": "偶极矩",
+              "raw_value": 12.171173529,
+              "percentile": 92.85714285714286,
+              "robust_z": 1.1143016642557793,
+              "reference_n": 7,
+              "kind": "support",
+              "text": "偶极矩较高，显示较明显的电荷分离，可为硼物种活化提供间接背景证据"
+            }
+          ],
+          "risk_flags": [
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "c_leaving_mayer_bond_order",
+              "field_label": "C–离去基团 Mayer 键级",
+              "raw_value": 2.4339,
+              "percentile": 90.0,
+              "robust_z": 0.5354284369114876,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "C–离去基团键级处于较高水平，可能增加氧化加成活化要求"
+            },
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "electrophile_c_hirshfeld",
+              "field_label": "反应碳 Hirshfeld 电荷",
+              "raw_value": 0.012403,
+              "percentile": 10.0,
+              "robust_z": -0.46504157218442926,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "反应碳相对不缺电子，氧化加成的电子效应支持较弱"
+            }
+          ],
+          "context_notes": [
+            {
+              "role": "Nucleophile",
+              "role_label": "有机硼试剂",
+              "component": "potassium trifluoro(5-methyl-1-(tetrahydro-2H-pyran-2-yl)-1H-indazol-4-yl)borate",
+              "field": "transfer_c_hirshfeld",
+              "field_label": "转移碳 Hirshfeld 电荷",
+              "raw_value": -0.093818,
+              "percentile": 8.333333333333334,
+              "robust_z": -1.290926018143633,
+              "reference_n": 6,
+              "kind": "context",
+              "text": "转移碳处于同角色较低电荷分位，提示 C–B 极化方向与其他硼试剂不同"
+            }
+          ],
+          "evidence_consistency": "混合",
+          "confidence": "中",
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      },
+      "nearest_observed_counterfactual": {
+        "model_record": {
+          "step": 39,
+          "query_index": 1366,
+          "predicted_yield": 87.38483483552311,
+          "uncertainty": 12.438467433762192,
+          "acquisition_value": 1.164942264346728,
+          "selection_mode": "expected_improvement",
+          "observed_yield_post_query": 94.13,
+          "best_so_far_post_query": 99.05
+        },
+        "condition": {
+          "Electrophile": "6-iodoquinoline",
+          "Nucleophile": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+          "Ligand": "triphenylphosphane",
+          "Base": "potassium hydroxide",
+          "Solvent": "acetonitrile"
+        },
+        "dft_explanation": {
+          "dataset": "Suzuki",
+          "condition": {
+            "Electrophile": "6-iodoquinoline",
+            "Nucleophile": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+            "Ligand": "triphenylphosphane",
+            "Base": "potassium hydroxide",
+            "Solvent": "acetonitrile"
+          },
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 4
+          },
+          "components": [
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "c_leaving_mayer_bond_order",
+                  "field_label": "C–离去基团 Mayer 键级",
+                  "raw_value": 2.4339,
+                  "percentile": 90.0,
+                  "robust_z": 0.5354284369114876,
+                  "reference_n": 5
+                },
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "electrophile_c_hirshfeld",
+                  "field_label": "反应碳 Hirshfeld 电荷",
+                  "raw_value": 0.012403,
+                  "percentile": 10.0,
+                  "robust_z": -0.46504157218442926,
+                  "reference_n": 5
+                },
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "lumo_ev",
+                  "field_label": "LUMO 能量",
+                  "raw_value": -2.0159,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 5
+                }
+              ]
+            },
+            {
+              "role": "Nucleophile",
+              "role_label": "有机硼试剂",
+              "component": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+                  "field": "c_b_mayer_bond_order",
+                  "field_label": "C–B Mayer 键级",
+                  "raw_value": 1.27,
+                  "percentile": 75.0,
+                  "robust_z": 0.6766088670946868,
+                  "reference_n": 6
+                },
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+                  "field": "boron_hirshfeld",
+                  "field_label": "硼位点 Hirshfeld 电荷",
+                  "raw_value": 0.195127,
+                  "percentile": 58.333333333333336,
+                  "robust_z": 0.024468935002150628,
+                  "reference_n": 6
+                },
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+                  "field": "transfer_c_hirshfeld",
+                  "field_label": "转移碳 Hirshfeld 电荷",
+                  "raw_value": -0.079069,
+                  "percentile": 41.666666666666664,
+                  "robust_z": -0.013596899560481568,
+                  "reference_n": 6
+                }
+              ]
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "triphenylphosphane",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "triphenylphosphane",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -5.9599,
+                  "percentile": 4.545454545454546,
+                  "robust_z": -3.245492371705958,
+                  "reference_n": 11
+                },
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "triphenylphosphane",
+                  "field": "phosphorus_hirshfeld_mean",
+                  "field_label": "磷位点 Hirshfeld 电荷",
+                  "raw_value": 0.093467,
+                  "percentile": 40.90909090909091,
+                  "robust_z": -0.0661838664252668,
+                  "reference_n": 11
+                }
+              ]
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "potassium hydroxide",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "potassium hydroxide",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.705622,
+                  "percentile": 21.428571428571427,
+                  "robust_z": -0.7455726124465942,
+                  "reference_n": 7
+                },
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "potassium hydroxide",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 9.465422078,
+                  "percentile": 64.28571428571429,
+                  "robust_z": 0.3999449838329295,
+                  "reference_n": 7
+                }
+              ]
+            },
+            {
+              "role": "Solvent",
+              "role_label": "溶剂",
+              "component": "acetonitrile",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Solvent",
+                  "role_label": "溶剂",
+                  "component": "acetonitrile",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 4.014480323,
+                  "percentile": 62.5,
+                  "robust_z": 0.48041341083429806,
+                  "reference_n": 4
+                },
+                {
+                  "role": "Solvent",
+                  "role_label": "溶剂",
+                  "component": "acetonitrile",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.249352,
+                  "percentile": 37.5,
+                  "robust_z": -0.0733435242447984,
+                  "reference_n": 4
+                }
+              ]
+            }
+          ],
+          "support_evidence": [
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "potassium hydroxide",
+              "field": "donor_hirshfeld_min",
+              "field_label": "最富电子供体位点电荷",
+              "raw_value": -0.705622,
+              "percentile": 21.428571428571427,
+              "robust_z": -0.7455726124465942,
+              "reference_n": 7,
+              "kind": "support",
+              "text": "局部供体位点相对富电子，可作为硼物种活化能力的间接支持"
+            }
+          ],
+          "risk_flags": [
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "c_leaving_mayer_bond_order",
+              "field_label": "C–离去基团 Mayer 键级",
+              "raw_value": 2.4339,
+              "percentile": 90.0,
+              "robust_z": 0.5354284369114876,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "C–离去基团键级处于较高水平，可能增加氧化加成活化要求"
+            },
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "electrophile_c_hirshfeld",
+              "field_label": "反应碳 Hirshfeld 电荷",
+              "raw_value": 0.012403,
+              "percentile": 10.0,
+              "robust_z": -0.46504157218442926,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "反应碳相对不缺电子，氧化加成的电子效应支持较弱"
+            }
+          ],
+          "context_notes": [],
+          "evidence_consistency": "混合",
+          "confidence": "中",
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      },
+      "first_vs_trajectory_best": {
+        "changed_roles": [
+          "Nucleophile",
+          "Ligand",
+          "Base",
+          "Solvent"
+        ],
+        "changed_role_labels": [
+          "有机硼试剂",
+          "配体",
+          "碱",
+          "溶剂"
+        ],
+        "candidate": {
+          "dataset": "Suzuki",
+          "condition": {
+            "Electrophile": "6-iodoquinoline",
+            "Nucleophile": "[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid",
+            "Ligand": "1,1'-Bis(diphenylphosphino)ferrocene",
+            "Base": "sodium hydrogen carbonate",
+            "Solvent": "N,N-dimethylformamide"
+          },
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 4
+          },
+          "components": [
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "c_leaving_mayer_bond_order",
+                  "field_label": "C–离去基团 Mayer 键级",
+                  "raw_value": 2.4339,
+                  "percentile": 90.0,
+                  "robust_z": 0.5354284369114876,
+                  "reference_n": 5
+                },
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "electrophile_c_hirshfeld",
+                  "field_label": "反应碳 Hirshfeld 电荷",
+                  "raw_value": 0.012403,
+                  "percentile": 10.0,
+                  "robust_z": -0.46504157218442926,
+                  "reference_n": 5
+                },
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "lumo_ev",
+                  "field_label": "LUMO 能量",
+                  "raw_value": -2.0159,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 5
+                }
+              ]
+            },
+            {
+              "role": "Nucleophile",
+              "role_label": "有机硼试剂",
+              "component": "[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid",
+                  "field": "c_b_mayer_bond_order",
+                  "field_label": "C–B Mayer 键级",
+                  "raw_value": 0.6203,
+                  "percentile": 25.0,
+                  "robust_z": -0.6371770891259291,
+                  "reference_n": 6
+                },
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid",
+                  "field": "boron_hirshfeld",
+                  "field_label": "硼位点 Hirshfeld 电荷",
+                  "raw_value": 0.214151,
+                  "percentile": 75.0,
+                  "robust_z": 0.414169244320626,
+                  "reference_n": 6
+                },
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid",
+                  "field": "transfer_c_hirshfeld",
+                  "field_label": "转移碳 Hirshfeld 电荷",
+                  "raw_value": -0.078755,
+                  "percentile": 58.333333333333336,
+                  "robust_z": 0.01359689956048277,
+                  "reference_n": 6
+                }
+              ]
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "1,1'-Bis(diphenylphosphino)ferrocene",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "1,1'-Bis(diphenylphosphino)ferrocene",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -5.6142,
+                  "percentile": 31.818181818181817,
+                  "robust_z": -0.04900601017105939,
+                  "reference_n": 11
+                },
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "1,1'-Bis(diphenylphosphino)ferrocene",
+                  "field": "phosphorus_hirshfeld_mean",
+                  "field_label": "磷位点 Hirshfeld 电荷",
+                  "raw_value": 0.109291,
+                  "percentile": 77.27272727272727,
+                  "robust_z": 0.5704687185676921,
+                  "reference_n": 11
+                }
+              ]
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "sodium hydrogen carbonate",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "sodium hydrogen carbonate",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.496049,
+                  "percentile": 78.57142857142857,
+                  "robust_z": 0.4038369778041033,
+                  "reference_n": 7
+                },
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "sodium hydrogen carbonate",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 12.171173529,
+                  "percentile": 92.85714285714286,
+                  "robust_z": 1.1143016642557793,
+                  "reference_n": 7
+                }
+              ]
+            },
+            {
+              "role": "Solvent",
+              "role_label": "溶剂",
+              "component": "N,N-dimethylformamide",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Solvent",
+                  "role_label": "溶剂",
+                  "component": "N,N-dimethylformamide",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 4.172454721,
+                  "percentile": 87.5,
+                  "robust_z": 0.5511397648036941,
+                  "reference_n": 4
+                },
+                {
+                  "role": "Solvent",
+                  "role_label": "溶剂",
+                  "component": "N,N-dimethylformamide",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.32213,
+                  "percentile": 12.5,
+                  "robust_z": -2.332249579042934,
+                  "reference_n": 4
+                }
+              ]
+            }
+          ],
+          "support_evidence": [
+            {
+              "role": "Nucleophile",
+              "role_label": "有机硼试剂",
+              "component": "[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid",
+              "field": "c_b_mayer_bond_order",
+              "field_label": "C–B Mayer 键级",
+              "raw_value": 0.6203,
+              "percentile": 25.0,
+              "robust_z": -0.6371770891259291,
+              "reference_n": 6,
+              "kind": "support",
+              "text": "C–B 键级处于较低水平，与转移基团相对易活化的方向一致"
+            },
+            {
+              "role": "Nucleophile",
+              "role_label": "有机硼试剂",
+              "component": "[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid",
+              "field": "boron_hirshfeld",
+              "field_label": "硼位点 Hirshfeld 电荷",
+              "raw_value": 0.214151,
+              "percentile": 75.0,
+              "robust_z": 0.414169244320626,
+              "reference_n": 6,
+              "kind": "support",
+              "text": "硼位点相对更缺电子，可能更容易接受碱/杂原子作用而进入活化态"
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "sodium hydrogen carbonate",
+              "field": "dipole_debye",
+              "field_label": "偶极矩",
+              "raw_value": 12.171173529,
+              "percentile": 92.85714285714286,
+              "robust_z": 1.1143016642557793,
+              "reference_n": 7,
+              "kind": "support",
+              "text": "偶极矩较高，显示较明显的电荷分离，可为硼物种活化提供间接背景证据"
+            }
+          ],
+          "risk_flags": [
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "c_leaving_mayer_bond_order",
+              "field_label": "C–离去基团 Mayer 键级",
+              "raw_value": 2.4339,
+              "percentile": 90.0,
+              "robust_z": 0.5354284369114876,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "C–离去基团键级处于较高水平，可能增加氧化加成活化要求"
+            },
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "electrophile_c_hirshfeld",
+              "field_label": "反应碳 Hirshfeld 电荷",
+              "raw_value": 0.012403,
+              "percentile": 10.0,
+              "robust_z": -0.46504157218442926,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "反应碳相对不缺电子，氧化加成的电子效应支持较弱"
+            }
+          ],
+          "context_notes": [],
+          "evidence_consistency": "混合",
+          "confidence": "中",
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        },
+        "reference": {
+          "dataset": "Suzuki",
+          "condition": {
+            "Electrophile": "6-iodoquinoline",
+            "Nucleophile": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+            "Ligand": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+            "Base": "potassium hydroxide",
+            "Solvent": "acetonitrile"
+          },
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 4
+          },
+          "components": [
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "c_leaving_mayer_bond_order",
+                  "field_label": "C–离去基团 Mayer 键级",
+                  "raw_value": 2.4339,
+                  "percentile": 90.0,
+                  "robust_z": 0.5354284369114876,
+                  "reference_n": 5
+                },
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "electrophile_c_hirshfeld",
+                  "field_label": "反应碳 Hirshfeld 电荷",
+                  "raw_value": 0.012403,
+                  "percentile": 10.0,
+                  "robust_z": -0.46504157218442926,
+                  "reference_n": 5
+                },
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "lumo_ev",
+                  "field_label": "LUMO 能量",
+                  "raw_value": -2.0159,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 5
+                }
+              ]
+            },
+            {
+              "role": "Nucleophile",
+              "role_label": "有机硼试剂",
+              "component": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+                  "field": "c_b_mayer_bond_order",
+                  "field_label": "C–B Mayer 键级",
+                  "raw_value": 1.27,
+                  "percentile": 75.0,
+                  "robust_z": 0.6766088670946868,
+                  "reference_n": 6
+                },
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+                  "field": "boron_hirshfeld",
+                  "field_label": "硼位点 Hirshfeld 电荷",
+                  "raw_value": 0.195127,
+                  "percentile": 58.333333333333336,
+                  "robust_z": 0.024468935002150628,
+                  "reference_n": 6
+                },
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+                  "field": "transfer_c_hirshfeld",
+                  "field_label": "转移碳 Hirshfeld 电荷",
+                  "raw_value": -0.079069,
+                  "percentile": 41.666666666666664,
+                  "robust_z": -0.013596899560481568,
+                  "reference_n": 6
+                }
+              ]
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -5.2788,
+                  "percentile": 95.45454545454545,
+                  "robust_z": 3.0522422561257443,
+                  "reference_n": 11
+                },
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+                  "field": "phosphorus_hirshfeld_mean",
+                  "field_label": "磷位点 Hirshfeld 电荷",
+                  "raw_value": 0.077054,
+                  "percentile": 13.636363636363637,
+                  "robust_z": -0.7265338966002813,
+                  "reference_n": 11
+                }
+              ]
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "potassium hydroxide",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "potassium hydroxide",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.705622,
+                  "percentile": 21.428571428571427,
+                  "robust_z": -0.7455726124465942,
+                  "reference_n": 7
+                },
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "potassium hydroxide",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 9.465422078,
+                  "percentile": 64.28571428571429,
+                  "robust_z": 0.3999449838329295,
+                  "reference_n": 7
+                }
+              ]
+            },
+            {
+              "role": "Solvent",
+              "role_label": "溶剂",
+              "component": "acetonitrile",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Solvent",
+                  "role_label": "溶剂",
+                  "component": "acetonitrile",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 4.014480323,
+                  "percentile": 62.5,
+                  "robust_z": 0.48041341083429806,
+                  "reference_n": 4
+                },
+                {
+                  "role": "Solvent",
+                  "role_label": "溶剂",
+                  "component": "acetonitrile",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.249352,
+                  "percentile": 37.5,
+                  "robust_z": -0.0733435242447984,
+                  "reference_n": 4
+                }
+              ]
+            }
+          ],
+          "support_evidence": [
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -5.2788,
+              "percentile": 95.45454545454545,
+              "robust_z": 3.0522422561257443,
+              "reference_n": 11,
+              "kind": "support",
+              "text": "HOMO 能量处于较高水平，提示相对较强的电子给予能力"
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+              "field": "phosphorus_hirshfeld_mean",
+              "field_label": "磷位点 Hirshfeld 电荷",
+              "raw_value": 0.077054,
+              "percentile": 13.636363636363637,
+              "robust_z": -0.7265338966002813,
+              "reference_n": 11,
+              "kind": "support",
+              "text": "磷位点相对富电子，与较强供电子配位位点一致"
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "potassium hydroxide",
+              "field": "donor_hirshfeld_min",
+              "field_label": "最富电子供体位点电荷",
+              "raw_value": -0.705622,
+              "percentile": 21.428571428571427,
+              "robust_z": -0.7455726124465942,
+              "reference_n": 7,
+              "kind": "support",
+              "text": "局部供体位点相对富电子，可作为硼物种活化能力的间接支持"
+            }
+          ],
+          "risk_flags": [
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "c_leaving_mayer_bond_order",
+              "field_label": "C–离去基团 Mayer 键级",
+              "raw_value": 2.4339,
+              "percentile": 90.0,
+              "robust_z": 0.5354284369114876,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "C–离去基团键级处于较高水平，可能增加氧化加成活化要求"
+            },
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "electrophile_c_hirshfeld",
+              "field_label": "反应碳 Hirshfeld 电荷",
+              "raw_value": 0.012403,
+              "percentile": 10.0,
+              "robust_z": -0.46504157218442926,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "反应碳相对不缺电子，氧化加成的电子效应支持较弱"
+            }
+          ],
+          "context_notes": [],
+          "evidence_consistency": "混合",
+          "confidence": "中",
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      },
+      "best_vs_nearest_observed_counterfactual": {
+        "changed_roles": [
+          "Ligand"
+        ],
+        "changed_role_labels": [
+          "配体"
+        ],
+        "candidate": {
+          "dataset": "Suzuki",
+          "condition": {
+            "Electrophile": "6-iodoquinoline",
+            "Nucleophile": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+            "Ligand": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+            "Base": "potassium hydroxide",
+            "Solvent": "acetonitrile"
+          },
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 4
+          },
+          "components": [
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "c_leaving_mayer_bond_order",
+                  "field_label": "C–离去基团 Mayer 键级",
+                  "raw_value": 2.4339,
+                  "percentile": 90.0,
+                  "robust_z": 0.5354284369114876,
+                  "reference_n": 5
+                },
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "electrophile_c_hirshfeld",
+                  "field_label": "反应碳 Hirshfeld 电荷",
+                  "raw_value": 0.012403,
+                  "percentile": 10.0,
+                  "robust_z": -0.46504157218442926,
+                  "reference_n": 5
+                },
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "lumo_ev",
+                  "field_label": "LUMO 能量",
+                  "raw_value": -2.0159,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 5
+                }
+              ]
+            },
+            {
+              "role": "Nucleophile",
+              "role_label": "有机硼试剂",
+              "component": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+                  "field": "c_b_mayer_bond_order",
+                  "field_label": "C–B Mayer 键级",
+                  "raw_value": 1.27,
+                  "percentile": 75.0,
+                  "robust_z": 0.6766088670946868,
+                  "reference_n": 6
+                },
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+                  "field": "boron_hirshfeld",
+                  "field_label": "硼位点 Hirshfeld 电荷",
+                  "raw_value": 0.195127,
+                  "percentile": 58.333333333333336,
+                  "robust_z": 0.024468935002150628,
+                  "reference_n": 6
+                },
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+                  "field": "transfer_c_hirshfeld",
+                  "field_label": "转移碳 Hirshfeld 电荷",
+                  "raw_value": -0.079069,
+                  "percentile": 41.666666666666664,
+                  "robust_z": -0.013596899560481568,
+                  "reference_n": 6
+                }
+              ]
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -5.2788,
+                  "percentile": 95.45454545454545,
+                  "robust_z": 3.0522422561257443,
+                  "reference_n": 11
+                },
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+                  "field": "phosphorus_hirshfeld_mean",
+                  "field_label": "磷位点 Hirshfeld 电荷",
+                  "raw_value": 0.077054,
+                  "percentile": 13.636363636363637,
+                  "robust_z": -0.7265338966002813,
+                  "reference_n": 11
+                }
+              ]
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "potassium hydroxide",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "potassium hydroxide",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.705622,
+                  "percentile": 21.428571428571427,
+                  "robust_z": -0.7455726124465942,
+                  "reference_n": 7
+                },
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "potassium hydroxide",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 9.465422078,
+                  "percentile": 64.28571428571429,
+                  "robust_z": 0.3999449838329295,
+                  "reference_n": 7
+                }
+              ]
+            },
+            {
+              "role": "Solvent",
+              "role_label": "溶剂",
+              "component": "acetonitrile",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Solvent",
+                  "role_label": "溶剂",
+                  "component": "acetonitrile",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 4.014480323,
+                  "percentile": 62.5,
+                  "robust_z": 0.48041341083429806,
+                  "reference_n": 4
+                },
+                {
+                  "role": "Solvent",
+                  "role_label": "溶剂",
+                  "component": "acetonitrile",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.249352,
+                  "percentile": 37.5,
+                  "robust_z": -0.0733435242447984,
+                  "reference_n": 4
+                }
+              ]
+            }
+          ],
+          "support_evidence": [
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -5.2788,
+              "percentile": 95.45454545454545,
+              "robust_z": 3.0522422561257443,
+              "reference_n": 11,
+              "kind": "support",
+              "text": "HOMO 能量处于较高水平，提示相对较强的电子给予能力"
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+              "field": "phosphorus_hirshfeld_mean",
+              "field_label": "磷位点 Hirshfeld 电荷",
+              "raw_value": 0.077054,
+              "percentile": 13.636363636363637,
+              "robust_z": -0.7265338966002813,
+              "reference_n": 11,
+              "kind": "support",
+              "text": "磷位点相对富电子，与较强供电子配位位点一致"
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "potassium hydroxide",
+              "field": "donor_hirshfeld_min",
+              "field_label": "最富电子供体位点电荷",
+              "raw_value": -0.705622,
+              "percentile": 21.428571428571427,
+              "robust_z": -0.7455726124465942,
+              "reference_n": 7,
+              "kind": "support",
+              "text": "局部供体位点相对富电子，可作为硼物种活化能力的间接支持"
+            }
+          ],
+          "risk_flags": [
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "c_leaving_mayer_bond_order",
+              "field_label": "C–离去基团 Mayer 键级",
+              "raw_value": 2.4339,
+              "percentile": 90.0,
+              "robust_z": 0.5354284369114876,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "C–离去基团键级处于较高水平，可能增加氧化加成活化要求"
+            },
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "electrophile_c_hirshfeld",
+              "field_label": "反应碳 Hirshfeld 电荷",
+              "raw_value": 0.012403,
+              "percentile": 10.0,
+              "robust_z": -0.46504157218442926,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "反应碳相对不缺电子，氧化加成的电子效应支持较弱"
+            }
+          ],
+          "context_notes": [],
+          "evidence_consistency": "混合",
+          "confidence": "中",
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        },
+        "reference": {
+          "dataset": "Suzuki",
+          "condition": {
+            "Electrophile": "6-iodoquinoline",
+            "Nucleophile": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+            "Ligand": "triphenylphosphane",
+            "Base": "potassium hydroxide",
+            "Solvent": "acetonitrile"
+          },
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 4
+          },
+          "components": [
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "c_leaving_mayer_bond_order",
+                  "field_label": "C–离去基团 Mayer 键级",
+                  "raw_value": 2.4339,
+                  "percentile": 90.0,
+                  "robust_z": 0.5354284369114876,
+                  "reference_n": 5
+                },
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "electrophile_c_hirshfeld",
+                  "field_label": "反应碳 Hirshfeld 电荷",
+                  "raw_value": 0.012403,
+                  "percentile": 10.0,
+                  "robust_z": -0.46504157218442926,
+                  "reference_n": 5
+                },
+                {
+                  "role": "Electrophile",
+                  "role_label": "亲电试剂",
+                  "component": "6-iodoquinoline",
+                  "field": "lumo_ev",
+                  "field_label": "LUMO 能量",
+                  "raw_value": -2.0159,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 5
+                }
+              ]
+            },
+            {
+              "role": "Nucleophile",
+              "role_label": "有机硼试剂",
+              "component": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+                  "field": "c_b_mayer_bond_order",
+                  "field_label": "C–B Mayer 键级",
+                  "raw_value": 1.27,
+                  "percentile": 75.0,
+                  "robust_z": 0.6766088670946868,
+                  "reference_n": 6
+                },
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+                  "field": "boron_hirshfeld",
+                  "field_label": "硼位点 Hirshfeld 电荷",
+                  "raw_value": 0.195127,
+                  "percentile": 58.333333333333336,
+                  "robust_z": 0.024468935002150628,
+                  "reference_n": 6
+                },
+                {
+                  "role": "Nucleophile",
+                  "role_label": "有机硼试剂",
+                  "component": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+                  "field": "transfer_c_hirshfeld",
+                  "field_label": "转移碳 Hirshfeld 电荷",
+                  "raw_value": -0.079069,
+                  "percentile": 41.666666666666664,
+                  "robust_z": -0.013596899560481568,
+                  "reference_n": 6
+                }
+              ]
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "triphenylphosphane",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "triphenylphosphane",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -5.9599,
+                  "percentile": 4.545454545454546,
+                  "robust_z": -3.245492371705958,
+                  "reference_n": 11
+                },
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "triphenylphosphane",
+                  "field": "phosphorus_hirshfeld_mean",
+                  "field_label": "磷位点 Hirshfeld 电荷",
+                  "raw_value": 0.093467,
+                  "percentile": 40.90909090909091,
+                  "robust_z": -0.0661838664252668,
+                  "reference_n": 11
+                }
+              ]
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "potassium hydroxide",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "potassium hydroxide",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.705622,
+                  "percentile": 21.428571428571427,
+                  "robust_z": -0.7455726124465942,
+                  "reference_n": 7
+                },
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "potassium hydroxide",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 9.465422078,
+                  "percentile": 64.28571428571429,
+                  "robust_z": 0.3999449838329295,
+                  "reference_n": 7
+                }
+              ]
+            },
+            {
+              "role": "Solvent",
+              "role_label": "溶剂",
+              "component": "acetonitrile",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Solvent",
+                  "role_label": "溶剂",
+                  "component": "acetonitrile",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 4.014480323,
+                  "percentile": 62.5,
+                  "robust_z": 0.48041341083429806,
+                  "reference_n": 4
+                },
+                {
+                  "role": "Solvent",
+                  "role_label": "溶剂",
+                  "component": "acetonitrile",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.249352,
+                  "percentile": 37.5,
+                  "robust_z": -0.0733435242447984,
+                  "reference_n": 4
+                }
+              ]
+            }
+          ],
+          "support_evidence": [
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "potassium hydroxide",
+              "field": "donor_hirshfeld_min",
+              "field_label": "最富电子供体位点电荷",
+              "raw_value": -0.705622,
+              "percentile": 21.428571428571427,
+              "robust_z": -0.7455726124465942,
+              "reference_n": 7,
+              "kind": "support",
+              "text": "局部供体位点相对富电子，可作为硼物种活化能力的间接支持"
+            }
+          ],
+          "risk_flags": [
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "c_leaving_mayer_bond_order",
+              "field_label": "C–离去基团 Mayer 键级",
+              "raw_value": 2.4339,
+              "percentile": 90.0,
+              "robust_z": 0.5354284369114876,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "C–离去基团键级处于较高水平，可能增加氧化加成活化要求"
+            },
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "electrophile_c_hirshfeld",
+              "field_label": "反应碳 Hirshfeld 电荷",
+              "raw_value": 0.012403,
+              "percentile": 10.0,
+              "robust_z": -0.46504157218442926,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "反应碳相对不缺电子，氧化加成的电子效应支持较弱"
+            }
+          ],
+          "context_notes": [],
+          "evidence_consistency": "混合",
+          "confidence": "中",
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      }
+    },
+    "Buchwald_sub4": {
+      "first_recommendation": {
+        "model_record": {
+          "step": 1,
+          "query_index": 151,
+          "predicted_yield": 46.47995970942943,
+          "uncertainty": 17.72526112424805,
+          "acquisition_value": 7.630585445185186,
+          "selection_mode": "expected_improvement",
+          "observed_yield_post_query": 74.97052076,
+          "best_so_far_post_query": 74.97052076
+        },
+        "condition": {
+          "Reactant2": "1-bromo-4-ethylbenzene",
+          "Ligand": "ditert-butyl-[3,6-dimethoxy-2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+          "Additive": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+          "Base": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+          "Product": "N-(4-ethylphenyl)-4-methylaniline"
+        },
+        "dft_explanation": {
+          "dataset": "Buchwald_sub4",
+          "condition": {
+            "Product": "N-(4-ethylphenyl)-4-methylaniline",
+            "Reactant2": "1-bromo-4-ethylbenzene",
+            "Ligand": "ditert-butyl-[3,6-dimethoxy-2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+            "Additive": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+            "Base": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine"
+          },
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 3
+          },
+          "components": [
+            {
+              "role": "Product",
+              "role_label": "目标产物",
+              "component": "N-(4-ethylphenyl)-4-methylaniline",
+              "available": true,
+              "metrics": []
+            },
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-bromo-4-ethylbenzene",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-bromo-4-ethylbenzene",
+                  "field": "c_leaving_mayer_bond_order",
+                  "field_label": "C–离去基团 Mayer 键级",
+                  "raw_value": 2.0699,
+                  "percentile": 70.0,
+                  "robust_z": 0.6047293632715044,
+                  "reference_n": 15
+                },
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-bromo-4-ethylbenzene",
+                  "field": "electrophile_c_hirshfeld",
+                  "field_label": "反应碳 Hirshfeld 电荷",
+                  "raw_value": 0.017801,
+                  "percentile": 30.0,
+                  "robust_z": -0.14824273843104369,
+                  "reference_n": 15
+                },
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-bromo-4-ethylbenzene",
+                  "field": "lumo_ev",
+                  "field_label": "LUMO 能量",
+                  "raw_value": -0.7347,
+                  "percentile": 90.0,
+                  "robust_z": 1.3204886284636008,
+                  "reference_n": 15
+                }
+              ]
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "ditert-butyl-[3,6-dimethoxy-2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "ditert-butyl-[3,6-dimethoxy-2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -5.237,
+                  "percentile": 87.5,
+                  "robust_z": 0.4702163529081198,
+                  "reference_n": 4
+                },
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "ditert-butyl-[3,6-dimethoxy-2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+                  "field": "phosphorus_hirshfeld_mean",
+                  "field_label": "磷位点 Hirshfeld 电荷",
+                  "raw_value": 0.112487,
+                  "percentile": 87.5,
+                  "robust_z": 0.7217245648532473,
+                  "reference_n": 4
+                }
+              ]
+            },
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -6.1521,
+                  "percentile": 88.63636363636364,
+                  "robust_z": 0.7872825186412601,
+                  "reference_n": 22
+                },
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+                  "field": "additive_n_hirshfeld",
+                  "field_label": "添加剂氮位点电荷",
+                  "raw_value": -0.150831,
+                  "percentile": 15.909090909090908,
+                  "robust_z": -0.7664803063260656,
+                  "reference_n": 22
+                },
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+                  "field": "additive_o_hirshfeld",
+                  "field_label": "添加剂氧位点电荷",
+                  "raw_value": -0.069174,
+                  "percentile": 25.0,
+                  "robust_z": -0.5911402022091051,
+                  "reference_n": 22
+                }
+              ]
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.274132,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 3
+                },
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 3.156206562,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 3
+                }
+              ]
+            }
+          ],
+          "support_evidence": [
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "ditert-butyl-[3,6-dimethoxy-2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -5.237,
+              "percentile": 87.5,
+              "robust_z": 0.4702163529081198,
+              "reference_n": 4,
+              "kind": "support",
+              "text": "HOMO 能量处于较高水平，提示相对较强的电子给予能力，可能有利于部分氧化加成步骤"
+            }
+          ],
+          "risk_flags": [
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-bromo-4-ethylbenzene",
+              "field": "lumo_ev",
+              "field_label": "LUMO 能量",
+              "raw_value": -0.7347,
+              "percentile": 90.0,
+              "robust_z": 1.3204886284636008,
+              "reference_n": 15,
+              "kind": "risk",
+              "text": "LUMO 能量处于较高水平，受电子特征相对较弱"
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "ditert-butyl-[3,6-dimethoxy-2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+              "field": "phosphorus_hirshfeld_mean",
+              "field_label": "磷位点 Hirshfeld 电荷",
+              "raw_value": 0.112487,
+              "percentile": 87.5,
+              "robust_z": 0.7217245648532473,
+              "reference_n": 4,
+              "kind": "risk",
+              "text": "磷位点电荷处于较高水平，磷中心电子丰富程度相对较低"
+            }
+          ],
+          "context_notes": [],
+          "evidence_consistency": "混合",
+          "confidence": "中",
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      },
+      "trajectory_best": {
+        "model_record": {
+          "step": 21,
+          "query_index": 200,
+          "predicted_yield": 60.983203733013504,
+          "uncertainty": 18.792748015009423,
+          "acquisition_value": 0.9070029934274673,
+          "selection_mode": "expected_improvement",
+          "observed_yield_post_query": 86.59757822,
+          "best_so_far_post_query": 86.59757822
+        },
+        "condition": {
+          "Reactant2": "1-bromo-4-ethylbenzene",
+          "Ligand": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+          "Additive": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+          "Base": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+          "Product": "N-(4-ethylphenyl)-4-methylaniline"
+        },
+        "dft_explanation": {
+          "dataset": "Buchwald_sub4",
+          "condition": {
+            "Product": "N-(4-ethylphenyl)-4-methylaniline",
+            "Reactant2": "1-bromo-4-ethylbenzene",
+            "Ligand": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+            "Additive": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+            "Base": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine"
+          },
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 3
+          },
+          "components": [
+            {
+              "role": "Product",
+              "role_label": "目标产物",
+              "component": "N-(4-ethylphenyl)-4-methylaniline",
+              "available": true,
+              "metrics": []
+            },
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-bromo-4-ethylbenzene",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-bromo-4-ethylbenzene",
+                  "field": "c_leaving_mayer_bond_order",
+                  "field_label": "C–离去基团 Mayer 键级",
+                  "raw_value": 2.0699,
+                  "percentile": 70.0,
+                  "robust_z": 0.6047293632715044,
+                  "reference_n": 15
+                },
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-bromo-4-ethylbenzene",
+                  "field": "electrophile_c_hirshfeld",
+                  "field_label": "反应碳 Hirshfeld 电荷",
+                  "raw_value": 0.017801,
+                  "percentile": 30.0,
+                  "robust_z": -0.14824273843104369,
+                  "reference_n": 15
+                },
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-bromo-4-ethylbenzene",
+                  "field": "lumo_ev",
+                  "field_label": "LUMO 能量",
+                  "raw_value": -0.7347,
+                  "percentile": 90.0,
+                  "robust_z": 1.3204886284636008,
+                  "reference_n": 15
+                }
+              ]
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -5.5605,
+                  "percentile": 37.5,
+                  "robust_z": -0.43874683899971956,
+                  "reference_n": 4
+                },
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+                  "field": "phosphorus_hirshfeld_mean",
+                  "field_label": "磷位点 Hirshfeld 电荷",
+                  "raw_value": 0.109528,
+                  "percentile": 37.5,
+                  "robust_z": -0.14026655014201675,
+                  "reference_n": 4
+                }
+              ]
+            },
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -7.6984,
+                  "percentile": 15.909090909090908,
+                  "robust_z": -0.8141052195526106,
+                  "reference_n": 22
+                },
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+                  "field": "additive_n_hirshfeld",
+                  "field_label": "添加剂氮位点电荷",
+                  "raw_value": -0.124068,
+                  "percentile": 65.9090909090909,
+                  "robust_z": 0.19575026515900476,
+                  "reference_n": 22
+                },
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+                  "field": "additive_o_hirshfeld",
+                  "field_label": "添加剂氧位点电荷",
+                  "raw_value": -0.047978,
+                  "percentile": 79.54545454545455,
+                  "robust_z": 0.6475951142539886,
+                  "reference_n": 22
+                }
+              ]
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.274132,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 3
+                },
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 3.156206562,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 3
+                }
+              ]
+            }
+          ],
+          "support_evidence": [],
+          "risk_flags": [
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-bromo-4-ethylbenzene",
+              "field": "lumo_ev",
+              "field_label": "LUMO 能量",
+              "raw_value": -0.7347,
+              "percentile": 90.0,
+              "robust_z": 1.3204886284636008,
+              "reference_n": 15,
+              "kind": "risk",
+              "text": "LUMO 能量处于较高水平，受电子特征相对较弱"
+            }
+          ],
+          "context_notes": [
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -7.6984,
+              "percentile": 15.909090909090908,
+              "robust_z": -0.8141052195526106,
+              "reference_n": 22,
+              "kind": "context",
+              "text": "添加剂 HOMO 能量较低，电子给予和竞争配位倾向相对有限"
+            },
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+              "field": "additive_o_hirshfeld",
+              "field_label": "添加剂氧位点电荷",
+              "raw_value": -0.047978,
+              "percentile": 79.54545454545455,
+              "robust_z": 0.6475951142539886,
+              "reference_n": 22,
+              "kind": "context",
+              "text": "氧位点电子密度相对较低，强配位风险在该指标上不突出"
+            }
+          ],
+          "evidence_consistency": "存疑",
+          "confidence": "中",
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      },
+      "representative_low_observation": {
+        "model_record": {
+          "step": 16,
+          "query_index": 415,
+          "predicted_yield": 39.56651387329999,
+          "uncertainty": 30.264336236905294,
+          "acquisition_value": 0.891470266306523,
+          "selection_mode": "expected_improvement",
+          "observed_yield_post_query": 0.646778821,
+          "best_so_far_post_query": 84.89551287
+        },
+        "condition": {
+          "Reactant2": "1-chloro-4-ethylbenzene",
+          "Ligand": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+          "Additive": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+          "Base": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+          "Product": "N-(4-ethylphenyl)-4-methylaniline"
+        },
+        "dft_explanation": {
+          "dataset": "Buchwald_sub4",
+          "condition": {
+            "Product": "N-(4-ethylphenyl)-4-methylaniline",
+            "Reactant2": "1-chloro-4-ethylbenzene",
+            "Ligand": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+            "Additive": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+            "Base": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine"
+          },
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 3
+          },
+          "components": [
+            {
+              "role": "Product",
+              "role_label": "目标产物",
+              "component": "N-(4-ethylphenyl)-4-methylaniline",
+              "available": true,
+              "metrics": []
+            },
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-chloro-4-ethylbenzene",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-chloro-4-ethylbenzene",
+                  "field": "c_leaving_mayer_bond_order",
+                  "field_label": "C–离去基团 Mayer 键级",
+                  "raw_value": 1.1655,
+                  "percentile": 30.0,
+                  "robust_z": -0.3762881006616768,
+                  "reference_n": 15
+                },
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-chloro-4-ethylbenzene",
+                  "field": "electrophile_c_hirshfeld",
+                  "field_label": "反应碳 Hirshfeld 电荷",
+                  "raw_value": 0.031428,
+                  "percentile": 63.333333333333336,
+                  "robust_z": 0.3711976823968894,
+                  "reference_n": 15
+                },
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-chloro-4-ethylbenzene",
+                  "field": "lumo_ev",
+                  "field_label": "LUMO 能量",
+                  "raw_value": -0.7206,
+                  "percentile": 96.66666666666667,
+                  "robust_z": 1.3484953818651304,
+                  "reference_n": 15
+                }
+              ]
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -5.5605,
+                  "percentile": 37.5,
+                  "robust_z": -0.43874683899971956,
+                  "reference_n": 4
+                },
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+                  "field": "phosphorus_hirshfeld_mean",
+                  "field_label": "磷位点 Hirshfeld 电荷",
+                  "raw_value": 0.109528,
+                  "percentile": 37.5,
+                  "robust_z": -0.14026655014201675,
+                  "reference_n": 4
+                }
+              ]
+            },
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -7.6984,
+                  "percentile": 15.909090909090908,
+                  "robust_z": -0.8141052195526106,
+                  "reference_n": 22
+                },
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+                  "field": "additive_n_hirshfeld",
+                  "field_label": "添加剂氮位点电荷",
+                  "raw_value": -0.124068,
+                  "percentile": 65.9090909090909,
+                  "robust_z": 0.19575026515900476,
+                  "reference_n": 22
+                },
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+                  "field": "additive_o_hirshfeld",
+                  "field_label": "添加剂氧位点电荷",
+                  "raw_value": -0.047978,
+                  "percentile": 79.54545454545455,
+                  "robust_z": 0.6475951142539886,
+                  "reference_n": 22
+                }
+              ]
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.274132,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 3
+                },
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 3.156206562,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 3
+                }
+              ]
+            }
+          ],
+          "support_evidence": [],
+          "risk_flags": [
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-chloro-4-ethylbenzene",
+              "field": "lumo_ev",
+              "field_label": "LUMO 能量",
+              "raw_value": -0.7206,
+              "percentile": 96.66666666666667,
+              "robust_z": 1.3484953818651304,
+              "reference_n": 15,
+              "kind": "risk",
+              "text": "LUMO 能量处于较高水平，受电子特征相对较弱"
+            }
+          ],
+          "context_notes": [
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -7.6984,
+              "percentile": 15.909090909090908,
+              "robust_z": -0.8141052195526106,
+              "reference_n": 22,
+              "kind": "context",
+              "text": "添加剂 HOMO 能量较低，电子给予和竞争配位倾向相对有限"
+            },
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+              "field": "additive_o_hirshfeld",
+              "field_label": "添加剂氧位点电荷",
+              "raw_value": -0.047978,
+              "percentile": 79.54545454545455,
+              "robust_z": 0.6475951142539886,
+              "reference_n": 22,
+              "kind": "context",
+              "text": "氧位点电子密度相对较低，强配位风险在该指标上不突出"
+            }
+          ],
+          "evidence_consistency": "存疑",
+          "confidence": "中",
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      },
+      "nearest_observed_counterfactual": {
+        "model_record": {
+          "step": 25,
+          "query_index": 1,
+          "predicted_yield": 70.34197940099682,
+          "uncertainty": 12.121030422507562,
+          "acquisition_value": 0.5053379683310464,
+          "selection_mode": "expected_improvement",
+          "observed_yield_post_query": 71.55294754,
+          "best_so_far_post_query": 86.59757822
+        },
+        "condition": {
+          "Reactant2": "1-bromo-4-ethylbenzene",
+          "Ligand": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+          "Additive": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+          "Base": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+          "Product": "N-(4-ethylphenyl)-4-methylaniline"
+        },
+        "dft_explanation": {
+          "dataset": "Buchwald_sub4",
+          "condition": {
+            "Product": "N-(4-ethylphenyl)-4-methylaniline",
+            "Reactant2": "1-bromo-4-ethylbenzene",
+            "Ligand": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+            "Additive": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+            "Base": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine"
+          },
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 3
+          },
+          "components": [
+            {
+              "role": "Product",
+              "role_label": "目标产物",
+              "component": "N-(4-ethylphenyl)-4-methylaniline",
+              "available": true,
+              "metrics": []
+            },
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-bromo-4-ethylbenzene",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-bromo-4-ethylbenzene",
+                  "field": "c_leaving_mayer_bond_order",
+                  "field_label": "C–离去基团 Mayer 键级",
+                  "raw_value": 2.0699,
+                  "percentile": 70.0,
+                  "robust_z": 0.6047293632715044,
+                  "reference_n": 15
+                },
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-bromo-4-ethylbenzene",
+                  "field": "electrophile_c_hirshfeld",
+                  "field_label": "反应碳 Hirshfeld 电荷",
+                  "raw_value": 0.017801,
+                  "percentile": 30.0,
+                  "robust_z": -0.14824273843104369,
+                  "reference_n": 15
+                },
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-bromo-4-ethylbenzene",
+                  "field": "lumo_ev",
+                  "field_label": "LUMO 能量",
+                  "raw_value": -0.7347,
+                  "percentile": 90.0,
+                  "robust_z": 1.3204886284636008,
+                  "reference_n": 15
+                }
+              ]
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -5.5605,
+                  "percentile": 37.5,
+                  "robust_z": -0.43874683899971956,
+                  "reference_n": 4
+                },
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+                  "field": "phosphorus_hirshfeld_mean",
+                  "field_label": "磷位点 Hirshfeld 电荷",
+                  "raw_value": 0.109528,
+                  "percentile": 37.5,
+                  "robust_z": -0.14026655014201675,
+                  "reference_n": 4
+                }
+              ]
+            },
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -6.1521,
+                  "percentile": 88.63636363636364,
+                  "robust_z": 0.7872825186412601,
+                  "reference_n": 22
+                },
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+                  "field": "additive_n_hirshfeld",
+                  "field_label": "添加剂氮位点电荷",
+                  "raw_value": -0.150831,
+                  "percentile": 15.909090909090908,
+                  "robust_z": -0.7664803063260656,
+                  "reference_n": 22
+                },
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+                  "field": "additive_o_hirshfeld",
+                  "field_label": "添加剂氧位点电荷",
+                  "raw_value": -0.069174,
+                  "percentile": 25.0,
+                  "robust_z": -0.5911402022091051,
+                  "reference_n": 22
+                }
+              ]
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.274132,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 3
+                },
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 3.156206562,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 3
+                }
+              ]
+            }
+          ],
+          "support_evidence": [],
+          "risk_flags": [
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-bromo-4-ethylbenzene",
+              "field": "lumo_ev",
+              "field_label": "LUMO 能量",
+              "raw_value": -0.7347,
+              "percentile": 90.0,
+              "robust_z": 1.3204886284636008,
+              "reference_n": 15,
+              "kind": "risk",
+              "text": "LUMO 能量处于较高水平，受电子特征相对较弱"
+            },
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -6.1521,
+              "percentile": 88.63636363636364,
+              "robust_z": 0.7872825186412601,
+              "reference_n": 22,
+              "kind": "risk",
+              "text": "添加剂 HOMO 能量较高，可能具有更强电子给予或竞争配位倾向"
+            }
+          ],
+          "context_notes": [],
+          "evidence_consistency": "存疑",
+          "confidence": "中",
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      },
+      "first_vs_trajectory_best": {
+        "changed_roles": [
+          "Ligand",
+          "Additive"
+        ],
+        "changed_role_labels": [
+          "配体",
+          "添加剂"
+        ],
+        "candidate": {
+          "dataset": "Buchwald_sub4",
+          "condition": {
+            "Product": "N-(4-ethylphenyl)-4-methylaniline",
+            "Reactant2": "1-bromo-4-ethylbenzene",
+            "Ligand": "ditert-butyl-[3,6-dimethoxy-2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+            "Additive": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+            "Base": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine"
+          },
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 3
+          },
+          "components": [
+            {
+              "role": "Product",
+              "role_label": "目标产物",
+              "component": "N-(4-ethylphenyl)-4-methylaniline",
+              "available": true,
+              "metrics": []
+            },
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-bromo-4-ethylbenzene",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-bromo-4-ethylbenzene",
+                  "field": "c_leaving_mayer_bond_order",
+                  "field_label": "C–离去基团 Mayer 键级",
+                  "raw_value": 2.0699,
+                  "percentile": 70.0,
+                  "robust_z": 0.6047293632715044,
+                  "reference_n": 15
+                },
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-bromo-4-ethylbenzene",
+                  "field": "electrophile_c_hirshfeld",
+                  "field_label": "反应碳 Hirshfeld 电荷",
+                  "raw_value": 0.017801,
+                  "percentile": 30.0,
+                  "robust_z": -0.14824273843104369,
+                  "reference_n": 15
+                },
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-bromo-4-ethylbenzene",
+                  "field": "lumo_ev",
+                  "field_label": "LUMO 能量",
+                  "raw_value": -0.7347,
+                  "percentile": 90.0,
+                  "robust_z": 1.3204886284636008,
+                  "reference_n": 15
+                }
+              ]
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "ditert-butyl-[3,6-dimethoxy-2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "ditert-butyl-[3,6-dimethoxy-2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -5.237,
+                  "percentile": 87.5,
+                  "robust_z": 0.4702163529081198,
+                  "reference_n": 4
+                },
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "ditert-butyl-[3,6-dimethoxy-2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+                  "field": "phosphorus_hirshfeld_mean",
+                  "field_label": "磷位点 Hirshfeld 电荷",
+                  "raw_value": 0.112487,
+                  "percentile": 87.5,
+                  "robust_z": 0.7217245648532473,
+                  "reference_n": 4
+                }
+              ]
+            },
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -6.1521,
+                  "percentile": 88.63636363636364,
+                  "robust_z": 0.7872825186412601,
+                  "reference_n": 22
+                },
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+                  "field": "additive_n_hirshfeld",
+                  "field_label": "添加剂氮位点电荷",
+                  "raw_value": -0.150831,
+                  "percentile": 15.909090909090908,
+                  "robust_z": -0.7664803063260656,
+                  "reference_n": 22
+                },
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+                  "field": "additive_o_hirshfeld",
+                  "field_label": "添加剂氧位点电荷",
+                  "raw_value": -0.069174,
+                  "percentile": 25.0,
+                  "robust_z": -0.5911402022091051,
+                  "reference_n": 22
+                }
+              ]
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.274132,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 3
+                },
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 3.156206562,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 3
+                }
+              ]
+            }
+          ],
+          "support_evidence": [
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "ditert-butyl-[3,6-dimethoxy-2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -5.237,
+              "percentile": 87.5,
+              "robust_z": 0.4702163529081198,
+              "reference_n": 4,
+              "kind": "support",
+              "text": "HOMO 能量处于较高水平，提示相对较强的电子给予能力，可能有利于部分氧化加成步骤"
+            }
+          ],
+          "risk_flags": [
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-bromo-4-ethylbenzene",
+              "field": "lumo_ev",
+              "field_label": "LUMO 能量",
+              "raw_value": -0.7347,
+              "percentile": 90.0,
+              "robust_z": 1.3204886284636008,
+              "reference_n": 15,
+              "kind": "risk",
+              "text": "LUMO 能量处于较高水平，受电子特征相对较弱"
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "ditert-butyl-[3,6-dimethoxy-2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+              "field": "phosphorus_hirshfeld_mean",
+              "field_label": "磷位点 Hirshfeld 电荷",
+              "raw_value": 0.112487,
+              "percentile": 87.5,
+              "robust_z": 0.7217245648532473,
+              "reference_n": 4,
+              "kind": "risk",
+              "text": "磷位点电荷处于较高水平，磷中心电子丰富程度相对较低"
+            }
+          ],
+          "context_notes": [],
+          "evidence_consistency": "混合",
+          "confidence": "中",
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        },
+        "reference": {
+          "dataset": "Buchwald_sub4",
+          "condition": {
+            "Product": "N-(4-ethylphenyl)-4-methylaniline",
+            "Reactant2": "1-bromo-4-ethylbenzene",
+            "Ligand": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+            "Additive": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+            "Base": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine"
+          },
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 3
+          },
+          "components": [
+            {
+              "role": "Product",
+              "role_label": "目标产物",
+              "component": "N-(4-ethylphenyl)-4-methylaniline",
+              "available": true,
+              "metrics": []
+            },
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-bromo-4-ethylbenzene",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-bromo-4-ethylbenzene",
+                  "field": "c_leaving_mayer_bond_order",
+                  "field_label": "C–离去基团 Mayer 键级",
+                  "raw_value": 2.0699,
+                  "percentile": 70.0,
+                  "robust_z": 0.6047293632715044,
+                  "reference_n": 15
+                },
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-bromo-4-ethylbenzene",
+                  "field": "electrophile_c_hirshfeld",
+                  "field_label": "反应碳 Hirshfeld 电荷",
+                  "raw_value": 0.017801,
+                  "percentile": 30.0,
+                  "robust_z": -0.14824273843104369,
+                  "reference_n": 15
+                },
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-bromo-4-ethylbenzene",
+                  "field": "lumo_ev",
+                  "field_label": "LUMO 能量",
+                  "raw_value": -0.7347,
+                  "percentile": 90.0,
+                  "robust_z": 1.3204886284636008,
+                  "reference_n": 15
+                }
+              ]
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -5.5605,
+                  "percentile": 37.5,
+                  "robust_z": -0.43874683899971956,
+                  "reference_n": 4
+                },
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+                  "field": "phosphorus_hirshfeld_mean",
+                  "field_label": "磷位点 Hirshfeld 电荷",
+                  "raw_value": 0.109528,
+                  "percentile": 37.5,
+                  "robust_z": -0.14026655014201675,
+                  "reference_n": 4
+                }
+              ]
+            },
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -7.6984,
+                  "percentile": 15.909090909090908,
+                  "robust_z": -0.8141052195526106,
+                  "reference_n": 22
+                },
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+                  "field": "additive_n_hirshfeld",
+                  "field_label": "添加剂氮位点电荷",
+                  "raw_value": -0.124068,
+                  "percentile": 65.9090909090909,
+                  "robust_z": 0.19575026515900476,
+                  "reference_n": 22
+                },
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+                  "field": "additive_o_hirshfeld",
+                  "field_label": "添加剂氧位点电荷",
+                  "raw_value": -0.047978,
+                  "percentile": 79.54545454545455,
+                  "robust_z": 0.6475951142539886,
+                  "reference_n": 22
+                }
+              ]
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.274132,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 3
+                },
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 3.156206562,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 3
+                }
+              ]
+            }
+          ],
+          "support_evidence": [],
+          "risk_flags": [
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-bromo-4-ethylbenzene",
+              "field": "lumo_ev",
+              "field_label": "LUMO 能量",
+              "raw_value": -0.7347,
+              "percentile": 90.0,
+              "robust_z": 1.3204886284636008,
+              "reference_n": 15,
+              "kind": "risk",
+              "text": "LUMO 能量处于较高水平，受电子特征相对较弱"
+            }
+          ],
+          "context_notes": [
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -7.6984,
+              "percentile": 15.909090909090908,
+              "robust_z": -0.8141052195526106,
+              "reference_n": 22,
+              "kind": "context",
+              "text": "添加剂 HOMO 能量较低，电子给予和竞争配位倾向相对有限"
+            },
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+              "field": "additive_o_hirshfeld",
+              "field_label": "添加剂氧位点电荷",
+              "raw_value": -0.047978,
+              "percentile": 79.54545454545455,
+              "robust_z": 0.6475951142539886,
+              "reference_n": 22,
+              "kind": "context",
+              "text": "氧位点电子密度相对较低，强配位风险在该指标上不突出"
+            }
+          ],
+          "evidence_consistency": "存疑",
+          "confidence": "中",
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      },
+      "best_vs_nearest_observed_counterfactual": {
+        "changed_roles": [
+          "Additive"
+        ],
+        "changed_role_labels": [
+          "添加剂"
+        ],
+        "candidate": {
+          "dataset": "Buchwald_sub4",
+          "condition": {
+            "Product": "N-(4-ethylphenyl)-4-methylaniline",
+            "Reactant2": "1-bromo-4-ethylbenzene",
+            "Ligand": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+            "Additive": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+            "Base": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine"
+          },
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 3
+          },
+          "components": [
+            {
+              "role": "Product",
+              "role_label": "目标产物",
+              "component": "N-(4-ethylphenyl)-4-methylaniline",
+              "available": true,
+              "metrics": []
+            },
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-bromo-4-ethylbenzene",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-bromo-4-ethylbenzene",
+                  "field": "c_leaving_mayer_bond_order",
+                  "field_label": "C–离去基团 Mayer 键级",
+                  "raw_value": 2.0699,
+                  "percentile": 70.0,
+                  "robust_z": 0.6047293632715044,
+                  "reference_n": 15
+                },
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-bromo-4-ethylbenzene",
+                  "field": "electrophile_c_hirshfeld",
+                  "field_label": "反应碳 Hirshfeld 电荷",
+                  "raw_value": 0.017801,
+                  "percentile": 30.0,
+                  "robust_z": -0.14824273843104369,
+                  "reference_n": 15
+                },
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-bromo-4-ethylbenzene",
+                  "field": "lumo_ev",
+                  "field_label": "LUMO 能量",
+                  "raw_value": -0.7347,
+                  "percentile": 90.0,
+                  "robust_z": 1.3204886284636008,
+                  "reference_n": 15
+                }
+              ]
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -5.5605,
+                  "percentile": 37.5,
+                  "robust_z": -0.43874683899971956,
+                  "reference_n": 4
+                },
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+                  "field": "phosphorus_hirshfeld_mean",
+                  "field_label": "磷位点 Hirshfeld 电荷",
+                  "raw_value": 0.109528,
+                  "percentile": 37.5,
+                  "robust_z": -0.14026655014201675,
+                  "reference_n": 4
+                }
+              ]
+            },
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -7.6984,
+                  "percentile": 15.909090909090908,
+                  "robust_z": -0.8141052195526106,
+                  "reference_n": 22
+                },
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+                  "field": "additive_n_hirshfeld",
+                  "field_label": "添加剂氮位点电荷",
+                  "raw_value": -0.124068,
+                  "percentile": 65.9090909090909,
+                  "robust_z": 0.19575026515900476,
+                  "reference_n": 22
+                },
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+                  "field": "additive_o_hirshfeld",
+                  "field_label": "添加剂氧位点电荷",
+                  "raw_value": -0.047978,
+                  "percentile": 79.54545454545455,
+                  "robust_z": 0.6475951142539886,
+                  "reference_n": 22
+                }
+              ]
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.274132,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 3
+                },
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 3.156206562,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 3
+                }
+              ]
+            }
+          ],
+          "support_evidence": [],
+          "risk_flags": [
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-bromo-4-ethylbenzene",
+              "field": "lumo_ev",
+              "field_label": "LUMO 能量",
+              "raw_value": -0.7347,
+              "percentile": 90.0,
+              "robust_z": 1.3204886284636008,
+              "reference_n": 15,
+              "kind": "risk",
+              "text": "LUMO 能量处于较高水平，受电子特征相对较弱"
+            }
+          ],
+          "context_notes": [
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -7.6984,
+              "percentile": 15.909090909090908,
+              "robust_z": -0.8141052195526106,
+              "reference_n": 22,
+              "kind": "context",
+              "text": "添加剂 HOMO 能量较低，电子给予和竞争配位倾向相对有限"
+            },
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+              "field": "additive_o_hirshfeld",
+              "field_label": "添加剂氧位点电荷",
+              "raw_value": -0.047978,
+              "percentile": 79.54545454545455,
+              "robust_z": 0.6475951142539886,
+              "reference_n": 22,
+              "kind": "context",
+              "text": "氧位点电子密度相对较低，强配位风险在该指标上不突出"
+            }
+          ],
+          "evidence_consistency": "存疑",
+          "confidence": "中",
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        },
+        "reference": {
+          "dataset": "Buchwald_sub4",
+          "condition": {
+            "Product": "N-(4-ethylphenyl)-4-methylaniline",
+            "Reactant2": "1-bromo-4-ethylbenzene",
+            "Ligand": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+            "Additive": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+            "Base": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine"
+          },
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 3
+          },
+          "components": [
+            {
+              "role": "Product",
+              "role_label": "目标产物",
+              "component": "N-(4-ethylphenyl)-4-methylaniline",
+              "available": true,
+              "metrics": []
+            },
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-bromo-4-ethylbenzene",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-bromo-4-ethylbenzene",
+                  "field": "c_leaving_mayer_bond_order",
+                  "field_label": "C–离去基团 Mayer 键级",
+                  "raw_value": 2.0699,
+                  "percentile": 70.0,
+                  "robust_z": 0.6047293632715044,
+                  "reference_n": 15
+                },
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-bromo-4-ethylbenzene",
+                  "field": "electrophile_c_hirshfeld",
+                  "field_label": "反应碳 Hirshfeld 电荷",
+                  "raw_value": 0.017801,
+                  "percentile": 30.0,
+                  "robust_z": -0.14824273843104369,
+                  "reference_n": 15
+                },
+                {
+                  "role": "Reactant2",
+                  "role_label": "芳基卤代物",
+                  "component": "1-bromo-4-ethylbenzene",
+                  "field": "lumo_ev",
+                  "field_label": "LUMO 能量",
+                  "raw_value": -0.7347,
+                  "percentile": 90.0,
+                  "robust_z": 1.3204886284636008,
+                  "reference_n": 15
+                }
+              ]
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -5.5605,
+                  "percentile": 37.5,
+                  "robust_z": -0.43874683899971956,
+                  "reference_n": 4
+                },
+                {
+                  "role": "Ligand",
+                  "role_label": "配体",
+                  "component": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+                  "field": "phosphorus_hirshfeld_mean",
+                  "field_label": "磷位点 Hirshfeld 电荷",
+                  "raw_value": 0.109528,
+                  "percentile": 37.5,
+                  "robust_z": -0.14026655014201675,
+                  "reference_n": 4
+                }
+              ]
+            },
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+                  "field": "homo_ev",
+                  "field_label": "HOMO 能量",
+                  "raw_value": -6.1521,
+                  "percentile": 88.63636363636364,
+                  "robust_z": 0.7872825186412601,
+                  "reference_n": 22
+                },
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+                  "field": "additive_n_hirshfeld",
+                  "field_label": "添加剂氮位点电荷",
+                  "raw_value": -0.150831,
+                  "percentile": 15.909090909090908,
+                  "robust_z": -0.7664803063260656,
+                  "reference_n": 22
+                },
+                {
+                  "role": "Additive",
+                  "role_label": "添加剂",
+                  "component": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+                  "field": "additive_o_hirshfeld",
+                  "field_label": "添加剂氧位点电荷",
+                  "raw_value": -0.069174,
+                  "percentile": 25.0,
+                  "robust_z": -0.5911402022091051,
+                  "reference_n": 22
+                }
+              ]
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+              "available": true,
+              "metrics": [
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+                  "field": "donor_hirshfeld_min",
+                  "field_label": "最富电子供体位点电荷",
+                  "raw_value": -0.274132,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 3
+                },
+                {
+                  "role": "Base",
+                  "role_label": "碱",
+                  "component": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+                  "field": "dipole_debye",
+                  "field_label": "偶极矩",
+                  "raw_value": 3.156206562,
+                  "percentile": 50.0,
+                  "robust_z": 0.0,
+                  "reference_n": 3
+                }
+              ]
+            }
+          ],
+          "support_evidence": [],
+          "risk_flags": [
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-bromo-4-ethylbenzene",
+              "field": "lumo_ev",
+              "field_label": "LUMO 能量",
+              "raw_value": -0.7347,
+              "percentile": 90.0,
+              "robust_z": 1.3204886284636008,
+              "reference_n": 15,
+              "kind": "risk",
+              "text": "LUMO 能量处于较高水平，受电子特征相对较弱"
+            },
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -6.1521,
+              "percentile": 88.63636363636364,
+              "robust_z": 0.7872825186412601,
+              "reference_n": 22,
+              "kind": "risk",
+              "text": "添加剂 HOMO 能量较高，可能具有更强电子给予或竞争配位倾向"
+            }
+          ],
+          "context_notes": [],
+          "evidence_consistency": "存疑",
+          "confidence": "中",
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      }
+    }
+  }
+}

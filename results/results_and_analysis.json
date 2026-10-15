@@ -1,0 +1,1808 @@
+{
+  "report_name": "CatalystFlow 队伍最终结果与分析",
+  "report_scope": "最终评测协议、公开数据范围、四项核心指标、优化性能与鲁棒性、DFT 选择后解释、轨迹审计、外部兼容性、智能体复现、已查询 Top-5 现实可行性评估与最终推荐反应条件",
+  "schema_version": "2.2",
+  "terminology": {
+    "official_reproduction": "2 datasets x 20 fixed seeds x 40 sequential queries",
+    "queried_top5": "five highest observed-yield unique conditions aggregated only from legal query records",
+    "final_recommended_reaction_condition": "DeepSeek selection from non-blocked queried Top-5 after six-dimension feasibility assessment; optimizer_rank unchanged; no_condition_recommended if all five are blocked",
+    "surrogate_model": "以较低成本近似反应条件到产率关系的预测模型；本项目具体由随机森林和/或高斯过程实现，并向采集函数提供预测均值与不确定性",
+    "offline_oracle": "离线预言器（OfflineOracle）；仅在候选索引确定后返回该索引的一条产率，未查询候选产率不可用于特征、训练、调参或排序",
+    "AUC_best_so_far": "40 轮 best-so-far 序列的算术平均，不是 ROC-AUC",
+    "round_to_95_global_best": "首次达到候选池全局最高产率 95% 的轮数；40 轮内未达到时记为 41",
+    "feasibility_score_notation": "现实可行性总分完整范围为 6–18；若任一维度为 unknown，则总分显示为破折号。例如 —（4/6）表示六个维度中仅四个具备可评分信息，另外两个为 unknown；括号内为已评分维度数/总维度数。"
+  },
+  "reproduction": {
+    "environment": "independent conda environment named test",
+    "trajectory_audit": {
+      "status": "valid",
+      "trajectory_files": 40,
+      "query_records": 1600
+    },
+    "reference_comparison": {
+      "status": "identical",
+      "identical": 40,
+      "different": 0
+    },
+    "metrics": {
+      "Suzuki": {
+        "initial_round_found_best_mean": 84.0425,
+        "best_found_mean": 97.3625,
+        "round_to_95_global_best_mean": 4.4,
+        "AUC_best_so_far_mean": 95.883975
+      },
+      "Buchwald_sub4": {
+        "initial_round_found_best_mean": 74.387710065,
+        "best_found_mean": 86.06695613,
+        "round_to_95_global_best_mean": 12.5,
+        "AUC_best_so_far_mean": 82.53504510117502
+      }
+    },
+    "metrics_summary_rows": [
+      {
+        "dataset": "Suzuki",
+        "metric": "initial_round_found_best",
+        "mean": 84.04249999999999,
+        "sample_std": 8.69367578669751,
+        "ci95": [
+          80.23232859345367,
+          87.8526714065463
+        ]
+      },
+      {
+        "dataset": "Suzuki",
+        "metric": "best_found",
+        "mean": 97.36250000000001,
+        "sample_std": 1.3957260890982432,
+        "ci95": [
+          96.75079607101407,
+          97.97420392898596
+        ]
+      },
+      {
+        "dataset": "Suzuki",
+        "metric": "round_to_95_global_best",
+        "mean": 4.4,
+        "sample_std": 8.732275280758582,
+        "ci95": [
+          0.5729116193006192,
+          8.227088380699382
+        ]
+      },
+      {
+        "dataset": "Suzuki",
+        "metric": "AUC_best_so_far",
+        "mean": 95.883975,
+        "sample_std": 1.1439740746855418,
+        "ci95": [
+          95.38260625608312,
+          96.38534374391689
+        ]
+      },
+      {
+        "dataset": "Buchwald_sub4",
+        "metric": "initial_round_found_best",
+        "mean": 74.387710065,
+        "sample_std": 1.7672791130271637,
+        "ci95": [
+          73.61316584353892,
+          75.16225428646106
+        ]
+      },
+      {
+        "dataset": "Buchwald_sub4",
+        "metric": "best_found",
+        "mean": 86.06695613000001,
+        "sample_std": 1.2051682296099926,
+        "ci95": [
+          85.53876786519673,
+          86.59514439480328
+        ]
+      },
+      {
+        "dataset": "Buchwald_sub4",
+        "metric": "round_to_95_global_best",
+        "mean": 12.5,
+        "sample_std": 5.13501908980206,
+        "ci95": [
+          10.249478656890926,
+          14.750521343109074
+        ]
+      },
+      {
+        "dataset": "Buchwald_sub4",
+        "metric": "AUC_best_so_far",
+        "mean": 82.53504510117502,
+        "sample_std": 1.4948030338460496,
+        "ci95": [
+          81.8799187866311,
+          83.19017141571894
+        ]
+      }
+    ]
+  },
+  "feasibility_assessment": {
+    "owner": "DeepSeek",
+    "basis": "mixed_verified_evidence_llm_inference_unknown",
+    "ranking_effect": "none",
+    "assessment_context": {
+      "target_scale": "not_provided",
+      "location": "not_provided",
+      "assessment_date": "2026-08-14"
+    },
+    "dimensions": [
+      "budget",
+      "procurement_difficulty",
+      "hazard",
+      "operational_complexity",
+      "scale_up_risk",
+      "waste_disposal_burden"
+    ],
+    "score_rule": {
+      "low": 3,
+      "medium": 2,
+      "high": 1,
+      "unknown": null,
+      "weights": "equal",
+      "observed_yield_included": false
+    },
+    "levels_by_rank": {
+      "Suzuki": [
+        {
+          "optimizer_rank": 1,
+          "budget": "unknown",
+          "procurement_difficulty": "medium",
+          "hazard": "high",
+          "operational_complexity": "high",
+          "scale_up_risk": "unknown",
+          "waste_disposal_burden": "medium",
+          "feasibility_total_score": null,
+          "score_coverage": "4/6",
+          "safety_gate": "blocked",
+          "basis": "mixed",
+          "confidence": "medium",
+          "basis_by_dimension": {
+            "budget": "unknown",
+            "procurement_difficulty": "verified_evidence",
+            "hazard": "verified_evidence",
+            "operational_complexity": "llm_inference",
+            "scale_up_risk": "unknown",
+            "waste_disposal_burden": "llm_inference"
+          },
+          "confidence_by_dimension": {
+            "budget": "low",
+            "procurement_difficulty": "medium",
+            "hazard": "medium",
+            "operational_complexity": "low",
+            "scale_up_risk": "low",
+            "waste_disposal_burden": "low"
+          },
+          "source_ids": [
+            "LIT-SUZ-001",
+            "CAT-SUZ-ELEC-001",
+            "CAT-SUZ-ESTER-001",
+            "CAT-APHOS-001",
+            "CAT-LIOTBU-001",
+            "SDS-LIOTBU-001",
+            "CAT-MEOH-001",
+            "SDS-MEOH-001"
+          ],
+          "critical_safety_flags": [
+            "LiOtBu is Self-heating Category 1."
+          ]
+        },
+        {
+          "optimizer_rank": 2,
+          "budget": "unknown",
+          "procurement_difficulty": "medium",
+          "hazard": "high",
+          "operational_complexity": "high",
+          "scale_up_risk": "unknown",
+          "waste_disposal_burden": "medium",
+          "feasibility_total_score": null,
+          "score_coverage": "4/6",
+          "safety_gate": "blocked",
+          "basis": "mixed",
+          "confidence": "medium",
+          "basis_by_dimension": {
+            "budget": "unknown",
+            "procurement_difficulty": "verified_evidence",
+            "hazard": "verified_evidence",
+            "operational_complexity": "llm_inference",
+            "scale_up_risk": "unknown",
+            "waste_disposal_burden": "llm_inference"
+          },
+          "confidence_by_dimension": {
+            "budget": "low",
+            "procurement_difficulty": "medium",
+            "hazard": "medium",
+            "operational_complexity": "low",
+            "scale_up_risk": "low",
+            "waste_disposal_burden": "low"
+          },
+          "source_ids": [
+            "LIT-SUZ-001",
+            "CAT-SUZ-ELEC-001",
+            "CAT-SUZ-ESTER-001",
+            "CAT-APHOS-001",
+            "CAT-LIOTBU-001",
+            "SDS-LIOTBU-001",
+            "SDS-ACN-001"
+          ],
+          "critical_safety_flags": [
+            "LiOtBu is Self-heating Category 1."
+          ]
+        },
+        {
+          "optimizer_rank": 3,
+          "budget": "unknown",
+          "procurement_difficulty": "medium",
+          "hazard": "medium",
+          "operational_complexity": "medium",
+          "scale_up_risk": "unknown",
+          "waste_disposal_burden": "medium",
+          "feasibility_total_score": null,
+          "score_coverage": "4/6",
+          "safety_gate": "conditional",
+          "basis": "mixed",
+          "confidence": "medium",
+          "basis_by_dimension": {
+            "budget": "unknown",
+            "procurement_difficulty": "verified_evidence",
+            "hazard": "verified_evidence",
+            "operational_complexity": "llm_inference",
+            "scale_up_risk": "unknown",
+            "waste_disposal_burden": "llm_inference"
+          },
+          "confidence_by_dimension": {
+            "budget": "low",
+            "procurement_difficulty": "medium",
+            "hazard": "medium",
+            "operational_complexity": "low",
+            "scale_up_risk": "low",
+            "waste_disposal_burden": "low"
+          },
+          "source_ids": [
+            "LIT-SUZ-001",
+            "CAT-SUZ-ELEC-001",
+            "CAT-SUZ-ESTER-001",
+            "CAT-APHOS-001",
+            "SDS-KOH-001",
+            "SDS-ACN-001"
+          ],
+          "critical_safety_flags": []
+        },
+        {
+          "optimizer_rank": 4,
+          "budget": "unknown",
+          "procurement_difficulty": "high",
+          "hazard": "high",
+          "operational_complexity": "high",
+          "scale_up_risk": "unknown",
+          "waste_disposal_burden": "medium",
+          "feasibility_total_score": null,
+          "score_coverage": "4/6",
+          "safety_gate": "blocked",
+          "basis": "mixed",
+          "confidence": "medium",
+          "basis_by_dimension": {
+            "budget": "unknown",
+            "procurement_difficulty": "verified_evidence",
+            "hazard": "verified_evidence",
+            "operational_complexity": "llm_inference",
+            "scale_up_risk": "unknown",
+            "waste_disposal_burden": "llm_inference"
+          },
+          "confidence_by_dimension": {
+            "budget": "low",
+            "procurement_difficulty": "medium",
+            "hazard": "medium",
+            "operational_complexity": "low",
+            "scale_up_risk": "low",
+            "waste_disposal_burden": "low"
+          },
+          "source_ids": [
+            "LIT-SUZ-001",
+            "CAT-SUZ-ELEC-001",
+            "CAT-SUZ-ACID-001",
+            "CAT-LIOTBU-001",
+            "SDS-LIOTBU-001",
+            "CAT-MEOH-001",
+            "SDS-MEOH-001"
+          ],
+          "critical_safety_flags": [
+            "LiOtBu is Self-heating Category 1."
+          ]
+        },
+        {
+          "optimizer_rank": 5,
+          "budget": "unknown",
+          "procurement_difficulty": "medium",
+          "hazard": "high",
+          "operational_complexity": "high",
+          "scale_up_risk": "unknown",
+          "waste_disposal_burden": "medium",
+          "feasibility_total_score": null,
+          "score_coverage": "4/6",
+          "safety_gate": "blocked",
+          "basis": "mixed",
+          "confidence": "medium",
+          "basis_by_dimension": {
+            "budget": "unknown",
+            "procurement_difficulty": "verified_evidence",
+            "hazard": "verified_evidence",
+            "operational_complexity": "llm_inference",
+            "scale_up_risk": "unknown",
+            "waste_disposal_burden": "llm_inference"
+          },
+          "confidence_by_dimension": {
+            "budget": "low",
+            "procurement_difficulty": "medium",
+            "hazard": "medium",
+            "operational_complexity": "low",
+            "scale_up_risk": "low",
+            "waste_disposal_burden": "low"
+          },
+          "source_ids": [
+            "LIT-SUZ-001",
+            "CAT-SUZ-ELEC-001",
+            "CAT-SUZ-ESTER-001",
+            "CAT-APHOS-001",
+            "SDS-TEA-001",
+            "SDS-ACN-001"
+          ],
+          "critical_safety_flags": [
+            "Triethylamine is flammable, acutely toxic and corrosive."
+          ]
+        }
+      ],
+      "Buchwald_sub4": [
+        {
+          "optimizer_rank": 1,
+          "budget": "unknown",
+          "procurement_difficulty": "medium",
+          "hazard": "medium",
+          "operational_complexity": "medium",
+          "scale_up_risk": "unknown",
+          "waste_disposal_burden": "medium",
+          "feasibility_total_score": null,
+          "score_coverage": "4/6",
+          "safety_gate": "conditional",
+          "basis": "mixed",
+          "confidence": "medium",
+          "basis_by_dimension": {
+            "budget": "unknown",
+            "procurement_difficulty": "verified_evidence",
+            "hazard": "verified_evidence",
+            "operational_complexity": "llm_inference",
+            "scale_up_risk": "unknown",
+            "waste_disposal_burden": "llm_inference"
+          },
+          "confidence_by_dimension": {
+            "budget": "low",
+            "procurement_difficulty": "medium",
+            "hazard": "medium",
+            "operational_complexity": "low",
+            "scale_up_risk": "low",
+            "waste_disposal_burden": "low"
+          },
+          "source_ids": [
+            "LIT-BCH-001",
+            "CAT-TBUXPHOS-001",
+            "CAT-MTBD-001",
+            "SDS-MTBD-001"
+          ],
+          "critical_safety_flags": []
+        },
+        {
+          "optimizer_rank": 2,
+          "budget": "unknown",
+          "procurement_difficulty": "medium",
+          "hazard": "medium",
+          "operational_complexity": "medium",
+          "scale_up_risk": "unknown",
+          "waste_disposal_burden": "medium",
+          "feasibility_total_score": null,
+          "score_coverage": "4/6",
+          "safety_gate": "conditional",
+          "basis": "mixed",
+          "confidence": "medium",
+          "basis_by_dimension": {
+            "budget": "unknown",
+            "procurement_difficulty": "verified_evidence",
+            "hazard": "verified_evidence",
+            "operational_complexity": "llm_inference",
+            "scale_up_risk": "unknown",
+            "waste_disposal_burden": "llm_inference"
+          },
+          "confidence_by_dimension": {
+            "budget": "low",
+            "procurement_difficulty": "medium",
+            "hazard": "medium",
+            "operational_complexity": "low",
+            "scale_up_risk": "low",
+            "waste_disposal_burden": "low"
+          },
+          "source_ids": [
+            "LIT-BCH-001",
+            "CAT-ADBRETTPHOS-001",
+            "CAT-MTBD-001",
+            "SDS-MTBD-001"
+          ],
+          "critical_safety_flags": []
+        },
+        {
+          "optimizer_rank": 3,
+          "budget": "unknown",
+          "procurement_difficulty": "medium",
+          "hazard": "medium",
+          "operational_complexity": "medium",
+          "scale_up_risk": "unknown",
+          "waste_disposal_burden": "medium",
+          "feasibility_total_score": null,
+          "score_coverage": "4/6",
+          "safety_gate": "conditional",
+          "basis": "mixed",
+          "confidence": "medium",
+          "basis_by_dimension": {
+            "budget": "unknown",
+            "procurement_difficulty": "verified_evidence",
+            "hazard": "verified_evidence",
+            "operational_complexity": "llm_inference",
+            "scale_up_risk": "unknown",
+            "waste_disposal_burden": "llm_inference"
+          },
+          "confidence_by_dimension": {
+            "budget": "low",
+            "procurement_difficulty": "medium",
+            "hazard": "medium",
+            "operational_complexity": "low",
+            "scale_up_risk": "low",
+            "waste_disposal_burden": "low"
+          },
+          "source_ids": [
+            "LIT-BCH-001",
+            "CAT-TBUXPHOS-001",
+            "CAT-MTBD-001",
+            "SDS-MTBD-001"
+          ],
+          "critical_safety_flags": []
+        },
+        {
+          "optimizer_rank": 4,
+          "budget": "unknown",
+          "procurement_difficulty": "medium",
+          "hazard": "medium",
+          "operational_complexity": "medium",
+          "scale_up_risk": "unknown",
+          "waste_disposal_burden": "medium",
+          "feasibility_total_score": null,
+          "score_coverage": "4/6",
+          "safety_gate": "conditional",
+          "basis": "mixed",
+          "confidence": "medium",
+          "basis_by_dimension": {
+            "budget": "unknown",
+            "procurement_difficulty": "verified_evidence",
+            "hazard": "verified_evidence",
+            "operational_complexity": "llm_inference",
+            "scale_up_risk": "unknown",
+            "waste_disposal_burden": "llm_inference"
+          },
+          "confidence_by_dimension": {
+            "budget": "low",
+            "procurement_difficulty": "medium",
+            "hazard": "medium",
+            "operational_complexity": "low",
+            "scale_up_risk": "low",
+            "waste_disposal_burden": "low"
+          },
+          "source_ids": [
+            "LIT-BCH-001",
+            "CAT-TBUBRETTPHOS-001",
+            "CAT-MTBD-001",
+            "SDS-MTBD-001"
+          ],
+          "critical_safety_flags": []
+        },
+        {
+          "optimizer_rank": 5,
+          "budget": "unknown",
+          "procurement_difficulty": "medium",
+          "hazard": "medium",
+          "operational_complexity": "medium",
+          "scale_up_risk": "unknown",
+          "waste_disposal_burden": "medium",
+          "feasibility_total_score": null,
+          "score_coverage": "4/6",
+          "safety_gate": "conditional",
+          "basis": "mixed",
+          "confidence": "medium",
+          "basis_by_dimension": {
+            "budget": "unknown",
+            "procurement_difficulty": "verified_evidence",
+            "hazard": "verified_evidence",
+            "operational_complexity": "llm_inference",
+            "scale_up_risk": "unknown",
+            "waste_disposal_burden": "llm_inference"
+          },
+          "confidence_by_dimension": {
+            "budget": "low",
+            "procurement_difficulty": "medium",
+            "hazard": "medium",
+            "operational_complexity": "low",
+            "scale_up_risk": "low",
+            "waste_disposal_burden": "low"
+          },
+          "source_ids": [
+            "LIT-BCH-001",
+            "CAT-TBUBRETTPHOS-001",
+            "CAT-MTBD-001",
+            "SDS-MTBD-001"
+          ],
+          "critical_safety_flags": []
+        }
+      ]
+    },
+    "evidence_boundary": "Supplier catalog and SDS claims are verified only for the cited product, region and retrieval date. Target scale and location are absent, so budget and scale-up risk remain unknown; operation and waste statements remain low-confidence LLM inference.",
+    "evidence_review_owner": "CatalystFlow deterministic evidence policy",
+    "evidence_retrieval": {
+      "status": "completed",
+      "policy": "external database and primary-source retrieval before LLM fallback",
+      "source_count": 20,
+      "snapshot": "results/top5_external_evidence.json",
+      "retrieved_at": "2026-08-14",
+      "numerical_ranking_effect": "none",
+      "llm_fallback": "saved DeepSeek assessment retained only where qualifying evidence is absent"
+    }
+  },
+  "safety_boundary": "The external evidence snapshot does not replace current China-region quotation, inventory, full-component SDS review, laboratory SOP, calorimetry, waste-vendor acceptance or EHS approval.",
+  "final_recommended_reaction_conditions": {
+    "Suzuki": {
+      "selected_optimizer_rank": 3,
+      "best_observed_yield": 99.05,
+      "condition": {
+        "Electrophile": "6-iodoquinoline",
+        "Nucleophile": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+        "Ligand": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+        "Base": "potassium hydroxide",
+        "Solvent": "acetonitrile"
+      },
+      "yield_difference_from_optimizer_rank_1": -0.85,
+      "alternative_optimizer_rank": null,
+      "recommendation_status": "recommended",
+      "safety_gate": "conditional",
+      "rationale": "Rank 3 is the only non-blocked queried Top-5 condition after SDS review: it avoids the Self-heating Category 1 LiOtBu used in ranks 1, 2 and 4 and the higher-hazard triethylamine/acetonitrile combination in rank 5, while retaining 99.05 observed yield.",
+      "unresolved_information": [
+        "Target-scale China-region quotation and inventory",
+        "Current SDS for every substrate and ligand",
+        "Concentration, addition order, calorimetry and waste-vendor acceptance"
+      ],
+      "required_checks": [
+        "Quotation and inventory",
+        "SDS",
+        "laboratory SOP and EHS review",
+        "scale-up trial",
+        "waste-disposal route"
+      ],
+      "evidence_basis": "verified supplier catalogs and SDS plus low-confidence LLM fallback"
+    },
+    "Buchwald_sub4": {
+      "selected_optimizer_rank": 1,
+      "best_observed_yield": 86.59757822,
+      "condition": {
+        "Reactant2": "1-bromo-4-ethylbenzene",
+        "Ligand": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+        "Additive": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+        "Base": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+        "Product": "N-(4-ethylphenyl)-4-methylaniline"
+      },
+      "yield_difference_from_optimizer_rank_1": 0.0,
+      "alternative_optimizer_rank": 3,
+      "recommendation_status": "recommended",
+      "safety_gate": "conditional",
+      "rationale": "Rank 1 retains the highest observed yield; its tBuXPhos catalog price is materially below the retrieved AdBrettPhos price for rank 2, while all five candidates remain conditional because target-scale budget and scale-up evidence are unavailable.",
+      "unresolved_information": [
+        "Target-scale China-region quotation for all components",
+        "Current SDS for every aryl halide, ligand and additive",
+        "Concentration, catalyst loading, calorimetry and waste-vendor acceptance"
+      ],
+      "required_checks": [
+        "Quotation and inventory",
+        "SDS/GHS",
+        "laboratory SOP and EHS review",
+        "small-scale process-safety test",
+        "metal-containing waste route"
+      ],
+      "evidence_basis": "verified supplier catalogs and MTBD SDS plus low-confidence LLM fallback"
+    }
+  },
+  "external_evidence_snapshot": {
+    "path": "results/top5_external_evidence.json",
+    "retrieved_at": "2026-08-14",
+    "source_count": 20,
+    "ranking_effect": "none"
+  },
+  "queried_top5": {
+    "Suzuki": [
+      {
+        "optimizer_rank": 1,
+        "ranking_scope": "unique conditions queried across 20 completed trajectories",
+        "condition": {
+          "Electrophile": "6-iodoquinoline",
+          "Nucleophile": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+          "Ligand": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+          "Base": "lithium 2-methylpropan-2-olate",
+          "Solvent": "methanol"
+        },
+        "best_observed_yield": 99.9,
+        "mean_observed_yield_when_queried": 99.9,
+        "times_queried": 1,
+        "seeds": [
+          1200
+        ],
+        "earliest_query_round": 31,
+        "dft_context": {
+          "status": "computed",
+          "ranking_effect": "none",
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 4
+          },
+          "confidence": "中",
+          "support_evidence": [
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -5.2788,
+              "percentile": 95.45454545454545,
+              "robust_z": 3.0522422561257443,
+              "reference_n": 11,
+              "kind": "support",
+              "text": "HOMO 能量处于较高水平，提示相对较强的电子给予能力"
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+              "field": "phosphorus_hirshfeld_mean",
+              "field_label": "磷位点 Hirshfeld 电荷",
+              "raw_value": 0.077054,
+              "percentile": 13.636363636363637,
+              "robust_z": -0.7265338966002813,
+              "reference_n": 11,
+              "kind": "support",
+              "text": "磷位点相对富电子，与较强供电子配位位点一致"
+            }
+          ],
+          "risk_flags": [
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "c_leaving_mayer_bond_order",
+              "field_label": "C–离去基团 Mayer 键级",
+              "raw_value": 2.4339,
+              "percentile": 90.0,
+              "robust_z": 0.5354284369114876,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "C–离去基团键级处于较高水平，可能增加氧化加成活化要求"
+            },
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "electrophile_c_hirshfeld",
+              "field_label": "反应碳 Hirshfeld 电荷",
+              "raw_value": 0.012403,
+              "percentile": 10.0,
+              "robust_z": -0.46504157218442926,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "反应碳相对不缺电子，氧化加成的电子效应支持较弱"
+            }
+          ],
+          "context_notes": [
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "lithium 2-methylpropan-2-olate",
+              "field": "dipole_debye",
+              "field_label": "偶极矩",
+              "raw_value": 5.899175264,
+              "percentile": 21.428571428571427,
+              "robust_z": -0.5415946519218857,
+              "reference_n": 7,
+              "kind": "context",
+              "text": "偶极矩较低，电荷分离特征相对有限"
+            },
+            {
+              "role": "Solvent",
+              "role_label": "溶剂",
+              "component": "methanol",
+              "field": "dipole_debye",
+              "field_label": "偶极矩",
+              "raw_value": 1.67636287,
+              "percentile": 12.5,
+              "robust_z": -0.5663797701905174,
+              "reference_n": 4,
+              "kind": "context",
+              "text": "偶极矩处于较低水平，对离子型中间体的稳定作用可能相对有限"
+            }
+          ],
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      },
+      {
+        "optimizer_rank": 2,
+        "ranking_scope": "unique conditions queried across 20 completed trajectories",
+        "condition": {
+          "Electrophile": "6-iodoquinoline",
+          "Nucleophile": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+          "Ligand": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+          "Base": "lithium 2-methylpropan-2-olate",
+          "Solvent": "acetonitrile"
+        },
+        "best_observed_yield": 99.15,
+        "mean_observed_yield_when_queried": 99.15,
+        "times_queried": 2,
+        "seeds": [
+          200,
+          1800
+        ],
+        "earliest_query_round": 18,
+        "dft_context": {
+          "status": "computed",
+          "ranking_effect": "none",
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 4
+          },
+          "confidence": "中",
+          "support_evidence": [
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -5.2788,
+              "percentile": 95.45454545454545,
+              "robust_z": 3.0522422561257443,
+              "reference_n": 11,
+              "kind": "support",
+              "text": "HOMO 能量处于较高水平，提示相对较强的电子给予能力"
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+              "field": "phosphorus_hirshfeld_mean",
+              "field_label": "磷位点 Hirshfeld 电荷",
+              "raw_value": 0.077054,
+              "percentile": 13.636363636363637,
+              "robust_z": -0.7265338966002813,
+              "reference_n": 11,
+              "kind": "support",
+              "text": "磷位点相对富电子，与较强供电子配位位点一致"
+            }
+          ],
+          "risk_flags": [
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "c_leaving_mayer_bond_order",
+              "field_label": "C–离去基团 Mayer 键级",
+              "raw_value": 2.4339,
+              "percentile": 90.0,
+              "robust_z": 0.5354284369114876,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "C–离去基团键级处于较高水平，可能增加氧化加成活化要求"
+            },
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "electrophile_c_hirshfeld",
+              "field_label": "反应碳 Hirshfeld 电荷",
+              "raw_value": 0.012403,
+              "percentile": 10.0,
+              "robust_z": -0.46504157218442926,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "反应碳相对不缺电子，氧化加成的电子效应支持较弱"
+            }
+          ],
+          "context_notes": [
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "lithium 2-methylpropan-2-olate",
+              "field": "dipole_debye",
+              "field_label": "偶极矩",
+              "raw_value": 5.899175264,
+              "percentile": 21.428571428571427,
+              "robust_z": -0.5415946519218857,
+              "reference_n": 7,
+              "kind": "context",
+              "text": "偶极矩较低，电荷分离特征相对有限"
+            }
+          ],
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      },
+      {
+        "optimizer_rank": 3,
+        "ranking_scope": "unique conditions queried across 20 completed trajectories",
+        "condition": {
+          "Electrophile": "6-iodoquinoline",
+          "Nucleophile": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+          "Ligand": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+          "Base": "potassium hydroxide",
+          "Solvent": "acetonitrile"
+        },
+        "best_observed_yield": 99.05,
+        "mean_observed_yield_when_queried": 99.05,
+        "times_queried": 2,
+        "seeds": [
+          100,
+          1100
+        ],
+        "earliest_query_round": 25,
+        "dft_context": {
+          "status": "computed",
+          "ranking_effect": "none",
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 4
+          },
+          "confidence": "中",
+          "support_evidence": [
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -5.2788,
+              "percentile": 95.45454545454545,
+              "robust_z": 3.0522422561257443,
+              "reference_n": 11,
+              "kind": "support",
+              "text": "HOMO 能量处于较高水平，提示相对较强的电子给予能力"
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+              "field": "phosphorus_hirshfeld_mean",
+              "field_label": "磷位点 Hirshfeld 电荷",
+              "raw_value": 0.077054,
+              "percentile": 13.636363636363637,
+              "robust_z": -0.7265338966002813,
+              "reference_n": 11,
+              "kind": "support",
+              "text": "磷位点相对富电子，与较强供电子配位位点一致"
+            },
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "potassium hydroxide",
+              "field": "donor_hirshfeld_min",
+              "field_label": "最富电子供体位点电荷",
+              "raw_value": -0.705622,
+              "percentile": 21.428571428571427,
+              "robust_z": -0.7455726124465942,
+              "reference_n": 7,
+              "kind": "support",
+              "text": "局部供体位点相对富电子，可作为硼物种活化能力的间接支持"
+            }
+          ],
+          "risk_flags": [
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "c_leaving_mayer_bond_order",
+              "field_label": "C–离去基团 Mayer 键级",
+              "raw_value": 2.4339,
+              "percentile": 90.0,
+              "robust_z": 0.5354284369114876,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "C–离去基团键级处于较高水平，可能增加氧化加成活化要求"
+            },
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "electrophile_c_hirshfeld",
+              "field_label": "反应碳 Hirshfeld 电荷",
+              "raw_value": 0.012403,
+              "percentile": 10.0,
+              "robust_z": -0.46504157218442926,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "反应碳相对不缺电子，氧化加成的电子效应支持较弱"
+            }
+          ],
+          "context_notes": [],
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      },
+      {
+        "optimizer_rank": 4,
+        "ranking_scope": "unique conditions queried across 20 completed trajectories",
+        "condition": {
+          "Electrophile": "6-iodoquinoline",
+          "Nucleophile": "[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid",
+          "Ligand": "triphenylphosphane",
+          "Base": "lithium 2-methylpropan-2-olate",
+          "Solvent": "methanol"
+        },
+        "best_observed_yield": 98.69,
+        "mean_observed_yield_when_queried": 98.69,
+        "times_queried": 2,
+        "seeds": [
+          1000,
+          1200
+        ],
+        "earliest_query_round": 25,
+        "dft_context": {
+          "status": "computed",
+          "ranking_effect": "none",
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 4
+          },
+          "confidence": "中",
+          "support_evidence": [
+            {
+              "role": "Nucleophile",
+              "role_label": "有机硼试剂",
+              "component": "[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid",
+              "field": "c_b_mayer_bond_order",
+              "field_label": "C–B Mayer 键级",
+              "raw_value": 0.6203,
+              "percentile": 25.0,
+              "robust_z": -0.6371770891259291,
+              "reference_n": 6,
+              "kind": "support",
+              "text": "C–B 键级处于较低水平，与转移基团相对易活化的方向一致"
+            },
+            {
+              "role": "Nucleophile",
+              "role_label": "有机硼试剂",
+              "component": "[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid",
+              "field": "boron_hirshfeld",
+              "field_label": "硼位点 Hirshfeld 电荷",
+              "raw_value": 0.214151,
+              "percentile": 75.0,
+              "robust_z": 0.414169244320626,
+              "reference_n": 6,
+              "kind": "support",
+              "text": "硼位点相对更缺电子，可能更容易接受碱/杂原子作用而进入活化态"
+            }
+          ],
+          "risk_flags": [
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "c_leaving_mayer_bond_order",
+              "field_label": "C–离去基团 Mayer 键级",
+              "raw_value": 2.4339,
+              "percentile": 90.0,
+              "robust_z": 0.5354284369114876,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "C–离去基团键级处于较高水平，可能增加氧化加成活化要求"
+            },
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "electrophile_c_hirshfeld",
+              "field_label": "反应碳 Hirshfeld 电荷",
+              "raw_value": 0.012403,
+              "percentile": 10.0,
+              "robust_z": -0.46504157218442926,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "反应碳相对不缺电子，氧化加成的电子效应支持较弱"
+            }
+          ],
+          "context_notes": [
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "lithium 2-methylpropan-2-olate",
+              "field": "dipole_debye",
+              "field_label": "偶极矩",
+              "raw_value": 5.899175264,
+              "percentile": 21.428571428571427,
+              "robust_z": -0.5415946519218857,
+              "reference_n": 7,
+              "kind": "context",
+              "text": "偶极矩较低，电荷分离特征相对有限"
+            },
+            {
+              "role": "Solvent",
+              "role_label": "溶剂",
+              "component": "methanol",
+              "field": "dipole_debye",
+              "field_label": "偶极矩",
+              "raw_value": 1.67636287,
+              "percentile": 12.5,
+              "robust_z": -0.5663797701905174,
+              "reference_n": 4,
+              "kind": "context",
+              "text": "偶极矩处于较低水平，对离子型中间体的稳定作用可能相对有限"
+            }
+          ],
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      },
+      {
+        "optimizer_rank": 5,
+        "ranking_scope": "unique conditions queried across 20 completed trajectories",
+        "condition": {
+          "Electrophile": "6-iodoquinoline",
+          "Nucleophile": "5-methyl-1-(oxan-2-yl)-4-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)indazole",
+          "Ligand": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+          "Base": "N,N-diethylethanamine",
+          "Solvent": "acetonitrile"
+        },
+        "best_observed_yield": 97.98,
+        "mean_observed_yield_when_queried": 97.98,
+        "times_queried": 6,
+        "seeds": [
+          100,
+          200,
+          500,
+          900,
+          1100,
+          1800
+        ],
+        "earliest_query_round": 14,
+        "dft_context": {
+          "status": "computed",
+          "ranking_effect": "none",
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 4
+          },
+          "confidence": "中",
+          "support_evidence": [
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -5.2788,
+              "percentile": 95.45454545454545,
+              "robust_z": 3.0522422561257443,
+              "reference_n": 11,
+              "kind": "support",
+              "text": "HOMO 能量处于较高水平，提示相对较强的电子给予能力"
+            },
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "4-ditert-butylphosphanyl-N,N-dimethylaniline",
+              "field": "phosphorus_hirshfeld_mean",
+              "field_label": "磷位点 Hirshfeld 电荷",
+              "raw_value": 0.077054,
+              "percentile": 13.636363636363637,
+              "robust_z": -0.7265338966002813,
+              "reference_n": 11,
+              "kind": "support",
+              "text": "磷位点相对富电子，与较强供电子配位位点一致"
+            }
+          ],
+          "risk_flags": [
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "c_leaving_mayer_bond_order",
+              "field_label": "C–离去基团 Mayer 键级",
+              "raw_value": 2.4339,
+              "percentile": 90.0,
+              "robust_z": 0.5354284369114876,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "C–离去基团键级处于较高水平，可能增加氧化加成活化要求"
+            },
+            {
+              "role": "Electrophile",
+              "role_label": "亲电试剂",
+              "component": "6-iodoquinoline",
+              "field": "electrophile_c_hirshfeld",
+              "field_label": "反应碳 Hirshfeld 电荷",
+              "raw_value": 0.012403,
+              "percentile": 10.0,
+              "robust_z": -0.46504157218442926,
+              "reference_n": 5,
+              "kind": "risk",
+              "text": "反应碳相对不缺电子，氧化加成的电子效应支持较弱"
+            }
+          ],
+          "context_notes": [
+            {
+              "role": "Base",
+              "role_label": "碱",
+              "component": "N,N-diethylethanamine",
+              "field": "dipole_debye",
+              "field_label": "偶极矩",
+              "raw_value": 0.534401559,
+              "percentile": 7.142857142857143,
+              "robust_z": -1.9579708433518912,
+              "reference_n": 7,
+              "kind": "context",
+              "text": "偶极矩较低，电荷分离特征相对有限"
+            }
+          ],
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      }
+    ],
+    "Buchwald_sub4": [
+      {
+        "optimizer_rank": 1,
+        "ranking_scope": "unique conditions queried across 20 completed trajectories",
+        "condition": {
+          "Reactant2": "1-bromo-4-ethylbenzene",
+          "Ligand": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+          "Additive": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+          "Base": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+          "Product": "N-(4-ethylphenyl)-4-methylaniline"
+        },
+        "best_observed_yield": 86.59757822,
+        "mean_observed_yield_when_queried": 86.59757822000003,
+        "times_queried": 16,
+        "seeds": [
+          100,
+          200,
+          300,
+          500,
+          700,
+          800,
+          900,
+          1000,
+          1100,
+          1200,
+          1300,
+          1400,
+          1500,
+          1600,
+          1800,
+          2000
+        ],
+        "earliest_query_round": 16,
+        "dft_context": {
+          "status": "computed",
+          "ranking_effect": "none",
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 3
+          },
+          "confidence": "中",
+          "support_evidence": [],
+          "risk_flags": [
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-bromo-4-ethylbenzene",
+              "field": "lumo_ev",
+              "field_label": "LUMO 能量",
+              "raw_value": -0.7347,
+              "percentile": 90.0,
+              "robust_z": 1.3204886284636008,
+              "reference_n": 15,
+              "kind": "risk",
+              "text": "LUMO 能量处于较高水平，受电子特征相对较弱"
+            }
+          ],
+          "context_notes": [
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -7.6984,
+              "percentile": 15.909090909090908,
+              "robust_z": -0.8141052195526106,
+              "reference_n": 22,
+              "kind": "context",
+              "text": "添加剂 HOMO 能量较低，电子给予和竞争配位倾向相对有限"
+            },
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+              "field": "additive_o_hirshfeld",
+              "field_label": "添加剂氧位点电荷",
+              "raw_value": -0.047978,
+              "percentile": 79.54545454545455,
+              "robust_z": 0.6475951142539886,
+              "reference_n": 22,
+              "kind": "context",
+              "text": "氧位点电子密度相对较低，强配位风险在该指标上不突出"
+            }
+          ],
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      },
+      {
+        "optimizer_rank": 2,
+        "ranking_scope": "unique conditions queried across 20 completed trajectories",
+        "condition": {
+          "Reactant2": "1-ethyl-4-iodobenzene",
+          "Ligand": "bis(1-adamantyl)-[3,6-dimethoxy-2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+          "Additive": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+          "Base": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+          "Product": "N-(4-ethylphenyl)-4-methylaniline"
+        },
+        "best_observed_yield": 85.89473594,
+        "mean_observed_yield_when_queried": 85.89473593999999,
+        "times_queried": 16,
+        "seeds": [
+          100,
+          200,
+          300,
+          500,
+          700,
+          800,
+          900,
+          1000,
+          1100,
+          1200,
+          1300,
+          1400,
+          1500,
+          1700,
+          1800,
+          2000
+        ],
+        "earliest_query_round": 12,
+        "dft_context": {
+          "status": "computed",
+          "ranking_effect": "none",
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 3
+          },
+          "confidence": "中",
+          "support_evidence": [
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "bis(1-adamantyl)-[3,6-dimethoxy-2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+              "field": "phosphorus_hirshfeld_mean",
+              "field_label": "磷位点 Hirshfeld 电荷",
+              "raw_value": 0.101645,
+              "percentile": 12.5,
+              "robust_z": -2.436676134294656,
+              "reference_n": 4,
+              "kind": "support",
+              "text": "磷位点电荷处于较低水平，与相对富电子的配位位点一致"
+            }
+          ],
+          "risk_flags": [
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-ethyl-4-iodobenzene",
+              "field": "c_leaving_mayer_bond_order",
+              "field_label": "C–离去基团 Mayer 键级",
+              "raw_value": 2.5728,
+              "percentile": 90.0,
+              "robust_z": 1.1502332140145348,
+              "reference_n": 15,
+              "kind": "risk",
+              "text": "C–离去基团键级处于较高水平，提示该键的活化可能需要更有利的配体或反应环境"
+            },
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-ethyl-4-iodobenzene",
+              "field": "electrophile_c_hirshfeld",
+              "field_label": "反应碳 Hirshfeld 电荷",
+              "raw_value": 0.008256,
+              "percentile": 23.333333333333332,
+              "robust_z": -0.512083555691088,
+              "reference_n": 15,
+              "kind": "risk",
+              "text": "反应碳相对不缺电子，电子效应对氧化加成的支持较弱"
+            }
+          ],
+          "context_notes": [
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -7.6984,
+              "percentile": 15.909090909090908,
+              "robust_z": -0.8141052195526106,
+              "reference_n": 22,
+              "kind": "context",
+              "text": "添加剂 HOMO 能量较低，电子给予和竞争配位倾向相对有限"
+            },
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+              "field": "additive_o_hirshfeld",
+              "field_label": "添加剂氧位点电荷",
+              "raw_value": -0.047978,
+              "percentile": 79.54545454545455,
+              "robust_z": 0.6475951142539886,
+              "reference_n": 22,
+              "kind": "context",
+              "text": "氧位点电子密度相对较低，强配位风险在该指标上不突出"
+            }
+          ],
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      },
+      {
+        "optimizer_rank": 3,
+        "ranking_scope": "unique conditions queried across 20 completed trajectories",
+        "condition": {
+          "Reactant2": "1-ethyl-4-iodobenzene",
+          "Ligand": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+          "Additive": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+          "Base": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+          "Product": "N-(4-ethylphenyl)-4-methylaniline"
+        },
+        "best_observed_yield": 84.89551287,
+        "mean_observed_yield_when_queried": 84.89551286999998,
+        "times_queried": 16,
+        "seeds": [
+          100,
+          200,
+          300,
+          500,
+          700,
+          800,
+          900,
+          1000,
+          1100,
+          1200,
+          1300,
+          1400,
+          1500,
+          1600,
+          1800,
+          2000
+        ],
+        "earliest_query_round": 11,
+        "dft_context": {
+          "status": "computed",
+          "ranking_effect": "none",
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 3
+          },
+          "confidence": "中",
+          "support_evidence": [],
+          "risk_flags": [
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-ethyl-4-iodobenzene",
+              "field": "c_leaving_mayer_bond_order",
+              "field_label": "C–离去基团 Mayer 键级",
+              "raw_value": 2.5728,
+              "percentile": 90.0,
+              "robust_z": 1.1502332140145348,
+              "reference_n": 15,
+              "kind": "risk",
+              "text": "C–离去基团键级处于较高水平，提示该键的活化可能需要更有利的配体或反应环境"
+            },
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-ethyl-4-iodobenzene",
+              "field": "electrophile_c_hirshfeld",
+              "field_label": "反应碳 Hirshfeld 电荷",
+              "raw_value": 0.008256,
+              "percentile": 23.333333333333332,
+              "robust_z": -0.512083555691088,
+              "reference_n": 15,
+              "kind": "risk",
+              "text": "反应碳相对不缺电子，电子效应对氧化加成的支持较弱"
+            }
+          ],
+          "context_notes": [
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -7.6984,
+              "percentile": 15.909090909090908,
+              "robust_z": -0.8141052195526106,
+              "reference_n": 22,
+              "kind": "context",
+              "text": "添加剂 HOMO 能量较低，电子给予和竞争配位倾向相对有限"
+            },
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+              "field": "additive_o_hirshfeld",
+              "field_label": "添加剂氧位点电荷",
+              "raw_value": -0.047978,
+              "percentile": 79.54545454545455,
+              "robust_z": 0.6475951142539886,
+              "reference_n": 22,
+              "kind": "context",
+              "text": "氧位点电子密度相对较低，强配位风险在该指标上不突出"
+            }
+          ],
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      },
+      {
+        "optimizer_rank": 4,
+        "ranking_scope": "unique conditions queried across 20 completed trajectories",
+        "condition": {
+          "Reactant2": "1-ethyl-4-iodobenzene",
+          "Ligand": "ditert-butyl-[3,6-dimethoxy-2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+          "Additive": "4-phenyl-1,2-oxazole",
+          "Base": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+          "Product": "N-(4-ethylphenyl)-4-methylaniline"
+        },
+        "best_observed_yield": 83.29437838,
+        "mean_observed_yield_when_queried": 83.29437837999997,
+        "times_queried": 19,
+        "seeds": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800,
+          900,
+          1000,
+          1100,
+          1200,
+          1300,
+          1400,
+          1500,
+          1600,
+          1800,
+          1900,
+          2000
+        ],
+        "earliest_query_round": 7,
+        "dft_context": {
+          "status": "computed",
+          "ranking_effect": "none",
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 3
+          },
+          "confidence": "中",
+          "support_evidence": [
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "ditert-butyl-[3,6-dimethoxy-2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -5.237,
+              "percentile": 87.5,
+              "robust_z": 0.4702163529081198,
+              "reference_n": 4,
+              "kind": "support",
+              "text": "HOMO 能量处于较高水平，提示相对较强的电子给予能力，可能有利于部分氧化加成步骤"
+            }
+          ],
+          "risk_flags": [
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-ethyl-4-iodobenzene",
+              "field": "c_leaving_mayer_bond_order",
+              "field_label": "C–离去基团 Mayer 键级",
+              "raw_value": 2.5728,
+              "percentile": 90.0,
+              "robust_z": 1.1502332140145348,
+              "reference_n": 15,
+              "kind": "risk",
+              "text": "C–离去基团键级处于较高水平，提示该键的活化可能需要更有利的配体或反应环境"
+            },
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-ethyl-4-iodobenzene",
+              "field": "electrophile_c_hirshfeld",
+              "field_label": "反应碳 Hirshfeld 电荷",
+              "raw_value": 0.008256,
+              "percentile": 23.333333333333332,
+              "robust_z": -0.512083555691088,
+              "reference_n": 15,
+              "kind": "risk",
+              "text": "反应碳相对不缺电子，电子效应对氧化加成的支持较弱"
+            }
+          ],
+          "context_notes": [],
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      },
+      {
+        "optimizer_rank": 5,
+        "ranking_scope": "unique conditions queried across 20 completed trajectories",
+        "condition": {
+          "Reactant2": "1-ethyl-4-iodobenzene",
+          "Ligand": "ditert-butyl-[3,6-dimethoxy-2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+          "Additive": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+          "Base": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+          "Product": "N-(4-ethylphenyl)-4-methylaniline"
+        },
+        "best_observed_yield": 82.71053034,
+        "mean_observed_yield_when_queried": 82.71053034000003,
+        "times_queried": 18,
+        "seeds": [
+          100,
+          200,
+          300,
+          500,
+          600,
+          700,
+          800,
+          900,
+          1000,
+          1100,
+          1200,
+          1300,
+          1400,
+          1500,
+          1600,
+          1700,
+          1800,
+          2000
+        ],
+        "earliest_query_round": 7,
+        "dft_context": {
+          "status": "computed",
+          "ranking_effect": "none",
+          "coverage": {
+            "available_roles": 5,
+            "total_roles": 5,
+            "fraction": 1.0,
+            "minimum_role_reference_n": 3
+          },
+          "confidence": "中",
+          "support_evidence": [
+            {
+              "role": "Ligand",
+              "role_label": "配体",
+              "component": "ditert-butyl-[3,6-dimethoxy-2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -5.237,
+              "percentile": 87.5,
+              "robust_z": 0.4702163529081198,
+              "reference_n": 4,
+              "kind": "support",
+              "text": "HOMO 能量处于较高水平，提示相对较强的电子给予能力，可能有利于部分氧化加成步骤"
+            }
+          ],
+          "risk_flags": [
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-ethyl-4-iodobenzene",
+              "field": "c_leaving_mayer_bond_order",
+              "field_label": "C–离去基团 Mayer 键级",
+              "raw_value": 2.5728,
+              "percentile": 90.0,
+              "robust_z": 1.1502332140145348,
+              "reference_n": 15,
+              "kind": "risk",
+              "text": "C–离去基团键级处于较高水平，提示该键的活化可能需要更有利的配体或反应环境"
+            },
+            {
+              "role": "Reactant2",
+              "role_label": "芳基卤代物",
+              "component": "1-ethyl-4-iodobenzene",
+              "field": "electrophile_c_hirshfeld",
+              "field_label": "反应碳 Hirshfeld 电荷",
+              "raw_value": 0.008256,
+              "percentile": 23.333333333333332,
+              "robust_z": -0.512083555691088,
+              "reference_n": 15,
+              "kind": "risk",
+              "text": "反应碳相对不缺电子，电子效应对氧化加成的支持较弱"
+            }
+          ],
+          "context_notes": [
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+              "field": "homo_ev",
+              "field_label": "HOMO 能量",
+              "raw_value": -7.6984,
+              "percentile": 15.909090909090908,
+              "robust_z": -0.8141052195526106,
+              "reference_n": 22,
+              "kind": "context",
+              "text": "添加剂 HOMO 能量较低，电子给予和竞争配位倾向相对有限"
+            },
+            {
+              "role": "Additive",
+              "role_label": "添加剂",
+              "component": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+              "field": "additive_o_hirshfeld",
+              "field_label": "添加剂氧位点电荷",
+              "raw_value": -0.047978,
+              "percentile": 79.54545454545455,
+              "robust_z": 0.6475951142539886,
+              "reference_n": 22,
+              "kind": "context",
+              "text": "氧位点电子密度相对较低，强配位风险在该指标上不突出"
+            }
+          ],
+          "disclaimer": "DFT explanation is generated after selection from outcome-free electronic structure data. It does not affect surrogate fitting, acquisition values or candidate ranking."
+        }
+      }
+    ]
+  },
+  "dft_post_interpretation": {
+    "policy": "computed project DFT first, external database or primary literature second, explicitly labelled LLM inference only when direct evidence is absent",
+    "ranking_effect": "none",
+    "datasets": {
+      "Suzuki": {
+        "source_ids": [
+          "DFT-SUZ-001"
+        ],
+        "supported_scope": "general catalytic-cycle context for interpreting role-specific frontier-orbital and charge descriptors",
+        "limitation": "the paper uses a model system and does not establish a causal yield effect for the submitted candidates"
+      },
+      "Buchwald_sub4": {
+        "source_ids": [
+          "DFT-BCH-001"
+        ],
+        "supported_scope": "general steric/electronic ligand context for interpreting post-selection ligand descriptors",
+        "limitation": "the paper studies a different substrate system and does not validate the submitted candidate ranking"
+      }
+    },
+    "computed_artifact_boundary": "Only packaged ORCA artifacts determine computed values, coverage and status; external sources and DeepSeek provide post-selection interpretation only.",
+    "llm_fallback": "Use explicitly labelled low- or medium-confidence inference only when no directly relevant registry or primary-literature source is available."
+  },
+  "deepseek_database_enhanced_review": {
+    "path": "results/deepseek_database_enhanced_review.json",
+    "framework": "Open Science 2.0.23",
+    "model": "deepseek/deepseek-v4-flash",
+    "session_id": "ses_000598409ffeNYeaje4OwKDGJD",
+    "review_date": "2026-08-14",
+    "review_status": "completed",
+    "ranking_effect": "none",
+    "database_checks": [
+      {
+        "target": "PubMed 27928513",
+        "status": "failed",
+        "detail": "PubMed connection failed in this session; Europe PMC fallback succeeded."
+      },
+      {
+        "target": "PubMed 29449509",
+        "status": "failed",
+        "detail": "PubMed connection failed in this session; Europe PMC fallback succeeded."
+      },
+      {
+        "target": "Crossref 10.1021/om060380i",
+        "status": "failed",
+        "detail": "Crossref connection failed in this session; the DOI was independently checked against the publisher record."
+      },
+      {
+        "target": "Crossref 10.1039/C9SC03095F",
+        "status": "failed",
+        "detail": "Crossref connection failed in this session; the DOI was independently checked against the publisher record."
+      },
+      {
+        "target": "Europe PMC 27928513",
+        "status": "success",
+        "locator": "https://europepmc.org/article/MED/27928513",
+        "detail": "Unique record for Suzuki-Miyaura cross-coupling optimization enabled by automated feedback; method context only."
+      },
+      {
+        "target": "Europe PMC 29449509",
+        "status": "success",
+        "locator": "https://europepmc.org/article/MED/29449509",
+        "detail": "Unique record for Predicting reaction performance in C-N cross-coupling using machine learning; method context only."
+      },
+      {
+        "target": "OpenAlex DOI fallback",
+        "status": "interrupted",
+        "detail": "Two OpenAlex calls did not complete and were stopped; no result was cited from them."
+      }
+    ],
+    "recommendations": {
+      "Suzuki": {
+        "selected_optimizer_rank": 3,
+        "verdict": "consistent",
+        "summary": "Rank 3 exchanges 0.85 percentage points of observed yield for removal of the LiOtBu self-heating Category 1 flag and avoids the triethylamine/acetonitrile burden in rank 5."
+      },
+      "Buchwald_sub4": {
+        "selected_optimizer_rank": 1,
+        "verdict": "consistent_with_conditions",
+        "summary": "Rank 1 retains the highest observed yield and the retrieved tBuXPhos catalog price is substantially below AdBrettPhos for rank 2; all candidates remain conditional because scale, location, complete SDS and scale-up evidence are incomplete."
+      }
+    },
+    "new_data_boundary": {
+      "allowed": "Use databases and DeepSeek to resolve identity, synonyms, structures, reaction family, variable roles and units; reviewed outcome-free structures and metadata may enter features.",
+      "forbidden": "External or literature yields, activities, optimum conditions, unqueried candidate results and outcome-derived preferences may not enter fitting, tuning, prompting, EI or ranking."
+    },
+    "required_checks": [
+      "Confirm target scale, laboratory location and current SDS for every component.",
+      "Recheck supplier price, stock and delivery for the intended region and date.",
+      "Complete SOP, calorimetry or process-safety review and waste-vendor acceptance before execution.",
+      "Retry unavailable literature databases when network access is restored and retain direct records actually used."
+    ]
+  },
+  "document_sync": {
+    "source_of_truth": "The manually finalized DOCX is the authoritative report; PDF and Markdown are synchronized review mirrors.",
+    "content_baseline": "results/results_and_analysis.docx",
+    "review_pdf": "results/results_and_analysis.pdf",
+    "searchable_markdown_mirror": "results/results_and_analysis.md",
+    "docx_sha256": "c7fad41ede01a2dc661dc47600a07c8afcaed5f5265fa019592133d63f01e48a",
+    "pdf_sha256": "27e31555cbb87746f5673660e9ee7f6660c2c17e91176479bd3215d184301b11",
+    "markdown_sha256": "f54150eba5ad6019c8b10b101100a79899e3d1417550b1dfe5a1c20d065c7ece",
+    "section_titles": [
+      "CatalystFlow 队伍最终结果与分析",
+      "1. 最终评测协议",
+      "2. 原始数据范围、全局最高值与命中情况",
+      "3. 两个官方公开评测数据集的四项指标",
+      "4. 优化曲线与鲁棒性图",
+      "5. 模型结果总结",
+      "6. DFT 选择后解释与真实轨迹案例",
+      "7. .pt 完整轨迹、字段和指标重算",
+      "8. 外部兼容性检查",
+      "8.1 官方两套数据",
+      "8.2 第三方 Buchwald 压力测试",
+      "8.3 第三方 Suzuki 压力测试",
+      "9. 智能体独立复现、已查询 Top-5 反应条件与最终推荐反应条件",
+      "9.1 Suzuki 已查询 Top-5 反应条件",
+      "9.2 Buchwald_sub4 已查询 Top-5 反应条件",
+      "10. 外部证据与智能体复核",
+      "11. 结论",
+      "参考文献"
+    ]
+  }
+}

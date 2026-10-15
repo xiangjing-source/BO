@@ -1,0 +1,3721 @@
+{
+  "package": "CatalystFlow",
+  "format": "competition submission with Open Science Agent",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "305ef34ba59210634f6269cc443c2e3f622bf4d022f49c1c46081076f17f3779",
+      "bytes": 253
+    },
+    {
+      "path": ".openscience/agent/catalystflow.md",
+      "sha256": "67f26124196cb0be7cdf07bbfae04f4be83c3a90ff3b1e83cda62c9f72c3efa9",
+      "bytes": 9073
+    },
+    {
+      "path": "agent/mcp_server.py",
+      "sha256": "1d18729573520dccf5653a33a3dd2a07ffd90d41edd2630208a8f3c46c869a5e",
+      "bytes": 17769
+    },
+    {
+      "path": "agent/policy_gateway.py",
+      "sha256": "2925b6239f48ca0b76cfb267bd71449af9dfd50ca915c7e0c0c937f3a2f436d5",
+      "bytes": 17538
+    },
+    {
+      "path": "agent/README.md",
+      "sha256": "6e2604cdaaa895ecbca4469178828b507974f2c088ec40926c121019731e5cdd",
+      "bytes": 14505
+    },
+    {
+      "path": "agent/requirements.md",
+      "sha256": "4d2e4c694cfcefc2e7d944cfd4f7b68c47d2aed73046d27e3d875612909fa1f2",
+      "bytes": 5128
+    },
+    {
+      "path": "agent/schemas/structure_resolution.schema.json",
+      "sha256": "e5027fcd11d1a65521e9b13865f6438f6e4bcbcbd6d67b219ee23b3297acbeaf",
+      "bytes": 1121
+    },
+    {
+      "path": "agent/start_mcp.sh",
+      "sha256": "8fa8ce1af349f9da5cb0302a67bd2f9c214ccc1033f6278f4fa052d5db6ebd9a",
+      "bytes": 415
+    },
+    {
+      "path": "agent/tests/test_mcp_server.py",
+      "sha256": "86a27387fa7a42a78271b876c51621c30c86edad763d1c85f4c08cefca163b76",
+      "bytes": 2931
+    },
+    {
+      "path": "agent/tests/test_policy_gateway.py",
+      "sha256": "8f95edb1d2ee8f7164f6dbc2c2352e4348216c7de7decd14f85a7d8cf68abd2b",
+      "bytes": 2512
+    },
+    {
+      "path": "code/chemical_knowledge.py",
+      "sha256": "7b8b3ce8d724762104af9a46da2a27037d39c1e58d903b085d521f8f0b62e7f9",
+      "bytes": 9481
+    },
+    {
+      "path": "code/compliant_bo.py",
+      "sha256": "6e96a2352fe7f321400fbbc824352844850919bc5749233cd5fc608d45b1e647",
+      "bytes": 71411
+    },
+    {
+      "path": "code/config/buchwald_structures.json",
+      "sha256": "48e5d48e80eb6a142895f42e042a59325bc6303581d14a46c137bac02b867bd0",
+      "bytes": 20165
+    },
+    {
+      "path": "code/config/mechanistic_preference_priors.json",
+      "sha256": "b19e09d6a73afe57675fccf6f1ff3622faa6774b85200cbf5cad4e2d79d1037e",
+      "bytes": 3098
+    },
+    {
+      "path": "code/config/production_config.json",
+      "sha256": "4e5a48398181390c5a94e2ca5df417a40e679865401405249a85bad5f83e09b8",
+      "bytes": 1967
+    },
+    {
+      "path": "code/dft_explainer.py",
+      "sha256": "d83ab8ef7b03bcb042ce79111b7659fdc3f36adba1ea2b6f309e33b83ae87a1c",
+      "bytes": 16710
+    },
+    {
+      "path": "code/dft_features.py",
+      "sha256": "336cf12c71e14ae9e78363c4f40ebfee5c2c7f94536d53dcb42d081e1dc99106",
+      "bytes": 35236
+    },
+    {
+      "path": "code/Dockerfile",
+      "sha256": "ecab7d65b346ce9959e015488f6088b08bb4491d46565233778383dc89b138a4",
+      "bytes": 657
+    },
+    {
+      "path": "code/environment-runtime.yml",
+      "sha256": "bdfea87c5bee89a47389d7fb5acc9abe5c094e82d4daa12c6a4d28194121f243",
+      "bytes": 180
+    },
+    {
+      "path": "code/environment.yml",
+      "sha256": "26a9e33f3c5f05addd5a4d5c05a1dc6ebe16358ba8421bc1cb12fff6f0873d21",
+      "bytes": 229
+    },
+    {
+      "path": "code/logs/README.md",
+      "sha256": "daafb294ee899e3aee70bc79c5118e3c85ef6574f5aed992b9fa7ef809078c15",
+      "bytes": 2005
+    },
+    {
+      "path": "code/logs/reproduction_verification.log",
+      "sha256": "7b07a6c1fc7654a792a4e168c6ba8a339d73cb9a9b6389aa562603de85b3ae5d",
+      "bytes": 5752
+    },
+    {
+      "path": "code/main/run_selected.py",
+      "sha256": "9f63d85f8be70ef992750824efa4bbf2b949f92a6dc5763007cac570d1181a6f",
+      "bytes": 6323
+    },
+    {
+      "path": "code/molecular_features.py",
+      "sha256": "59c7092a5f0164c9e1b2a5526dc7cbc723b22ae81553dc41c1ce4a836fba392f",
+      "bytes": 5994
+    },
+    {
+      "path": "code/preference_guidance.py",
+      "sha256": "7a77c3c19eb5d4c36b08fa5722b276b646153969ceacd7a6d51afac1f9c73b06",
+      "bytes": 8239
+    },
+    {
+      "path": "code/protocol.py",
+      "sha256": "e716563d0e1a834b40cd30263d31a38a51552174af25f87f328efb553469d132",
+      "bytes": 8209
+    },
+    {
+      "path": "code/README.md",
+      "sha256": "f58d10ddf98e5e2300459273b04c457126697732a298be102f235db4aa79cb28",
+      "bytes": 14270
+    },
+    {
+      "path": "code/run_compliant.py",
+      "sha256": "e3911ff142133db924a8dab0e9b7a971d606e174f4ca570d7b5fb8d9abdcfe2d",
+      "bytes": 32321
+    },
+    {
+      "path": "code/scripts/apply_top5_evidence_snapshot.py",
+      "sha256": "7466cebd1978dc67f75d00e31a6ecc4ffa752a98d52ca5b9cf51a19cd10af371",
+      "bytes": 9863
+    },
+    {
+      "path": "code/scripts/embed_docx_images.py",
+      "sha256": "2548ffcb86e760894d317c94bd2f872cb131726cf0cbf69e56f05df4af125e09",
+      "bytes": 5785
+    },
+    {
+      "path": "code/scripts/explain_dft_condition.py",
+      "sha256": "80d407502bc8e56c01f06f7f8d031c5851833db0389d09d9da41bb2707c4868f",
+      "bytes": 2751
+    },
+    {
+      "path": "code/scripts/generate_dft_explanations.py",
+      "sha256": "b9a22d1af3450f37cc635b74f053f6344938a2e00e204c7c2232ff6d2c6f97a0",
+      "bytes": 15814
+    },
+    {
+      "path": "code/scripts/generate_final_figures.py",
+      "sha256": "2eed24aafe5028b7f44a34ff5bdb61211ecf518d50a124edc5b442d0ce017370",
+      "bytes": 33621
+    },
+    {
+      "path": "code/scripts/regenerate_manifest.py",
+      "sha256": "ad2bb79f7f34e9fb1f55491d88bcff0a6b336dd78a565c320ffda6715ad0931c",
+      "bytes": 2117
+    },
+    {
+      "path": "code/scripts/render_markdown_for_office.py",
+      "sha256": "a1a4e9c69483f16fdcb4678f551264e0493bd0c135dfd83861b6a7a873b399fc",
+      "bytes": 2602
+    },
+    {
+      "path": "code/scripts/validate_submission.py",
+      "sha256": "8a19f583e4b2cc9f873bf2aa1e1744e79febbf9b233961e8e9aa3069ce94fd32",
+      "bytes": 2217
+    },
+    {
+      "path": "code/scripts/verify_final_submission.py",
+      "sha256": "4b29ba3a9dc69b6813fb87c4728ed3299ee800c1f00135f5b916945e9f51aa36",
+      "bytes": 22945
+    },
+    {
+      "path": "code/tests/test_dft_explainer.py",
+      "sha256": "0069b01bf549f9aa92c0e7012db88aed0e979c79061e27bb2d592c7e220d5a6e",
+      "bytes": 3738
+    },
+    {
+      "path": "code/tests/test_dft_features.py",
+      "sha256": "9b9ffb9b2efe9a888c4c670db5ed759a1680aea1de589641814855656a0f0715",
+      "bytes": 8918
+    },
+    {
+      "path": "code/tests/test_protocol_and_preference.py",
+      "sha256": "e24b880db34534b0b2bd530e3419a18c22ac0a632157b39143f9fc1e608d9349",
+      "bytes": 15365
+    },
+    {
+      "path": "data/Buchwald_sub4/buchwald_sub4_searchspace.csv",
+      "sha256": "7639791479eed43fbe0c71587dfea0916be23f0a9a101ac449e25ef615882588",
+      "bytes": 197427
+    },
+    {
+      "path": "data/Buchwald_sub4/buchwald_sub4_test.csv",
+      "sha256": "c6304584b2997808a8400900c8182b40994319f566b7c32c6c89ef237568c477",
+      "bytes": 195643
+    },
+    {
+      "path": "data/Buchwald_sub4/buchwald_sub4_test_features.csv",
+      "sha256": "bba0407e030bc0decd738ab6d2a2bee01a1864a40e21cabe0d7da8a306f9e8c4",
+      "bytes": 186609
+    },
+    {
+      "path": "data/Buchwald_sub4/buchwald_sub4_train.csv",
+      "sha256": "f24d5ab8a51c2337a7abfb2ce3a61cf54b4624f924ea4fb7f952687c6d6f1cfd",
+      "bytes": 8950
+    },
+    {
+      "path": "data/Buchwald_sub4/options.json",
+      "sha256": "ffe52a2dc524b17e5dbdffeeb0b642b46fbcfbda7155cfc00cae9cc6f65771d0",
+      "bytes": 1876
+    },
+    {
+      "path": "data/Buchwald_sub4/README.md",
+      "sha256": "e21eb0e1bc0e104637f80cb91272aefe16027251cf03e6769bcea5763cafab6c",
+      "bytes": 12129
+    },
+    {
+      "path": "data/README.md",
+      "sha256": "76ebd2365aaed670003096c9e91798adf07a3fb2e8182f3eeee000b6d5cd3726",
+      "bytes": 3329
+    },
+    {
+      "path": "data/Suzuki/options.json",
+      "sha256": "9fdf305d0491d6b360a558ccd59536efcebd1942ab9d270a771b0452afe85df4",
+      "bytes": 1647
+    },
+    {
+      "path": "data/Suzuki/README.md",
+      "sha256": "5c3ed3b370e5b1c9abe6d4256f6baf42b4f4c2a663fe7eae74b6f6e40f8bf78b",
+      "bytes": 9519
+    },
+    {
+      "path": "data/Suzuki/suzuki_searchspace.csv",
+      "sha256": "379f7e9301ac799adc272b50bb3e120cb2d50c7cf03c436ec5aca2b90e21b3d9",
+      "bytes": 980592
+    },
+    {
+      "path": "data/Suzuki/suzuki_test.csv",
+      "sha256": "2ed15973f663c2a91ff713b09fa2b6dea6046bea8b98cc85d79e66fdf6e5a7bd",
+      "bytes": 975619
+    },
+    {
+      "path": "data/Suzuki/suzuki_test_features.csv",
+      "sha256": "d76ee15f06877f3fb1781478d6f9170f671290bfe4bde9e9f953d5ab1518c95a",
+      "bytes": 942712
+    },
+    {
+      "path": "data/Suzuki/suzuki_train.csv",
+      "sha256": "7ac7c674daf0397f89313ea2063759ad0d3b6cadf457846dfc67172510236be8",
+      "bytes": 5024
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/atomic_features.csv",
+      "sha256": "b86517b473170869e71b689e857ef467ff6b2a924f58d8bea46d413c66881a18",
+      "bytes": 183632
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/atomic_features.csv",
+      "sha256": "57bca05f7e1bc4a3202bf447e7c7c96ef9be69bbc0bfbad1d51a6be705d56afd",
+      "bytes": 106056
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C001/BCH_C001.sp.gbw",
+      "sha256": "281e294b2971529b887a80daaca69aa244f309e86b3726b84e72ade3da3963c1",
+      "bytes": 1545716
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C001/BCH_C001.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C001/BCH_C001.sp.out",
+      "sha256": "275593ff335e957b469bc775271a195ed17236dfaf6d297aa474302030836936",
+      "bytes": 66318
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C001/BCH_C001.sp.property.txt",
+      "sha256": "ebd396dd24ee5893c73ef3e17642eed1c9d16296022595f9439f069326ccabc9",
+      "bytes": 28981
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C001/metadata.json",
+      "sha256": "bf49de09965751c8a98e504c1a8c8d5b37d048c43566647aafc25e35d7c3a815",
+      "bytes": 1894
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C001/optimized.xyz",
+      "sha256": "044480d5833e2bbe60cbe99bf07d9cee75569e0313d93093a315e3c6c7d3b0c7",
+      "bytes": 1108
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C002/BCH_C002.sp.gbw",
+      "sha256": "ec79e76bd6d648ed4deccee72b09e20b7e3efa8032611a9824bde033eb92cb94",
+      "bytes": 1545716
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C002/BCH_C002.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C002/BCH_C002.sp.out",
+      "sha256": "3a93ac04eda335db7a07738c5e274f389769c77e6e093c84bc368ea2d0cf209d",
+      "bytes": 66696
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C002/BCH_C002.sp.property.txt",
+      "sha256": "5b484160549a050412ab9a2275011d7cbd3a4ffdcab82caf4bf9a42ee5fcfd1c",
+      "bytes": 30680
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C002/metadata.json",
+      "sha256": "8df927cad96bbf095f523b0bf27e5c92acba729ac95c9002670658adef4b885d",
+      "bytes": 1836
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C002/optimized.xyz",
+      "sha256": "d0bc95f45b1e607c43dc86daf17d55167ccde5113362231fa220911328db40dc",
+      "bytes": 1108
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C003/BCH_C003.sp.gbw",
+      "sha256": "0049663b1ad9c0ad1a73a00dca0a6510fa5cbd15efd2e12cd73a7a7babf8d075",
+      "bytes": 1446516
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C003/BCH_C003.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C003/BCH_C003.sp.out",
+      "sha256": "181daf79c7f02f453fc66d7d17876082aecc363fcb8e4b25033b848303569202",
+      "bytes": 65285
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C003/BCH_C003.sp.property.txt",
+      "sha256": "fa5174d07606c76aa41fe8ffad9f57ab3829ef21389cc9a47a64e6e55d0a730e",
+      "bytes": 28015
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C003/metadata.json",
+      "sha256": "8e3b638f50634da22c8463c3b9986b6854b14b43ceb945cc4a8549ac482420b2",
+      "bytes": 1889
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C003/optimized.xyz",
+      "sha256": "60e58849cb216cf08cb9d54d0e628a9e188d1ed5e7bf4871cb6ab414d0c4b613",
+      "bytes": 1108
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C004/BCH_C004.sp.gbw",
+      "sha256": "89aef76dbd7092a89137a20069395bd11ac129e4a49f8f8dea7560d5f4bdc299",
+      "bytes": 1315100
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C004/BCH_C004.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C004/BCH_C004.sp.out",
+      "sha256": "e3baf933ed6a2e73b27f91b0b0bae760bba7441b576a59ac7e70937d54ee6dbc",
+      "bytes": 62216
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C004/BCH_C004.sp.property.txt",
+      "sha256": "089039688d4f811d78610cf4bf1c2438db905bbe1d904dc73f799de5c8c6a6be",
+      "bytes": 23386
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C004/metadata.json",
+      "sha256": "4afc3d09d2029546f70041ba0222363783edf4dbcd3803fd96785d792e762d92",
+      "bytes": 1888
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C004/optimized.xyz",
+      "sha256": "a6c8b1619fcde586c5b0fb30a0dffd4dc42d6b5a3d1affe985ff021f5b9ac1a1",
+      "bytes": 883
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C005/BCH_C005.sp.gbw",
+      "sha256": "76f1d3f6dbc25dd45c6775bfd36938fba63b7ca4fd0f37bb944d29d59baafe1a",
+      "bytes": 2011116
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C005/BCH_C005.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C005/BCH_C005.sp.out",
+      "sha256": "acc0e7a80800a5e46889123d23ec2812545e6b65949a44dc79099279a8e4e03c",
+      "bytes": 74144
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C005/BCH_C005.sp.property.txt",
+      "sha256": "d11dacd5a15e8eee0d373f62a6db1971cade51a00a37ef818ab613a1b5aca604",
+      "bytes": 43062
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C005/metadata.json",
+      "sha256": "28713ad77043c5da83a8b63fed7340d014cedc2e88d448550195629d3842b205",
+      "bytes": 1914
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C005/optimized.xyz",
+      "sha256": "fd5e54702ed4263aec60f0bbea6e45eb77f34648ccb6dfb0f972487504c91f26",
+      "bytes": 1633
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C006/BCH_C006.sp.gbw",
+      "sha256": "7b802e468803e542d407b4a89461dfa7db455e01f2c9a1a349d96416dd4bb05c",
+      "bytes": 1812884
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C006/BCH_C006.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C006/BCH_C006.sp.out",
+      "sha256": "4bdae5689a1c7e977a050e7e7004b8f80692f5e2f277f6ad840b5257f8d74f28",
+      "bytes": 71030
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C006/BCH_C006.sp.property.txt",
+      "sha256": "782afbf60f6950d006cba2e9665ccdbfa0010339979b456d9812612f2e70428b",
+      "bytes": 37672
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C006/metadata.json",
+      "sha256": "93fd49374d671d76e704a4707fd53af7e8332d30451fe434196b54800029d430",
+      "bytes": 1910
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C006/optimized.xyz",
+      "sha256": "dcf6d6e8bf2a400fc2976f2ebb7e21f74fee9426186589e7ff767f47670e9215",
+      "bytes": 1408
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C007/BCH_C007.sp.gbw",
+      "sha256": "98d3b53060f84399eb431982ce4e3b0423ea5706cad053ed5c23c5f5be9799c0",
+      "bytes": 1812884
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C007/BCH_C007.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C007/BCH_C007.sp.out",
+      "sha256": "3bbb630a6671fbad19ccb76d2ca47dc4a6ae783d5ccf67ddfc841121e709a350",
+      "bytes": 70832
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C007/BCH_C007.sp.property.txt",
+      "sha256": "b1f7c1ac6572afee96281e46efca1a62d7a155ba2867bf2de1917f4f0cae7a42",
+      "bytes": 36237
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C007/metadata.json",
+      "sha256": "a8613d826e98c82ebd8b746c40d5eedc055a340fd1d8201d6687dedcc071781b",
+      "bytes": 1863
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C007/optimized.xyz",
+      "sha256": "7f2cc0e96402fd90845ea548cbc72bd2f7cb8df92fd8ac21dcfea1ec685d3b66",
+      "bytes": 1408
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C008/BCH_C008.sp.gbw",
+      "sha256": "20d7de1dfa2bd724b30d1bab9b253510dbdc7ee15b977dc08b728defdea62a3a",
+      "bytes": 1973684
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C008/BCH_C008.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C008/BCH_C008.sp.out",
+      "sha256": "1f29ae79e8ed23235eefbcfb1716ccf65013d428f5c5c392718495c71887d090",
+      "bytes": 71993
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C008/BCH_C008.sp.property.txt",
+      "sha256": "04abdc4ee742c9f24fa4ff247cdfab9fcfad90bec2b083f80fd19e8acc5c5967",
+      "bytes": 35973
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C008/metadata.json",
+      "sha256": "73e7ec269169b1c49055c75675d07d911a592a90a6eced2023e59aab1024c0b8",
+      "bytes": 1924
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C008/optimized.xyz",
+      "sha256": "eb44dfcbd6007ddd5faf4d5006355412e502fb951ed8dba29426cfdc6567fdbf",
+      "bytes": 1408
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C009/BCH_C009.sp.gbw",
+      "sha256": "6b34981bab24a8b99e49e8717f691c44da2e521fb8e7084ab673fdafc521486c",
+      "bytes": 1315100
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C009/BCH_C009.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C009/BCH_C009.sp.out",
+      "sha256": "71f5ac23e2f5654d99a638ed666c64039853aa961978e59fbbbcb061462e86fa",
+      "bytes": 62237
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C009/BCH_C009.sp.property.txt",
+      "sha256": "ef8e1ca5cfea577eeba5e8eafce0cc406ed0c572d9dc47df043707ea153ce44a",
+      "bytes": 22976
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C009/metadata.json",
+      "sha256": "be48ac613a28bda5fb1423207e9ec87bd9b4f344658e745c1aac0a8e367d0a2c",
+      "bytes": 1845
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C009/optimized.xyz",
+      "sha256": "b034514df67f8dc17d72062d7e493e6f2fd5a097c00a4f941bed682d5d2c353f",
+      "bytes": 883
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C010/BCH_C010.sp.gbw",
+      "sha256": "060b2e1b5ba8ddc99d378d6e3edc71674af4cedfe9d58a2ac41c57a25a2120f1",
+      "bytes": 1855132
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C010/BCH_C010.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C010/BCH_C010.sp.out",
+      "sha256": "28ab64b09cd00b8107f539e3ee62f9150ca8da5df36fa0cd8dccc2f39e5d611d",
+      "bytes": 71611
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C010/BCH_C010.sp.property.txt",
+      "sha256": "ff2cd6b99ef788209c0e738b077981d888a58591b8e813b5962c7763adf98151",
+      "bytes": 35730
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C010/metadata.json",
+      "sha256": "464478156e15932721cb8740905e0cfe5dff40fbc38cd150376e526561abebe4",
+      "bytes": 1917
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C010/optimized.xyz",
+      "sha256": "44e28e4f584ddd0100a7d2c827ef845767ab18aeb6bfe30ec3e235c4926f8c64",
+      "bytes": 1483
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C011/BCH_C011.sp.gbw",
+      "sha256": "bb11b3bd1183c12d5d5d85c5edc2381b3cc63e9ca505f8a895ee1292ce59efde",
+      "bytes": 1812884
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C011/BCH_C011.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C011/BCH_C011.sp.out",
+      "sha256": "4981078e7a0da84b9b833d05465719611aa53587899f875695485a11cc12ce4a",
+      "bytes": 71303
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C011/BCH_C011.sp.property.txt",
+      "sha256": "2de02c9d6813eee87d535dce53751dba73db99c278c80af025f29f26587b8c34",
+      "bytes": 38492
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C011/metadata.json",
+      "sha256": "7863984248e9da0d671cc11f85af73d5eceaa33a3b8bcd7eba263b0f9f647c3d",
+      "bytes": 1900
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C011/optimized.xyz",
+      "sha256": "e7e1e0cfbc6afb67281070ed23ead44bc52838b289d9d1bae7e0f581a1c740ca",
+      "bytes": 1408
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C012/BCH_C012.sp.gbw",
+      "sha256": "5e32f8cff163ee24acc1f5ee5b08e95e8b6e64e6a1c0b0e9f09e3c2cca5668aa",
+      "bytes": 3636068
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C012/BCH_C012.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C012/BCH_C012.sp.out",
+      "sha256": "9468291a67d1c99a46af9d706846278e864002fffc6ebb9d14cbf5bd35b7e88d",
+      "bytes": 91118
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C012/BCH_C012.sp.property.txt",
+      "sha256": "a4646f05347918afeda250e68e9503ae47bb8bb0fb9939990300ee23105d3ee1",
+      "bytes": 67912
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C012/metadata.json",
+      "sha256": "2a67999ab2ee593cba46a7125460621fd6eabda837bd2c214bd93d777d23a0ee",
+      "bytes": 1961
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C012/optimized.xyz",
+      "sha256": "e69c51551e3fea42ab70eeca7a8bf910023e5cd1381f7869958d240a3881058f",
+      "bytes": 2758
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C013/BCH_C013.sp.gbw",
+      "sha256": "dc42381acb41902b480066b6e71b43aaf6fb257513efc596c84707b80c791ad0",
+      "bytes": 3636068
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C013/BCH_C013.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C013/BCH_C013.sp.out",
+      "sha256": "3717ea1335423be181a493b17ee99e3239f186705a3a78636d532bdaa052d9b2",
+      "bytes": 90911
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C013/BCH_C013.sp.property.txt",
+      "sha256": "17261aec360cf7a554f69d8971b9c31293c082a9ea16651cb68a8220264ce87e",
+      "bytes": 66828
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C013/metadata.json",
+      "sha256": "8da69458d0f47845344b9603993c31cc36afca62115f2507fd34bdb2eb770e7a",
+      "bytes": 1945
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C013/optimized.xyz",
+      "sha256": "9589e3dc1f967c962db1cd8733aa37c2f078c730c4910fc1d7a9af70ed814b5f",
+      "bytes": 2758
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C014/BCH_C014.sp.gbw",
+      "sha256": "5d426aec9bdb7e0914ce58e6ef1af4e06825cf87be12ab4337a494d546901791",
+      "bytes": 1738348
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C014/BCH_C014.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C014/BCH_C014.sp.out",
+      "sha256": "a4fb7942adc687641d675d6928edabae9d201727f8b76f09fcb56731e778c1aa",
+      "bytes": 69259
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C014/BCH_C014.sp.property.txt",
+      "sha256": "51be6994a82603f5908811fd400877f99cd21c61fe0593db7d334d8f1668d384",
+      "bytes": 30389
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C014/metadata.json",
+      "sha256": "9c0a32c10fe3ff9ec30bfc634476a5c575530ed917f22bd265cfee9f1783a4ee",
+      "bytes": 1908
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C014/optimized.xyz",
+      "sha256": "694fe32236ae61a37b83dcf4575a7965a0a4a8f5e13616afaafcdfeb5c832989",
+      "bytes": 1333
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C015/BCH_C015.sp.gbw",
+      "sha256": "9f191d98270033dfc4d4dddd09608fcb41c0c64d8f44bbe5fb3fbe69c25852ae",
+      "bytes": 1738348
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C015/BCH_C015.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C015/BCH_C015.sp.out",
+      "sha256": "e88814b11666553d2f3a3d60ba7e5e9b7884f58883f9374389640fb0197c0353",
+      "bytes": 69068
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C015/BCH_C015.sp.property.txt",
+      "sha256": "5303150a253db170042a49a289c56b0ad6dda777bafb69760e922390a71ab11d",
+      "bytes": 30799
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C015/metadata.json",
+      "sha256": "fc4340b81d6336de45a35d5bc6f98ff96a4e1b5a81757590935f1047d9214464",
+      "bytes": 1919
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C015/optimized.xyz",
+      "sha256": "7179f7495e34da56b362116ebebd5fa0002fa8b623034feae245855d2df8434d",
+      "bytes": 1333
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C016/BCH_C016.sp.gbw",
+      "sha256": "03b0d7656172ba9f1f63a3e80cde2933afbd1187bae86dcfc71b3e02c175bc49",
+      "bytes": 2059380
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C016/BCH_C016.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C016/BCH_C016.sp.out",
+      "sha256": "22ae56072f87543cb18a08712a8c90a629f4d832d7c93a7eadf142538e17751a",
+      "bytes": 73298
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C016/BCH_C016.sp.property.txt",
+      "sha256": "238e23a0f7dca2fcb9a3c29313af92440d7fcac0a92be6ff9b7b1ce5f122e1cb",
+      "bytes": 35536
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C016/metadata.json",
+      "sha256": "f299cbc31f6e2dc1ef8992644db6413e291c726ff72f1d8b331c8d968cd84bdf",
+      "bytes": 1922
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C016/optimized.xyz",
+      "sha256": "c51126fcaad5f6d0921c8bc0887bfb3bfbaed81b67df5d2324cea1d0032b62f2",
+      "bytes": 1633
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C017/BCH_C017.sp.gbw",
+      "sha256": "88db63cece079db2ad6f3f09663fae95f6489ac26a7858d97267d35e5b287182",
+      "bytes": 1928516
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C017/BCH_C017.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C017/BCH_C017.sp.out",
+      "sha256": "c52ae82572d53ae6f35c9570dfb1f2af56bd9040e8550c08aa7340643fa57c56",
+      "bytes": 72163
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C017/BCH_C017.sp.property.txt",
+      "sha256": "5f670e748a3c69036086325adb0eb858320a64deef8a8068ebc26e9ecea3eabe",
+      "bytes": 35018
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C017/metadata.json",
+      "sha256": "532955dac181df799149840921bc70d34b6a6c4899d245219f0bfb6701637344",
+      "bytes": 1878
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C017/optimized.xyz",
+      "sha256": "682de8e4383f8abec85a3fefaa1599e452392a5755d280058a295dfc9c67b8b9",
+      "bytes": 1558
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C018/BCH_C018.sp.gbw",
+      "sha256": "13ab1f0217c662f76a7e02f59b24c2962b2a7e1754075292665e76abf157a6bc",
+      "bytes": 1928516
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C018/BCH_C018.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C018/BCH_C018.sp.out",
+      "sha256": "fe10914a630e5fd14b7a42b025084ae21e5bb706e3e86edff016a0075bd1051e",
+      "bytes": 72327
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C018/BCH_C018.sp.property.txt",
+      "sha256": "bfb87e3ce525cd94d2004e8cbf2a1701007bfb241297ac89e7e5bb787448a8e6",
+      "bytes": 35018
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C018/metadata.json",
+      "sha256": "10f645936acf4c51dcd0914c0f00e3624addc759cc0299d1319f0138f0ca4285",
+      "bytes": 1878
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C018/optimized.xyz",
+      "sha256": "1543a4ab0daa1f175c8309ca57394bd097279fc3b00269f65267f782c347e6ab",
+      "bytes": 1558
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C019/BCH_C019.sp.gbw",
+      "sha256": "c25239e6d9ddc70e978c42ca513d440a4733cf86c1efd67cfb6f017de6c8ba1b",
+      "bytes": 1928516
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C019/BCH_C019.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C019/BCH_C019.sp.out",
+      "sha256": "2ddcc7d3c93e102d394a70944a74bfae62badda7cc159657e8d7e44a19d11135",
+      "bytes": 72215
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C019/BCH_C019.sp.property.txt",
+      "sha256": "e4f86569ba0a65bda81d421462b22f7657d401af5b6272f41bba23cb13d465b1",
+      "bytes": 34813
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C019/metadata.json",
+      "sha256": "a794433c6aae61c345c871601ca4aa254b13516a549f49280a08039f9f9b8681",
+      "bytes": 1908
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C019/optimized.xyz",
+      "sha256": "624f557af25682bbf26848827e1b65fed889da673331570e3fa924fbff3a1bbf",
+      "bytes": 1558
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C020/BCH_C020.sp.gbw",
+      "sha256": "3b1d8483bbbe5bd14436c3d0f79243a7efb3f44addbb9a5a75bdab8f8c432dba",
+      "bytes": 1568916
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C020/BCH_C020.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C020/BCH_C020.sp.out",
+      "sha256": "d9b7876cdaf51c5cbd7b7fd819c4faad22e4445636074a1853eda9731602ed68",
+      "bytes": 66056
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C020/BCH_C020.sp.property.txt",
+      "sha256": "3142f888bc9c057b613d59959dae6cc6afd80b2c978106fdaa2394a6cd5140d1",
+      "bytes": 26580
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C020/metadata.json",
+      "sha256": "872db4c29883840bf5dcbe816fa8ed575fc2293f65f7b0262241de1d822a924c",
+      "bytes": 1906
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C020/optimized.xyz",
+      "sha256": "e82b57b7350825182930cc386284faa51d26f9c3e8426549623f1bc894006113",
+      "bytes": 1108
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C021/BCH_C021.sp.gbw",
+      "sha256": "72594bf3845d955d0be6a4a3ace4135f6e796e6013685533a945450a357458cb",
+      "bytes": 2206580
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C021/BCH_C021.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C021/BCH_C021.sp.out",
+      "sha256": "b7132e3b64aa06634415876d282ba8a21171acb58ee57e74e901de2b3369e1f7",
+      "bytes": 74402
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C021/BCH_C021.sp.property.txt",
+      "sha256": "d5918ddfb491619df42b3ae4e584a2c82abce44cec6b5176fd1eec84a77879b0",
+      "bytes": 37178
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C021/metadata.json",
+      "sha256": "36c505ffa98ba3cd93a392b8f2c0e0ccf9e0d87ec153e0825af8b891f0d96a65",
+      "bytes": 1906
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C021/optimized.xyz",
+      "sha256": "565a13ec7994d3365aa64f889fc994c1b895278fb0b5c700d4b820411fc03b0a",
+      "bytes": 1633
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C022/BCH_C022.sp.gbw",
+      "sha256": "4ab02d5a48ccbd62ed47b9379c5484989c25756579d9b193cc0edbaf27769984",
+      "bytes": 2231652
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C022/BCH_C022.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C022/BCH_C022.sp.out",
+      "sha256": "d382bbfe7f86e8f110f7b22ba58cc936c4c16face13fbc71c20c68f6730995ed",
+      "bytes": 74789
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C022/BCH_C022.sp.property.txt",
+      "sha256": "02430f5b577c6e496376a8f5e4ed9a594b0b8c2fce398de24dce3bf6be8443cd",
+      "bytes": 36768
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C022/metadata.json",
+      "sha256": "f188b48f3bd4fe8dfafcd6f45ceb6a88367e90f8971408e1a30b97fb9e0fda14",
+      "bytes": 1957
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C022/optimized.xyz",
+      "sha256": "6baa1407c3b2562fe51da63ec9a8c330f517340a7c2dc546113e3f3cd39cbc35",
+      "bytes": 1634
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C023/BCH_C023.sp.gbw",
+      "sha256": "3dab48b51f741bd2043eb836cf4b937485368baf6ea2ea1a4ee92828677c1793",
+      "bytes": 2162396
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C023/BCH_C023.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C023/BCH_C023.sp.out",
+      "sha256": "6f7528c37bef09788fd5dd66d75e5aedd9d9d11135d8483afc786fc791619371",
+      "bytes": 76878
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C023/BCH_C023.sp.property.txt",
+      "sha256": "cd90d6dd282c737c613b460dc61c0d0a9bf25172577a4c347335539ce41f7dc7",
+      "bytes": 42577
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C023/metadata.json",
+      "sha256": "382e158c6c159edb0fa4459642b1544a01e3dc2a052a6c2488a420a0c9d230e0",
+      "bytes": 1910
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C023/optimized.xyz",
+      "sha256": "39d1f92249d6d9f622954c9cdbcf1427bfc1557999e04a8f98e5b8477568592b",
+      "bytes": 2014
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C024/BCH_C024.sp.gbw",
+      "sha256": "bfc006feacb909b9f8ca662bf84c799754c8b5197ac02583d2ebdcfc24ed8e60",
+      "bytes": 2620564
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C024/BCH_C024.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C024/BCH_C024.sp.out",
+      "sha256": "d3bb9f2fcaef173396bfb4aad1773b919fdb5367e8568439f39167b1726cf63b",
+      "bytes": 83403
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C024/BCH_C024.sp.property.txt",
+      "sha256": "51e65d86824e4f7e0e76efd1a63b9c279fe95ac32b351adbc254a3c49604fffb",
+      "bytes": 52617
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C024/metadata.json",
+      "sha256": "f06732992b467fd0e4c9a98611125f4647818011d27752453a4f4c92f103a535",
+      "bytes": 1922
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C024/optimized.xyz",
+      "sha256": "4e9e0932ebc41e0d245beadb25d57e9d596f60ae2e4b4b480c60865a779ba823",
+      "bytes": 2539
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C025/BCH_C025.sp.gbw",
+      "sha256": "60d8933d8a7376ae665e6f33b5dd522afadb59d0daef10c4f8fbebb46b67c33f",
+      "bytes": 5524652
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C025/BCH_C025.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C025/BCH_C025.sp.out",
+      "sha256": "9d04a6769616a9bf64957ab93f65057a765bc09594a607f7b8aa9c571c7b454a",
+      "bytes": 108163
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C025/BCH_C025.sp.property.txt",
+      "sha256": "fb2c5fd1af910b640653a08753005589ff4c01b51695e9a19e265ced2d3ee73c",
+      "bytes": 87702
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C025/metadata.json",
+      "sha256": "7a9236a281428613d59481f4e571b3b22ff6586e8fc16b6c129ad64c707dfe07",
+      "bytes": 2047
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C025/optimized.xyz",
+      "sha256": "1c2993e1d70e9154e16c792c6f648178001c53179fa65ce5ce5e7de664f485e4",
+      "bytes": 4259
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C026/BCH_C026.sp.gbw",
+      "sha256": "e9ff1451db5add8d91593ef8f66ea05d2d628fd72fa7fb58b267d176746aebe2",
+      "bytes": 18133588
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C026/BCH_C026.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C026/BCH_C026.sp.out",
+      "sha256": "9b39fcb993b091a2ad236ff6733ee9da33ea3e30a176200dca700c8986ae7f5d",
+      "bytes": 171353
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C026/BCH_C026.sp.property.txt",
+      "sha256": "a5f51dde439279523f2d329fd77fa6084c0927b93bd0ee2f9081d7e0bdc1a4e6",
+      "bytes": 219719
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C026/metadata.json",
+      "sha256": "39d42fd5bfd06c6df979705aca52b8955bc4ea1835b3429edee3634bf9186897",
+      "bytes": 2107
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C026/optimized.xyz",
+      "sha256": "fce999a7b4ea47d0ff13e64589848b561d2efcf97a6e68ba153791d4b32a522a",
+      "bytes": 8085
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C027/BCH_C027.sp.gbw",
+      "sha256": "cc0033161c7713f10bf89305c406f615b132e13458c1349e47a22c756e8f127e",
+      "bytes": 11054868
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C027/BCH_C027.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C027/BCH_C027.sp.out",
+      "sha256": "c0a8f06c425ebcf064a06723ac1d54a2aa8a083cdc535aa8f6089d42723dc794",
+      "bytes": 140240
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C027/BCH_C027.sp.property.txt",
+      "sha256": "8370e54d0dd66b8a49c7365dfc1bfa57ffe5810ce25d8d1fdb591c26b7c03281",
+      "bytes": 153556
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C027/metadata.json",
+      "sha256": "88e9f9b9a9840fe8befae2397be73d032d05ab608c58a014d18d9fe1984113b1",
+      "bytes": 2020
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C027/optimized.xyz",
+      "sha256": "fef28d777ce6e3595084f35fff910b4edd2ee1e958abecc5eca3762a09c8aa30",
+      "bytes": 6263
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C028/BCH_C028.sp.gbw",
+      "sha256": "e3b03206fb33988085cc02e4878db5ebdec0f3dcd69c29a4b1bb625c9f961216",
+      "bytes": 9142484
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C028/BCH_C028.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C028/BCH_C028.sp.out",
+      "sha256": "90826092cb7980f9222ab438138d183344d78b81895313620393e2bfb71973a9",
+      "bytes": 131870
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C028/BCH_C028.sp.property.txt",
+      "sha256": "ce077cfc2ff04b6601b9857dfe9e0d497e62c814ae9323b470d3dc0acfa76873",
+      "bytes": 140186
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C028/metadata.json",
+      "sha256": "c2098d95b83f89c03d8535567b90efb146dabe10010da559ecd1fb95076df8b5",
+      "bytes": 2019
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C028/optimized.xyz",
+      "sha256": "0379a30415fd098fea0735528f6084cec85eb7549ddd94f6e8f3c140a4be57de",
+      "bytes": 5684
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C029/BCH_C029.sp.gbw",
+      "sha256": "ed3a0e88d1180c7ae2dc86fcbcc75ca38cf6a71de14b4027ff837d4a5a32c7e5",
+      "bytes": 11159956
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C029/BCH_C029.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C029/BCH_C029.sp.out",
+      "sha256": "b5d18a51565edb3e610598264d565940c7f4b910af3b89aa95faeee87f851956",
+      "bytes": 142814
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C029/BCH_C029.sp.property.txt",
+      "sha256": "df3482ffd04d52b3cc7752dd17e62de2951e9ca37cba11ad633294db6d48239c",
+      "bytes": 166471
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C029/metadata.json",
+      "sha256": "1077d1432a1024b0a5c4b767b048fa4db86630a8119925399db289c285380323",
+      "bytes": 2049
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C029/optimized.xyz",
+      "sha256": "f56c8de3ff520004f9b3f3b4311d578a03b12ac090d603ab3cd18de5718e0369",
+      "bytes": 6284
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C030/BCH_C030.sp.gbw",
+      "sha256": "5cfffb66c53bcf82816b700c1427156c14a8c5ccec1cf378590f97cff60fe8f8",
+      "bytes": 3057364
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C030/BCH_C030.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C030/BCH_C030.sp.out",
+      "sha256": "cd993364bee60baca062e690b1e0c76091feb9375d8925ba22e83f2d8c526481",
+      "bytes": 85114
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C030/BCH_C030.sp.property.txt",
+      "sha256": "260b6af0288559c1d2e059a567272cca629409f9293e1b588a0727df189943e3",
+      "bytes": 58039
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C030/metadata.json",
+      "sha256": "9760b1f6420a7c91a1b5d1ab0e10dd7e9b19f58b167cb58096416c9ac38a8fed",
+      "bytes": 1901
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C030/optimized.xyz",
+      "sha256": "f187de4793d53e9f6b55fe51230bd19391a0bb44911f4a507fdbd26e89297b72",
+      "bytes": 2314
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C031/BCH_C031.sp.gbw",
+      "sha256": "fbf829aa61ca5848bf14e7667df7b64ed49dd8b809cc46abe2dfb584b7ab6035",
+      "bytes": 2988692
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C031/BCH_C031.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C031/BCH_C031.sp.out",
+      "sha256": "37ec2fa1e370efb9e3c1e4678cf3f069b3600e78da132ea381b7263a9b40e016",
+      "bytes": 86732
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C031/BCH_C031.sp.property.txt",
+      "sha256": "37febb36bfd4356f400f60d6ee9c276cf2d06df2a92634b562a3b3491a8d9d6d",
+      "bytes": 64922
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C031/metadata.json",
+      "sha256": "ba6d3154f52b78db92015d0d512fde29350f0b0a4b6b6b2a388347031713d4c8",
+      "bytes": 1923
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C031/optimized.xyz",
+      "sha256": "8b81cdf61ace141a53df25a4268dcd20ef699bcc10dd26006cc95b5618ab54de",
+      "bytes": 2533
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C032/BCH_C032.sp.gbw",
+      "sha256": "0dece4c19b5ee63a13677eab092ceb5c1e2067181dbf080764f54b9ceb1f35cc",
+      "bytes": 2883900
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C032/BCH_C032.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C032/BCH_C032.sp.out",
+      "sha256": "f6f2ce327118b770fd4a9b285d013f45cbb20183a26595bf29d6b9e40d974af7",
+      "bytes": 84615
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C032/BCH_C032.sp.property.txt",
+      "sha256": "c95a9f9528b8e845b25b1e695d7044a3e6156921fe5a76490f449360b66cd765",
+      "bytes": 57118
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C032/metadata.json",
+      "sha256": "9bc0d321cf74750375f09c5967a2af22302e8d489364fb0d0748b4a2a222841b",
+      "bytes": 1883
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C032/optimized.xyz",
+      "sha256": "e73992306e477e4be6174d1de3ad93462f545bbc2ef820ab3b068f1486868c7a",
+      "bytes": 2383
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C033/BCH_C033.sp.gbw",
+      "sha256": "21c11e88b2fd416a9db51c4f6387b431840494d19b5aa239c97759a1006ad3f7",
+      "bytes": 2395868
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C033/BCH_C033.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C033/BCH_C033.sp.out",
+      "sha256": "eddd213afb058beb6f00d959414b3f3db9f8b20ec68ed6c87066193c1e2fd0cd",
+      "bytes": 79429
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C033/BCH_C033.sp.property.txt",
+      "sha256": "2317790d216e559e411b29e8124acd3936db58456595759c83605ede3302f2f3",
+      "bytes": 51861
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C033/metadata.json",
+      "sha256": "b6e90a0975abaffbeb3288257907c95779e847ecfd9977a7b2feca52beb9ba74",
+      "bytes": 1875
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C033/optimized.xyz",
+      "sha256": "88ac61854ec8e074fd3035c29ea1689ffa0f3adbaabea157d8c58d5b2a435790",
+      "bytes": 2008
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C034/BCH_C034.sp.gbw",
+      "sha256": "91bdad3c2fc9dd2517d168ce622d3080faf8ff85ea75eb0e0cdc9aa4e409761e",
+      "bytes": 2395868
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C034/BCH_C034.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C034/BCH_C034.sp.out",
+      "sha256": "17387b818e4df305c7479a49c50be5715792cafa228b85b30317a9b8c141f899",
+      "bytes": 79029
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C034/BCH_C034.sp.property.txt",
+      "sha256": "ed6c259147f004ff56a5aa35a183e3c9a077303e352c7779dc2c84d3ee635988",
+      "bytes": 48991
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C034/metadata.json",
+      "sha256": "424a695ac18b80b627f2d88e9d783e43ba65a921c4dd966960c3b40ede1f8ed2",
+      "bytes": 1875
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C034/optimized.xyz",
+      "sha256": "17053ba7bbafd857ce893230c38ccaa6e90e86a8fae9c1d3f7b6b3ea158a5373",
+      "bytes": 2008
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C035/BCH_C035.sp.gbw",
+      "sha256": "98ea72ffd1ac55a9febdc4c40035452130f097b7602087571faf14022fd4aac9",
+      "bytes": 1586708
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C035/BCH_C035.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C035/BCH_C035.sp.out",
+      "sha256": "3420c6e49a17c0dbdf2d906cc7099688990113511a81dca6ec8bb90884060f98",
+      "bytes": 68095
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C035/BCH_C035.sp.property.txt",
+      "sha256": "18650f0a112f405227bb0d081d8d7f9d5898a3bf09b33f8790c657a7d52f9952",
+      "bytes": 32234
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C035/metadata.json",
+      "sha256": "147b8487b34e1c632c322a21d24848c61444f14e6f69d5ffa929847bde29b93f",
+      "bytes": 1826
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C035/optimized.xyz",
+      "sha256": "0c6b195001d2d23f59adcb203a9f68a8d8ef818c344509ae34fd60d0e18b4d77",
+      "bytes": 1333
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C036/BCH_C036.sp.gbw",
+      "sha256": "4c099c43b626810a4077f95ad323939ee86d3021554ba42b0d18e4f89e4bb1e7",
+      "bytes": 1816868
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C036/BCH_C036.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C036/BCH_C036.sp.out",
+      "sha256": "d72df97a4a9d2ef297f1a06896b8a7a35aa2b50593ba82f681c9ce0c8269a5d8",
+      "bytes": 69371
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C036/BCH_C036.sp.property.txt",
+      "sha256": "7a74965a1cd38d0085985de8a753f7ccdf54e0e822e83c8181a14c826b18ca08",
+      "bytes": 30175
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C036/metadata.json",
+      "sha256": "0f0341af377cda76ff44bb87486e7e6a8bff660385360ac88a6e26a253cde185",
+      "bytes": 1883
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C036/optimized.xyz",
+      "sha256": "4f1e99f7e1e5e52c3cc4b06925ea07d5786d295cb05d993892a76a2e17cdb2fd",
+      "bytes": 1184
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C037/BCH_C037.sp.gbw",
+      "sha256": "d1879129bcdc8687833bf85fec25d0b3bf6775f2fa36c42d7d38a9dc03328a0b",
+      "bytes": 1774548
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C037/BCH_C037.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C037/BCH_C037.sp.out",
+      "sha256": "6e727032b2d970b230c0bb58cf82279a96bc324e7354abc98844ec33472d2339",
+      "bytes": 70471
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C037/BCH_C037.sp.property.txt",
+      "sha256": "0b8cea4c1e3f0c1fc0a3c6958161a380408a7c842bc7614f2fe47adf4cc19516",
+      "bytes": 33718
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C037/metadata.json",
+      "sha256": "f32805247e392ecf8668f7c025a3086ac9d1528af20a4d910265a64c8578ebbf",
+      "bytes": 1901
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C037/optimized.xyz",
+      "sha256": "b39b84ad0c23f9ff3e0eb9234b48699a9a4b0e116635383d1228734b326ef75f",
+      "bytes": 1409
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C038/BCH_C038.sp.gbw",
+      "sha256": "f8bdf9da3684ac6f704164dc4acf15829f05978d708089736a336e474f794c9e",
+      "bytes": 1707820
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C038/BCH_C038.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C038/BCH_C038.sp.out",
+      "sha256": "4dfdf65a33e5023f309c89dd8267c89fd79ecfca3cc71f03c244cef77211a58c",
+      "bytes": 69130
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C038/BCH_C038.sp.property.txt",
+      "sha256": "bd5818a5b4378d174af9fa89c958f1a21f3cb7a859c7e1f5ab9996aff441a9e7",
+      "bytes": 31716
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C038/metadata.json",
+      "sha256": "6f14e0dd1d0df6af5f16a517918a5ca887d1338092cb5bea86dce92cddee3d24",
+      "bytes": 1849
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C038/optimized.xyz",
+      "sha256": "ff87359e19e4c2b335cf7cfab1c7f97b40cffdad54242ce6492d7ce3d400c7f5",
+      "bytes": 1259
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C039/BCH_C039.sp.gbw",
+      "sha256": "fe33b3dbba151a0203389188fabe64638efb4a76cde29e7722a020d0b4178e21",
+      "bytes": 1751604
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C039/BCH_C039.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C039/BCH_C039.sp.out",
+      "sha256": "1bdb9e6da782ccb0ca2fb511b0ceff077b7a28542cb2d9799d318545bf026422",
+      "bytes": 68431
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C039/BCH_C039.sp.property.txt",
+      "sha256": "a80043bbb80ec1da5adb746ba91a91630addcf0f3522475afb0f906be5fa668e",
+      "bytes": 30378
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C039/metadata.json",
+      "sha256": "f5a1fbebdbbdf1dd92d0810efe004d48911aff533fe6ae2fa152f9c202eb1ecc",
+      "bytes": 1882
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C039/optimized.xyz",
+      "sha256": "6a48b88da14c23c35ccf7ac64a57cb5669bb2fc1e2612ba219f7fd43cfd5a608",
+      "bytes": 1184
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C040/BCH_C040.sp.gbw",
+      "sha256": "dcad75e1fc4708dae182249fd4576f67e1ff222687ec760d237e0da467ce1cc0",
+      "bytes": 1711300
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C040/BCH_C040.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C040/BCH_C040.sp.out",
+      "sha256": "815bb38b2ddc8a6731bfcd58c360086a44581ec8c0acd8457cf550fa17cefce8",
+      "bytes": 69835
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C040/BCH_C040.sp.property.txt",
+      "sha256": "4b08f1f6f0c2574954d07d2d171d7d027180c5575bd198cd7246c2c729810d5f",
+      "bytes": 34597
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C040/metadata.json",
+      "sha256": "8c5ddbeb319732dc21bac61ec9b8eff7842a1f30085cad46f38e932cbb517f05",
+      "bytes": 1901
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C040/optimized.xyz",
+      "sha256": "c936d059b53d1afcaa1d652146e8e4a9392180c92a4b5362170c91babe6419ce",
+      "bytes": 1408
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C041/BCH_C041.sp.gbw",
+      "sha256": "4101870ff9360b6e1822ccc61928e7ce3af4ebdee63eda8ea4f0f589729de80a",
+      "bytes": 1647484
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C041/BCH_C041.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C041/BCH_C041.sp.out",
+      "sha256": "92c1abc63a9c5d64c34f8f90342afbf52e40fe0207f5a67f64e5126cba6bc219",
+      "bytes": 68082
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C041/BCH_C041.sp.property.txt",
+      "sha256": "d40dd88dfbfcd4f55b860064078e718617948f64dc62635a2e2388713742ab4c",
+      "bytes": 31042
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C041/metadata.json",
+      "sha256": "e0e257e2daabd4df2cae4d4b88c4a9cdfc3cc961a1e1ebdc458b5008ccaa6814",
+      "bytes": 1847
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C041/optimized.xyz",
+      "sha256": "6910041d91126a6d8073eecc68c0dbc07cd832e0edba61596c87b0a8d013d284",
+      "bytes": 1258
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C042/BCH_C042.sp.gbw",
+      "sha256": "5cdc9a6d729ca930646527f08e3aee6d384eeddfa1f6e066c3f5dda69a77f63f",
+      "bytes": 1747910
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C042/BCH_C042.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C042/BCH_C042.sp.out",
+      "sha256": "7b51f07806efe6d590bbb51ca43821564bcde7f6723b695b7efd7f3812dabad9",
+      "bytes": 71555
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C042/BCH_C042.sp.property.txt",
+      "sha256": "cafc606f39d9d5849381201e918bf711fffdf67ae160add144c640828af78c06",
+      "bytes": 34597
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C042/metadata.json",
+      "sha256": "0a124e192d155d242eb1e090c62aa4d48a25e47327885c46628bd9967a3f0ea7",
+      "bytes": 1892
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C042/optimized.xyz",
+      "sha256": "5a4dfb8c57648568fee0a957a3cad701dd9126de5be0ff4442d6eacb354581f3",
+      "bytes": 1408
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C043/BCH_C043.sp.gbw",
+      "sha256": "bf02838f94a25079d7bedda6122b9b56abfb0f1b3474a906928fadf9f7eb1cf4",
+      "bytes": 1789363
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C043/BCH_C043.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C043/BCH_C043.sp.out",
+      "sha256": "6dfc8519f99e7f42c6d8557fa04c82605ade81a05e72ccd061e731ff21872bb6",
+      "bytes": 70193
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C043/BCH_C043.sp.property.txt",
+      "sha256": "d7015b20cd95064123e12f3a4a1563a555c02f556d873c76c5d3052bfc5dccd8",
+      "bytes": 30173
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C043/metadata.json",
+      "sha256": "50e9bac98e961a9a6eca57cbcd783964aad37cee50169b9abe5c4d20d694d002",
+      "bytes": 1875
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C043/optimized.xyz",
+      "sha256": "7d6fdeddcb2d7832b94fc86bb6c6e6621a54a3848fc5f473d92209d9e7a95876",
+      "bytes": 1183
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C044/BCH_C044.sp.gbw",
+      "sha256": "b8cb68e0b5eab0611fea86cd955a41ab4ac0d2a251216014dfd2ab72df0ff55e",
+      "bytes": 1682428
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C044/BCH_C044.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C044/BCH_C044.sp.out",
+      "sha256": "f78bb7f341c3bc9a64e88d0472315a41583335adad9b512cb791ab483330935b",
+      "bytes": 70035
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C044/BCH_C044.sp.property.txt",
+      "sha256": "7584bb9e67c6d7d056e446c6993e781f2d4386a03649f48829060bcf49e86db1",
+      "bytes": 31716
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C044/metadata.json",
+      "sha256": "6240ca2a0dce8145b9723f781265248dcf3e79368d7d4c8170799e167bf0e771",
+      "bytes": 1855
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C044/optimized.xyz",
+      "sha256": "b27fcd077baa04e5c8895f6486c6d5c7431b2d12a67a85fe3474b59b57f8609d",
+      "bytes": 1258
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C045/BCH_C045.sp.gbw",
+      "sha256": "1cf4a2c7cb087ac7190b32323b50c104b1d3503e3fec6f821b401f62ae5de02f",
+      "bytes": 1415964
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C045/BCH_C045.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C045/BCH_C045.sp.out",
+      "sha256": "82c337b1f58bc3be15a20d28e8a0fcea503a34f843923d994f4e5aca13a75972",
+      "bytes": 63869
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C045/BCH_C045.sp.property.txt",
+      "sha256": "bf2d2c2ffd3ab3d2a31d0eb53b309409172aa680d3f8aa020a7f3224c80600e2",
+      "bytes": 23591
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C045/metadata.json",
+      "sha256": "d946ef149e6a1106b011c616808512bdb5f01614ece83c5c7fcd82cbb3447313",
+      "bytes": 1839
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C045/optimized.xyz",
+      "sha256": "b6982608c637ce2a1b6e02f37a30f4677efc574e7a84d76b23f8222bfaaddac5",
+      "bytes": 884
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C046/BCH_C046.sp.gbw",
+      "sha256": "0b5423e1f190436e62f8d80bd6339200d489e457c21f8291d714751b55fa44fa",
+      "bytes": 1370636
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C046/BCH_C046.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C046/BCH_C046.sp.out",
+      "sha256": "bd3611cd7734407ee032b49b34b65b9938444f67d714162b3932e8b8ac018248",
+      "bytes": 62862
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C046/BCH_C046.sp.property.txt",
+      "sha256": "f3c76f5f8808e52632644d0a052027c70a98ca20446c9376586e274372684234",
+      "bytes": 23386
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C046/metadata.json",
+      "sha256": "8d41e63d7a1382e05ef77c7dc724e2befeb7ac7848b668542152cadd6027a700",
+      "bytes": 1840
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C046/optimized.xyz",
+      "sha256": "fdddbcf6fb7f51d0c8a296baa07279b8a6d30d8f028d744f482e448c4cb0ae04",
+      "bytes": 883
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C047/BCH_C047.sp.gbw",
+      "sha256": "175eb711075383db3c075d87f9d4799437b3a964cf84b338d1c5cfa457f0f1f5",
+      "bytes": 1396999
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C047/BCH_C047.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C047/BCH_C047.sp.out",
+      "sha256": "f5278b08876055fe3aeab14e8e0e20d5e3b35def8acbba540e7e824bcde3a4f4",
+      "bytes": 64638
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C047/BCH_C047.sp.property.txt",
+      "sha256": "28ca3350b9b648f12175cfcec00a5a6864f7afc0511f0f3721e2e9a924ddd51b",
+      "bytes": 23181
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C047/metadata.json",
+      "sha256": "774119d0f68e381f5c66a57181db5111206c720b8b7f3f40f9a584ff1bdafc84",
+      "bytes": 1834
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C047/optimized.xyz",
+      "sha256": "2c0152b0e3f601799fd18ddb884d8aa2285ce35b0fbd5db9f5da506c7b465217",
+      "bytes": 883
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C048/BCH_C048.sp.gbw",
+      "sha256": "f19f3ed0147e6461874824d06cd5cf43d0c022cbf200db6a5d4c1623cdd3dd17",
+      "bytes": 1415964
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C048/BCH_C048.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C048/BCH_C048.sp.out",
+      "sha256": "c60369675cfd6c3d86f8bac16727bf9449ac111cd94c908546382daf03527b0a",
+      "bytes": 63871
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C048/BCH_C048.sp.property.txt",
+      "sha256": "c20cbe50df02fe7a50b87b5c1c88f2f98a9927b241c03bf2dad59e1d0f2aa475",
+      "bytes": 23591
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C048/metadata.json",
+      "sha256": "8c4ff2a435e59e2764b36b28d2066aa1981af598b5e19dfe2b30ed8b7084e530",
+      "bytes": 1851
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C048/optimized.xyz",
+      "sha256": "b09a03e1c82e9f4b4c49760451aef501cb94470c6c9c1e1c41e978b6e655be9a",
+      "bytes": 884
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C049/BCH_C049.sp.gbw",
+      "sha256": "2cf26e0320cc45d5703389de6a7d9e65b67fda5ea8937f6d3c1429dfc8af671f",
+      "bytes": 1370636
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C049/BCH_C049.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C049/BCH_C049.sp.out",
+      "sha256": "47217663e4ea4f61040d6a584e3c6df56e854ad727522914b36747fde8de72cf",
+      "bytes": 62835
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C049/BCH_C049.sp.property.txt",
+      "sha256": "a2d3a12b934fff4e84254efbb9ae82bdec4ea340cd1338751763ad03ccb893ad",
+      "bytes": 23181
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C049/metadata.json",
+      "sha256": "5970b03d45b09f22382f3351a1d5258e7db26da89fc57145b94103aeb3534a52",
+      "bytes": 1841
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C049/optimized.xyz",
+      "sha256": "cf6d0153eaa6c93026405b35858d9f1c7354a8fc4a60b394d73fe428ba162f3e",
+      "bytes": 883
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C050/BCH_C050.sp.gbw",
+      "sha256": "5dd2f0014e37f436c431d5be6bb0168a2698716edd7f0df22e23e0a31d88e784",
+      "bytes": 1396999
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C050/BCH_C050.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C050/BCH_C050.sp.out",
+      "sha256": "3de4c851bc9677db923f779a4e3119d826b1893d2aa60e6aad2ba2af3b388ac5",
+      "bytes": 64686
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C050/BCH_C050.sp.property.txt",
+      "sha256": "64a3df0f9d1205956a7c1286264b980e31cbc2a893ca43536d9acb52deb20383",
+      "bytes": 23942
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C050/metadata.json",
+      "sha256": "0f006599b3f6ddcfb653288e198b0cbda88917eccb4253ae68bec47c368dd750",
+      "bytes": 1833
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C050/optimized.xyz",
+      "sha256": "b866acbf2603a101edd0d9372f9d80f5dc38cd1ea8c1136835f7deefb55fdfc3",
+      "bytes": 883
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C051/BCH_C051.sp.gbw",
+      "sha256": "f3185476716ba0275966075b8168f63727d07cb88d49a7b287807f7f3881d763",
+      "bytes": 1234124
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C051/BCH_C051.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C051/BCH_C051.sp.out",
+      "sha256": "484545d1c3150cafe388b1fe93b91f8a45185f35a38e325a71db2b3b138c6baa",
+      "bytes": 60417
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C051/BCH_C051.sp.property.txt",
+      "sha256": "d846a174e3a278e6f1e00345e17526b696d0e92b99106cf025bb976d51d62df0",
+      "bytes": 19998
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C051/metadata.json",
+      "sha256": "d658e2cb71d6f3184a2bf293d414ceae01fd818c0f62b43ef880c9ac1d2d8907",
+      "bytes": 1821
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_C051/optimized.xyz",
+      "sha256": "84f3a563c831bdab7ed873cb629910e9e733d141955d035a8217efbae4a73adc",
+      "bytes": 808
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_M026/BCH_M026.sp.gbw",
+      "sha256": "10a70968f7dbdfc3c5dc201585c82cdbf2becdda742696a6fe916c4978acf0b6",
+      "bytes": 6176649
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_M026/BCH_M026.sp.inp",
+      "sha256": "c8ab5fd942f39146679f4e42985e6bf4cf723dc75272b64325591a6cd6fa520e",
+      "bytes": 284
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_M026/BCH_M026.sp.out",
+      "sha256": "91035f57ddb4e4b972e82a7c3e91616ca64b7bd30e7fdfc982d90e92fb7e82f9",
+      "bytes": 104681
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_M026/BCH_M026.sp.property.txt",
+      "sha256": "5e48d1e1e280ed2c15545829831ff326fbbdcfbe644d0642b11518a8b7f4d790",
+      "bytes": 66423
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_M026/calculation_override.json",
+      "sha256": "8ab690a9791e7e113dd9b10014b1b01768f641f754db63762b48bd78fd314f34",
+      "bytes": 431
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_M026/metadata.json",
+      "sha256": "084b07051dbd346ad3710228012e59a2e079e707bac07f85cb5925af1ffc12ae",
+      "bytes": 2122
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/BCH_M026/optimized.xyz",
+      "sha256": "1464b953bf75ab4d4e4c40719f70f81aaea1735116357eeeecace42a6eb10022",
+      "bytes": 3454
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/calculation_index.csv",
+      "sha256": "e659cbdbf56ea53d0f88ba111a17feec764856f1b88761fc974c8c4567bb3a98",
+      "bytes": 28707
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/mayer_bond_orders.csv",
+      "sha256": "3afdfa21288cf7e1eddd55704622ece31e62408e963611712fd33e47942613c2",
+      "bytes": 163486
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Buchwald_sub4/molecular_features.csv",
+      "sha256": "02ae8a36174b62095d7965851afd869916823a99a2999e1a530531f0e022e405",
+      "bytes": 12844
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/calculation_index.csv",
+      "sha256": "1b97791afc608ce37c3a6abd277c5975ab5e3e3cafb804008c2590aa9cd38a9f",
+      "bytes": 48991
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/mayer_bond_orders.csv",
+      "sha256": "744cd3ca3040d3866e902192db4791f72cc855a01e8e1d765710006d429a88de",
+      "bytes": 270596
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/molecular_features.csv",
+      "sha256": "a2652df449007728dec552e8caddaf6eb6ce351e245c5affc0ebb8b7c700a37e",
+      "bytes": 20703
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/pending_calculations.csv",
+      "sha256": "6eb4629bdb34709ace4b300da829f03f727c2e2dad4e8b6a3a2362b18c496373",
+      "bytes": 92
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/README.md",
+      "sha256": "57a7a2be53d82930f2b57ff091e53a191e1587ccf6cce9080f534d0f11418121",
+      "bytes": 1742
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/SNAPSHOT_STATUS.txt",
+      "sha256": "efdd893fd9adf7f2226242ff8baeb28c5f100db91dcab45774cd85c608074eff",
+      "bytes": 35
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/source_tables_leak_safe/Buchwald_sub4/buchwald_sub4_test_features.csv",
+      "sha256": "bba0407e030bc0decd738ab6d2a2bee01a1864a40e21cabe0d7da8a306f9e8c4",
+      "bytes": 186609
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/source_tables_leak_safe/Buchwald_sub4/buchwald_sub4_train.csv",
+      "sha256": "f24d5ab8a51c2337a7abfb2ce3a61cf54b4624f924ea4fb7f952687c6d6f1cfd",
+      "bytes": 8950
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/source_tables_leak_safe/Buchwald_sub4/options.json",
+      "sha256": "ffe52a2dc524b17e5dbdffeeb0b642b46fbcfbda7155cfc00cae9cc6f65771d0",
+      "bytes": 1876
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/source_tables_leak_safe/Buchwald_sub4/README.md",
+      "sha256": "e21eb0e1bc0e104637f80cb91272aefe16027251cf03e6769bcea5763cafab6c",
+      "bytes": 12129
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/source_tables_leak_safe/Suzuki/options.json",
+      "sha256": "9fdf305d0491d6b360a558ccd59536efcebd1942ab9d270a771b0452afe85df4",
+      "bytes": 1647
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/source_tables_leak_safe/Suzuki/README.md",
+      "sha256": "5c3ed3b370e5b1c9abe6d4256f6baf42b4f4c2a663fe7eae74b6f6e40f8bf78b",
+      "bytes": 9519
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/source_tables_leak_safe/Suzuki/suzuki_test_features.csv",
+      "sha256": "d76ee15f06877f3fb1781478d6f9170f671290bfe4bde9e9f953d5ab1518c95a",
+      "bytes": 942712
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/source_tables_leak_safe/Suzuki/suzuki_train.csv",
+      "sha256": "7ac7c674daf0397f89313ea2063759ad0d3b6cadf457846dfc67172510236be8",
+      "bytes": 5024
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/summary.json",
+      "sha256": "627c15f646585a236e9a6f369785e157b984e744ece5ad5fdd324ee936ef6cd2",
+      "bytes": 492
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/atomic_features.csv",
+      "sha256": "28db97e19ec88c87cfc93966dcbbf7c9428de4063d3b278eb9336a319087e1a8",
+      "bytes": 77783
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/calculation_index.csv",
+      "sha256": "82ac09ea8e68c267e1f2e0ee8db773c3becb6b9b3336f679b90b419f54094049",
+      "bytes": 20783
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/mayer_bond_orders.csv",
+      "sha256": "1c34395fb3c0d1c1c1ba03a34d1c5450bf1e459cb25c9406f1d6b5b19dc704fb",
+      "bytes": 107188
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/molecular_features.csv",
+      "sha256": "47e700e7fc67562f51c656a007d299e9eacd9542a6e1f5ff99d145b60e2e4623",
+      "bytes": 8162
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C001/metadata.json",
+      "sha256": "097ddfa1f19d0e6d5c26779cb9c12b06ce90accdfacf9bedee5489c8c08deb31",
+      "bytes": 1810
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C001/optimized.xyz",
+      "sha256": "b4a10b08eaaf0923b57758b8a81730ce84d70ea8830c11c7edd64b277afae8cc",
+      "bytes": 1708
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C001/SUZ_C001.sp.gbw",
+      "sha256": "d58c9dddcf809f69f76248df2dbbc3c185cc106c8ed707488515ea1791cb3dd8",
+      "bytes": 1717948
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C001/SUZ_C001.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C001/SUZ_C001.sp.out",
+      "sha256": "372b1f00fd3679d612ccf763dd2b1fcfa98e944b792211852760d30eb7870dc1",
+      "bytes": 71535
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C001/SUZ_C001.sp.property.txt",
+      "sha256": "3cfea5ef0535c5818d3d03bda3339560b87d8a4eaec0587a0370b829627a48f0",
+      "bytes": 36200
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C011/metadata.json",
+      "sha256": "a62c4b109c2d5eb38146fc0d5316c8b2adde74de201fa6e941a51c736b21fc3c",
+      "bytes": 1935
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C011/optimized.xyz",
+      "sha256": "2fbd1ddad54d986eb30299d8125e1d9414c9ffc698c8312806b86ced30b37604",
+      "bytes": 2459
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C011/SUZ_C011.sp.gbw",
+      "sha256": "02ec8cd66bda02ec639871f30139d757dc72b1f274d3756e64c8dbc5f2732e0d",
+      "bytes": 3210156
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C011/SUZ_C011.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C011/SUZ_C011.sp.out",
+      "sha256": "43980bd8c3fe7a3c276e0c130776f345b62a95a7c1330cd426c564769501057a",
+      "bytes": 86863
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C011/SUZ_C011.sp.property.txt",
+      "sha256": "3a2f75dbb0b6a8b7757f7dd97a2c7030008df286d0e102f505d1e1521778877a",
+      "bytes": 56407
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C012/metadata.json",
+      "sha256": "0affa87d98b41fff6103cf3cd242dea89e5fe33ebb8ac14869285a9afc30b9ec",
+      "bytes": 1861
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C012/optimized.xyz",
+      "sha256": "3a9d9b1cf76e278a0c5c54487d622ae21f8b2912647b9d3a1519740b6ad02e29",
+      "bytes": 1334
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C012/SUZ_C012.sp.gbw",
+      "sha256": "d06ad4599b06a8aa0c576f83799be57e760748f8c4427e8f71de03fd0a02f39b",
+      "bytes": 1858636
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C012/SUZ_C012.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C012/SUZ_C012.sp.out",
+      "sha256": "2f875c0faa6252e9b09bd1842bce33697bc134e1494921c7827a95209e67ba69",
+      "bytes": 70873
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C012/SUZ_C012.sp.property.txt",
+      "sha256": "c7124d9c3fede456ff0fedee21e20fd724b818147771538d2bed09f3242d4aa3",
+      "bytes": 33817
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C013/metadata.json",
+      "sha256": "a9f1bc8946b3e3fef632edb1ff7bcb603ef99c54d38509ce42be7f2fed47ffda",
+      "bytes": 1860
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C013/optimized.xyz",
+      "sha256": "e08f1e33e3695d98deeb78bae7a64ca5b896ea065e67ae6346ecf66e6277c58d",
+      "bytes": 1333
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C013/SUZ_C013.sp.gbw",
+      "sha256": "a231d1b9c286739a02252fb5525548b64dbdad1cc39d9032e1e2e2eb03979f30",
+      "bytes": 1791804
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C013/SUZ_C013.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C013/SUZ_C013.sp.out",
+      "sha256": "a881bceabfcf7032d615d74230ab4ab24902c89c816c5de0f2d2d0349e78d29d",
+      "bytes": 70071
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C013/SUZ_C013.sp.property.txt",
+      "sha256": "c1c16a1007f2e21ad6b3898a72fd46720e3c05625650e491facd63cde458424d",
+      "bytes": 34079
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C014/metadata.json",
+      "sha256": "a2ae970b55f7895b4c642f5d3824774ef85cc3204e19aae74ba5767d3bfb303e",
+      "bytes": 1866
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C014/optimized.xyz",
+      "sha256": "28a8c85d1d9097945c78d87f021f8e75cb992286b92a4d3f1a6377a4001c818c",
+      "bytes": 1333
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C014/SUZ_C014.sp.gbw",
+      "sha256": "03bb6bcf6da635c12a62abb0e836243db16158fe78ec4ccfe177b4f709517b1d",
+      "bytes": 1830461
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C014/SUZ_C014.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C014/SUZ_C014.sp.out",
+      "sha256": "476c7c04f780c4c73dedbe5026127cecfd6315564296bf042ab121bf9ede9f36",
+      "bytes": 71872
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C014/SUZ_C014.sp.property.txt",
+      "sha256": "16e20b2d7fc74539d6fb487631d7b07fab63176eb4ee2f771a0f540eb27ff51b",
+      "bytes": 34079
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C015/metadata.json",
+      "sha256": "812e097ae954aed993867d28acd63b22f4d4991bd0b4789ecec781b564fc97a4",
+      "bytes": 1942
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C015/optimized.xyz",
+      "sha256": "5dc7857d61ac970343e63d1d77ecadb86d6f045d4d3cab4ffddf89eba6bc9f8e",
+      "bytes": 1859
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C015/SUZ_C015.sp.gbw",
+      "sha256": "f8b5910a8037c5861961c6e67f28f510934196558e75be2bc4a5fa628d3e04a3",
+      "bytes": 2797012
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C015/SUZ_C015.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C015/SUZ_C015.sp.out",
+      "sha256": "803e8cccc9cd7111fa96be081e705ea1f1d5a40abd2f0b5c1e3f936e0b6b7811",
+      "bytes": 79841
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C015/SUZ_C015.sp.property.txt",
+      "sha256": "3e2ec11cfc70de8c119457dfbf7051b4cdb45381d5756f38fddeb5902140cdf7",
+      "bytes": 43037
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C016/metadata.json",
+      "sha256": "b0fea0e80b4d22a806f762ecc0665156dd829b95ca0bceae80161461042e88ec",
+      "bytes": 2003
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C016/optimized.xyz",
+      "sha256": "33ef143223df3485a8b68b26d937e169c4146e5256d878a9f2d1ef665b366094",
+      "bytes": 5615
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C016/SUZ_C016.sp.gbw",
+      "sha256": "e0e18c4c135285069e7e082e8f631e3f91c281d160d17ceb2a640b48a7d8a24e",
+      "bytes": 11618164
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C016/SUZ_C016.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C016/SUZ_C016.sp.out",
+      "sha256": "ff6f9d5570e6bc70615ea581e165fd8c43ee48c75158ebd011fdb49acf323209",
+      "bytes": 139096
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C016/SUZ_C016.sp.property.txt",
+      "sha256": "c69fd61337ebf271c4a06ff72da908d010fc9cbd68c87d627d3cf0e4bd389e28",
+      "bytes": 152379
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C017/metadata.json",
+      "sha256": "af7db612012064dcee3e589b413cc3d50fee8644d60088bc793742131fcd8c41",
+      "bytes": 1914
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C017/optimized.xyz",
+      "sha256": "c742a5c391db92dfe3f34493d6dbc0032986ee4a656506f5adfc1d58f2b47a4f",
+      "bytes": 3509
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C017/SUZ_C017.sp.gbw",
+      "sha256": "3adaafe995f8d1650b161e910172058da4ffab2e642b30352126c03e842d7cc5",
+      "bytes": 4190316
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C017/SUZ_C017.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C017/SUZ_C017.sp.out",
+      "sha256": "f8f0d9130e1f7b0809790d8860c8e2b17109064d8b9d7c6bc2c9ae36ddaaec33",
+      "bytes": 98412
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C017/SUZ_C017.sp.property.txt",
+      "sha256": "e9243e8ef2e5f1d5d5a8a0aa6da6638e8517ca2ddeb262f8edc3202c44c44d80",
+      "bytes": 78012
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C018/metadata.json",
+      "sha256": "328fa066ee55a65f7d2ab2392df69f53cc00f8bc7d95c9ab1e0d19b51fee8e93",
+      "bytes": 1915
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C018/optimized.xyz",
+      "sha256": "f480de0a4520a6a3caeaa9fea26966f3fc825c0284a34ed244494eecda531743",
+      "bytes": 4859
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C018/SUZ_C018.sp.gbw",
+      "sha256": "d05e0f653a21cb8833f10f6573f07a5345e917a0f5a86915066731e6d5e3cc2c",
+      "bytes": 6923260
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C018/SUZ_C018.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C018/SUZ_C018.sp.out",
+      "sha256": "1340c6eb2d7d7671c515da0886806bffc9121c3b4e3dbb5cbdb9bf2962d57367",
+      "bytes": 118293
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C018/SUZ_C018.sp.property.txt",
+      "sha256": "cb2bcf1130b01f41238cdda3add6fdf6c76e4432d72ded5ad572baa71b1f2faf",
+      "bytes": 112756
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C019/metadata.json",
+      "sha256": "22ee662bb3d46d8132af7c4e587bf402447c17aa67d8667d965eaa7d87a7bb42",
+      "bytes": 1925
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C019/optimized.xyz",
+      "sha256": "3419524e7869a2e93ed5b616076d28acbbc9de044ec635ed6b527c6407db1db3",
+      "bytes": 4859
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C019/SUZ_C019.sp.gbw",
+      "sha256": "fafd11a6a8ccd3f3fd148969e11cf88561f860595e32e070fe2295ae8632b154",
+      "bytes": 7689468
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C019/SUZ_C019.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C019/SUZ_C019.sp.out",
+      "sha256": "d963c8370b85e2d41bfab6d4eafab5bc488b285bf32bda72d8f653c6bba70b80",
+      "bytes": 120600
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C019/SUZ_C019.sp.property.txt",
+      "sha256": "27f01f6f916bd0b19e4f76101b0176f247e48169636bd04c91b5cf763885194e",
+      "bytes": 112553
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C021/metadata.json",
+      "sha256": "013892fc0e19a4b8d51b57f0acd3e1d351300f47a8f1fb8cd497b1feac68d481",
+      "bytes": 1864
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C021/optimized.xyz",
+      "sha256": "b2286765cd5636fc9e4644076735afa5841ef265a30b4fc97c68293ba8e492e8",
+      "bytes": 3959
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C021/SUZ_C021.sp.gbw",
+      "sha256": "66187eaed160e28a19b182677b18eee2101f86acf244e398af4d8e55b50ae5d5",
+      "bytes": 4828828
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C021/SUZ_C021.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C021/SUZ_C021.sp.out",
+      "sha256": "3fd80066f433839e1fc98f01c06c50e9c8db524c16f2ea2f4f022f845c005711",
+      "bytes": 104015
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C021/SUZ_C021.sp.property.txt",
+      "sha256": "952913ae31527a1537ae8b77f5f55f7823cf71c135d33532ff53c1b063ee3120",
+      "bytes": 87885
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C022/metadata.json",
+      "sha256": "7271128f7c8e3c0b77dcea6ba460913c7143ebbb4424990354a98db1971a9295",
+      "bytes": 1860
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C022/optimized.xyz",
+      "sha256": "443b4803aaeba537f36543205ebd60415bb3728d8f54c7669dd39b4664165457",
+      "bytes": 2609
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C022/SUZ_C022.sp.gbw",
+      "sha256": "22ed9205608365e8991de12ad9ab0af108b66b20258f8340c81e876293eb5a1b",
+      "bytes": 3393292
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C022/SUZ_C022.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C022/SUZ_C022.sp.out",
+      "sha256": "0c505e3e82219d539948d31364031d4d4ec3d85b647753484c8850bdb759aa8a",
+      "bytes": 88355
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C022/SUZ_C022.sp.property.txt",
+      "sha256": "3b97be29b36cd2a0eb86bffc88b3e0838e8af8e31cae6ffd7d4dc193b410f913",
+      "bytes": 63391
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C023/metadata.json",
+      "sha256": "380060056d275e770654521c52e2b34f8a74bd0aa480190d8b8d0e536d1bd360",
+      "bytes": 1885
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C023/optimized.xyz",
+      "sha256": "9e4cbb356ae8035d4708ee5d7236eee7204e2dc7f229b0fc81ff493c22fa446b",
+      "bytes": 3290
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C023/SUZ_C023.sp.gbw",
+      "sha256": "b4436b55bf420387b7758a944b0419a43d7693066a9495be8dd0dd9a9e78e2c5",
+      "bytes": 4438996
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C023/SUZ_C023.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C023/SUZ_C023.sp.out",
+      "sha256": "c715721e0e62d4c045215f473c676ad1db5479887789f098cc0e78bdd6d8f9b3",
+      "bytes": 98310
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C023/SUZ_C023.sp.property.txt",
+      "sha256": "ceec653fedd6fe5ec7079fd24e52cca219d64977602c25d406d02623e53451b1",
+      "bytes": 80089
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C024/metadata.json",
+      "sha256": "701ebd6dded21b6b7f6eb6f4cbdda6a1ac3c3d2d9336b3aa11480e65ee4ede5e",
+      "bytes": 1848
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C024/optimized.xyz",
+      "sha256": "568aed73f44fad4fb5fe8f9e5713b9c14c15c1a89abc9e4951b71decf4a6891b",
+      "bytes": 3058
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C024/SUZ_C024.sp.gbw",
+      "sha256": "def047c6f28e7be2863f16b1d57696db204760787bc7bef419dc2e98f626c2b3",
+      "bytes": 3185980
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C024/SUZ_C024.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C024/SUZ_C024.sp.out",
+      "sha256": "c9c089bec24d611f94b5f006083497ae3b0b8b99006a6a240252819d72fbf9af",
+      "bytes": 90222
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C024/SUZ_C024.sp.property.txt",
+      "sha256": "77440fd19a0eb93fe612dcc2a9f2555aa5511d64af3be46c9a0a3f4eb764a146",
+      "bytes": 65821
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C025/metadata.json",
+      "sha256": "8a8f1f3b8950dc0c537b744fbde9d78995cd4f350474a07c9ecb9c9e04f6ac81",
+      "bytes": 2003
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C025/optimized.xyz",
+      "sha256": "2e6786da495edd3ed03af8c358e563c994e6350ae03a7b1267a2183f388778ad",
+      "bytes": 3959
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C025/SUZ_C025.sp.gbw",
+      "sha256": "b06f6bae1af1d3384eba71fc786415f0f74c51ee4e6ce152b7f969968e65775e",
+      "bytes": 5728708
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C025/SUZ_C025.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C025/SUZ_C025.sp.out",
+      "sha256": "76af784ea057b350d1575b0804f95fc976488241b5e3bc7db5069cf311032b61",
+      "bytes": 107533
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C025/SUZ_C025.sp.property.txt",
+      "sha256": "c53504ce9eecdcbf20200ef3887ad2ffc83fb4b378daca6871210b6fb8243791",
+      "bytes": 90550
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C026/metadata.json",
+      "sha256": "cb79bb3a94973819b0ccb310df7f69f9632f02407e1f12325f034149f0e537cd",
+      "bytes": 1951
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C026/optimized.xyz",
+      "sha256": "f28c342d8d5659655dc505cb8f0d0aa11b9fc26098bb705de67a9488f8b3b69f",
+      "bytes": 2833
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C026/SUZ_C026.sp.gbw",
+      "sha256": "6a50615fa57e492b2e0574a31a75c9e1ba11ea97ed0d60e940ba9e71fcf0bf5d",
+      "bytes": 3625268
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C026/SUZ_C026.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C026/SUZ_C026.sp.out",
+      "sha256": "455fb3833c4b4d97f2678b5b7aacfb11fa6cc8dbefe1fbf0a5181e560a80132f",
+      "bytes": 92094
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C026/SUZ_C026.sp.property.txt",
+      "sha256": "c55ec6044b659e4dea48f2c9c747c0a516e97d7737ef1861f1df348e928e8605",
+      "bytes": 69865
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C027/metadata.json",
+      "sha256": "350bd74b3152a0f73dcffa1166882a16824e40c85d9a6eeb59b1fd1bc0a9bf2f",
+      "bytes": 1927
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C027/optimized.xyz",
+      "sha256": "001fe3f4a4a4031745456ff8c0e5c45c4d0488d30ae0759180f22e7118f7c173",
+      "bytes": 2758
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C027/SUZ_C027.sp.gbw",
+      "sha256": "11af82b0bb6176dde2a2c12bf80941c07381738a8e9a40c05fa60868b863c5dc",
+      "bytes": 3577796
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C027/SUZ_C027.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C027/SUZ_C027.sp.out",
+      "sha256": "dd179229abb3c6b0f42b8c0ffc3dc947e3f0014a986f7391133c034fd64c99c8",
+      "bytes": 89958
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C027/SUZ_C027.sp.property.txt",
+      "sha256": "eb82de06da59db4cc936af38b72dda2bb3a152a275b7f437cbddef633bb8258f",
+      "bytes": 61495
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C030/metadata.json",
+      "sha256": "cb8a10f2a62f7b728bc7003b95ea6c2dfcdbd33837640d3e9e2feca73b55e1f5",
+      "bytes": 1876
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C030/optimized.xyz",
+      "sha256": "117400310cbcf087037004c4c9c7bdcacc27af17db5a1c30069f44d7c8311283",
+      "bytes": 1633
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C030/SUZ_C030.sp.gbw",
+      "sha256": "5428d3b2743511feb632461ea92c2bb68120cb8844b6d952ed567fcbc29c53ff",
+      "bytes": 2098356
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C030/SUZ_C030.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C030/SUZ_C030.sp.out",
+      "sha256": "9996cbff06e5e7d3cc5d482312bf5ea8581bdcde4ffd64a432ee0efcfed4748e",
+      "bytes": 74593
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C030/SUZ_C030.sp.property.txt",
+      "sha256": "1a7ab68b19acf0e4aa085e6c23548c87dd205c4775e070b46bdeb746fc3d5f19",
+      "bytes": 40251
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C031/metadata.json",
+      "sha256": "da90317813ea71555728fa2cfd1abf2d248c190374344ba313b86c54619ba120",
+      "bytes": 1944
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C031/optimized.xyz",
+      "sha256": "e8b5b0f2426c305c3e2c9f698c55a36b554956f702b41d071f58907cfc8a25af",
+      "bytes": 3584
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C031/SUZ_C031.sp.gbw",
+      "sha256": "89ba566ee146d9152a42d6584b8b1f90f0f8201f95bc2e3af44c48e53d6369f8",
+      "bytes": 5321020
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C031/SUZ_C031.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C031/SUZ_C031.sp.out",
+      "sha256": "ff6b6c5fd7276b079dad9d3fa287b58914806ec3dfa550eb3c1b092996a82739",
+      "bytes": 103041
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C031/SUZ_C031.sp.property.txt",
+      "sha256": "e3d8c42c3bf55cf7a2deb1f71d3b82f7aa5bb7f420ca102ff6b44ee11dc6c167",
+      "bytes": 82571
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C032/metadata.json",
+      "sha256": "b275c98eacc48a35de784977ef53f5bfeeb2459535b4014ee5993304525eab0d",
+      "bytes": 1821
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C032/optimized.xyz",
+      "sha256": "96865bdcbb9ca44b23e628578b5323edc6563e0d4b4a9c9b0a21da93063d594d",
+      "bytes": 958
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C032/SUZ_C032.sp.gbw",
+      "sha256": "e9572b07062c2e8bc42d2eccda35b18e15855c1bd5631069a2ccd47baeb621b3",
+      "bytes": 1301732
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C032/SUZ_C032.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C032/SUZ_C032.sp.out",
+      "sha256": "f71704f72b44ceffd42761e10c2398d51f5a6a403d846bba0d8a68259d76dc35",
+      "bytes": 62419
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C032/SUZ_C032.sp.property.txt",
+      "sha256": "0db161e89225a3ff36b832ca591f1275c4cc1fd3a60ed2747d4d870f2f3df97e",
+      "bytes": 23289
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C033/metadata.json",
+      "sha256": "7c60516b683e6dad4e5ae93ab5ea5465cf6169d0b2bc066e551a1b5889ebacfe",
+      "bytes": 1799
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C033/optimized.xyz",
+      "sha256": "581f851c1c5a3fa093d7cbf60dcdb356ead13462320acbd269b70f0f57dbb3f4",
+      "bytes": 507
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C033/SUZ_C033.sp.gbw",
+      "sha256": "2c2b6b941ebf1b9ec2ba9395e83b98d76e051bded911541f6dc253f389569da1",
+      "bytes": 1100860
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C033/SUZ_C033.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C033/SUZ_C033.sp.out",
+      "sha256": "3e8b9125cf6a960ab991bc48a11637cc8ea2d528e2115cc70d0d5334734eff21",
+      "bytes": 56266
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C033/SUZ_C033.sp.property.txt",
+      "sha256": "2fc4fe21833fd5fb1226ec95db77e18a36c2c2d606a8a568a3527884a79df83b",
+      "bytes": 15792
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C034/metadata.json",
+      "sha256": "b2739f1e455831d2f45883589fbfddd1c3d81f2fd8751b0b06ad4af8464e9532",
+      "bytes": 1787
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C034/optimized.xyz",
+      "sha256": "d3a4b713332caf848c0c0737ad4a054bd2964a3ea56caaca0c704a4c352d1f9d",
+      "bytes": 507
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C034/SUZ_C034.sp.gbw",
+      "sha256": "d5ecbbf69a71f4be62fc31168c437860a00adf8ef455df028c30f77c187f2e66",
+      "bytes": 1081076
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C034/SUZ_C034.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C034/SUZ_C034.sp.out",
+      "sha256": "b81148f382b3583c80f9cdfeb898a278c4cce46a108bed4b383c3e3225934e06",
+      "bytes": 55720
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C034/SUZ_C034.sp.property.txt",
+      "sha256": "68c44769fec7d272b99ffaf197ad32bbaa3d6a6f9520f51ebb8a0214f9d26ee5",
+      "bytes": 15029
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C035/metadata.json",
+      "sha256": "ff7b1cd312793dce3f2ca7cc6a3077a5a02972bb8b491e0362e6394c3ab8a4e4",
+      "bytes": 1803
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C035/optimized.xyz",
+      "sha256": "b000c35600aa0e445ec3b09cf8f2ecd6acfe53885862bcdac17a1f63ab9bc49e",
+      "bytes": 1033
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C035/SUZ_C035.sp.gbw",
+      "sha256": "cd6a9a77eba2a3910bcc317288524e531f121c5ec615a5034deac9d7f7ce3936",
+      "bytes": 1328620
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C035/SUZ_C035.sp.inp",
+      "sha256": "88a00dc411d5a8251356c6d8942a28be30269248857faf67815d1dd5e9252fc8",
+      "bytes": 177
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C035/SUZ_C035.sp.out",
+      "sha256": "3e334e7fa9790a3387c5e3e756b6a36696de387168ec65a05d38e20ac06519cb",
+      "bytes": 62836
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_C035/SUZ_C035.sp.property.txt",
+      "sha256": "592424002630054e74c221a7ba09221f894ee055a99c064f89c266dc75d41da3",
+      "bytes": 24012
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M003/calculation_override.json",
+      "sha256": "920ce57f5ca6de9bc418d4ae0de1534eaa2bbe247885a9ba8c8812a238d81fc3",
+      "bytes": 415
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M003/metadata.json",
+      "sha256": "44505ac890c3750583a9d3adf4d44f4bfe93a8e346f628eb679cf8de43601def",
+      "bytes": 2028
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M003/optimized.xyz",
+      "sha256": "95925c88422ca3d9dbace6457d0025a6bd55edaf2359f4741ddbf26bfb27e6ee",
+      "bytes": 218
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M003/SUZ_M003.sp.gbw",
+      "sha256": "99f7ed0fa63c0a2ca3627b6b2b73bc05ecf6ae9f4619bd2551ecf22995b8b53d",
+      "bytes": 1036326
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M003/SUZ_M003.sp.inp",
+      "sha256": "ca850b0622b9ad7330cd04ea585339ffdc9a58a224139ca871825f295b0b4528",
+      "bytes": 236
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M003/SUZ_M003.sp.out",
+      "sha256": "0e7a1216e6aa08f1fcd5dda50ce4bcd8b4946f692aa7e2a44599588e7110fdfc",
+      "bytes": 57290
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M003/SUZ_M003.sp.property.txt",
+      "sha256": "c988d29b48a7b0be7557e6762c0155636f708f68b7d11f9dec5397a491c21406",
+      "bytes": 10548
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M004/calculation_override.json",
+      "sha256": "cbdb41ac37b5ca66af3595ed860110adf39295e7f231cde0d73f80f0fd0abc59",
+      "bytes": 425
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M004/metadata.json",
+      "sha256": "7eef0853f1b67649b87b1335bb14510da1fe69b076cbfea3f108e049f9384fe3",
+      "bytes": 2089
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M004/optimized.xyz",
+      "sha256": "96c74d3f95d009252fb1a3f4bdd10717b13f9dc72e818ea6629ee115294a5348",
+      "bytes": 1200
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M004/SUZ_M004.sp.gbw",
+      "sha256": "4878ca554a3aebd232b4e0d28dfb557fbe8b9187a34ca8cc169f796c73efcc81",
+      "bytes": 1404844
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M004/SUZ_M004.sp.inp",
+      "sha256": "73e5091279b9e8d7a252ea56595b4ea0b414a90609a5d7a9567fda7311c51c79",
+      "bytes": 255
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M004/SUZ_M004.sp.out",
+      "sha256": "0bdb6b6a849bc9e4c629140baf7b01ece70b6ee2f162d1f85326418eb99b3f14",
+      "bytes": 67924
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M004/SUZ_M004.sp.property.txt",
+      "sha256": "52a2134ea1761015715f33659af89d9575cb0e5ad5e279c42a86977c340d21f3",
+      "bytes": 27001
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M005/calculation_override.json",
+      "sha256": "02f4c7e59119ac8b5c09fa5973a292119adcb2c02f49020d39c6d833532da54d",
+      "bytes": 419
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M005/metadata.json",
+      "sha256": "a9be2eac927b18f48ed92217460a8179e642cd23f7de9c43c0178d2eba2cdeef",
+      "bytes": 2034
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M005/optimized.xyz",
+      "sha256": "a29bc7e7614d8dddedbd1fbf8602647fe885163cc4bee828fe8fe65f5a1747af",
+      "bytes": 297
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M005/SUZ_M005.sp.gbw",
+      "sha256": "79dd5e5757787f38983ff8cc2a9a6dd2e4fc74070e01a65aa24ddfc8d3e79e97",
+      "bytes": 1048948
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M005/SUZ_M005.sp.inp",
+      "sha256": "4e2efcf1a251e02df7fd04648e9165b6176d7b3f7ba13d4a7587b9a8a4af1697",
+      "bytes": 240
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M005/SUZ_M005.sp.out",
+      "sha256": "41c3dcdb3cd13881976e5a6c67b03ca290ba15941f862fcb255250d0a142d6e5",
+      "bytes": 57210
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M005/SUZ_M005.sp.property.txt",
+      "sha256": "b1910ce92842d70e9d96c532b5c0a08b127f34765a1f3d4097d2436dc32e8126",
+      "bytes": 12064
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M006/calculation_override.json",
+      "sha256": "bfb337080e9cd2f6918cbe2ba21f14bbe95466fbcc830f5740b1f188b2569adc",
+      "bytes": 421
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M006/metadata.json",
+      "sha256": "c0d8d0c9013e70a5527d6060c1c1c32adffa8858c6f024409139b67ffbd80501",
+      "bytes": 2071
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M006/optimized.xyz",
+      "sha256": "12a631d675a82475cc4b2412c657ef822c16cc54e744e2e21fe95fdfd98d566e",
+      "bytes": 521
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M006/SUZ_M006.sp.gbw",
+      "sha256": "b1a9e0ff7fd75bd54e38a2a4196c6fb36fe8ad0a0dcf9dacc59a932133053818",
+      "bytes": 1172420
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M006/SUZ_M006.sp.inp",
+      "sha256": "87c18d0e5af9e3ea4ab5e56662a3f1055faac80b3a84859f8fadb46d935ab630",
+      "bytes": 249
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M006/SUZ_M006.sp.out",
+      "sha256": "475f6be4a24b4db09f460e66ef909f7d03f0421b9e6c8b99b413c188f9933f94",
+      "bytes": 60719
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M006/SUZ_M006.sp.property.txt",
+      "sha256": "11fd884f5867bb28b0f80674b84ea645aa52c4b17bcff022bb15676179f04ae6",
+      "bytes": 16079
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M007/calculation_override.json",
+      "sha256": "f91aac7b3f4ec182e3535e4ede41113a7e7d3397d96ec9a68c566de04e57e998",
+      "bytes": 417
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M007/metadata.json",
+      "sha256": "5b79eef924cd6e2d69b5e4b3502913f5d24008e76383260fdde1588ea209f534",
+      "bytes": 2034
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M007/optimized.xyz",
+      "sha256": "d14a9b3ceb42b57265ec4603dcdc67cf48aa533d1d7296acedf32d54c18b765a",
+      "bytes": 294
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M007/SUZ_M007.sp.gbw",
+      "sha256": "65f6439013fbde8f609cad0898954035a17a2825bc8172ee536bba836002574f",
+      "bytes": 1038988
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M007/SUZ_M007.sp.inp",
+      "sha256": "d1f01dec3dc279cc0f548fb1cb67e891c61ba1d2e5a72a77e6ac00814d4777a4",
+      "bytes": 238
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M007/SUZ_M007.sp.out",
+      "sha256": "cc53e503b9be5c03b0f764e184f97c4dc10c824aa533ece7c940353619025d1c",
+      "bytes": 56533
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M007/SUZ_M007.sp.property.txt",
+      "sha256": "7f6834dbf90ef49ccc2b64bfb2241616b87891fe990e79df6482b2ff538c1764",
+      "bytes": 12003
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M008/calculation_override.json",
+      "sha256": "5e90b9d498fbcee8412fb181b365fbda10aaadec2bb3e79c0cd2c2dabe2b184f",
+      "bytes": 424
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M008/metadata.json",
+      "sha256": "92bf12638c9138b3055ad1bf8bd8c21ce7771b5f26f8a82ccaba17c257bc2388",
+      "bytes": 2099
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M008/optimized.xyz",
+      "sha256": "6d965a47472ad430f5a47708727658fd9ca1f7d71053c9591872428fb5f37947",
+      "bytes": 676
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M008/SUZ_M008.sp.gbw",
+      "sha256": "1f10a92b2d21db1094e9627bd730360eafdf202e8642aa1c49cd50849d8f927f",
+      "bytes": 1430148
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M008/SUZ_M008.sp.inp",
+      "sha256": "f3fa5bcdebf83fb82dd52ead475f42832d3af394f3c3f694fa2fdb5aa5b312a1",
+      "bytes": 245
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M008/SUZ_M008.sp.out",
+      "sha256": "f7e342132c635e64e55ee04633ca262e2c1b922137028b01b1fa63073516c7a6",
+      "bytes": 64928
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M008/SUZ_M008.sp.property.txt",
+      "sha256": "921c97d650c230b91984c89a5bd7840a3ab3e8081b30939f974a4229b6293371",
+      "bytes": 17469
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M009/calculation_override.json",
+      "sha256": "8ab690a9791e7e113dd9b10014b1b01768f641f754db63762b48bd78fd314f34",
+      "bytes": 431
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M009/metadata.json",
+      "sha256": "bbf40d23210c7f7695a1b29e3600f2935ba6157643767c09a7c7e9ab98660c1d",
+      "bytes": 2073
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M009/optimized.xyz",
+      "sha256": "1464b953bf75ab4d4e4c40719f70f81aaea1735116357eeeecace42a6eb10022",
+      "bytes": 3454
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M009/SUZ_M009.sp.gbw",
+      "sha256": "10a70968f7dbdfc3c5dc201585c82cdbf2becdda742696a6fe916c4978acf0b6",
+      "bytes": 6176649
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M009/SUZ_M009.sp.inp",
+      "sha256": "c8ab5fd942f39146679f4e42985e6bf4cf723dc75272b64325591a6cd6fa520e",
+      "bytes": 284
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M009/SUZ_M009.sp.out",
+      "sha256": "91035f57ddb4e4b972e82a7c3e91616ca64b7bd30e7fdfc982d90e92fb7e82f9",
+      "bytes": 104681
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M009/SUZ_M009.sp.property.txt",
+      "sha256": "5e48d1e1e280ed2c15545829831ff326fbbdcfbe644d0642b11518a8b7f4d790",
+      "bytes": 66423
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M016/calculation_override.json",
+      "sha256": "8c2926e707a242cc788303f9ed5d03ee0ad7698a6d0f7604a61321b3bc67314c",
+      "bytes": 510
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M016/metadata.json",
+      "sha256": "5085f179f5b2a4a3fdc3b4c139903c47e0086b92c2ca703495aa8aeb8794aaf5",
+      "bytes": 2319
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M016/optimized.xyz",
+      "sha256": "4d4bf03b9ed83bef8778f67b327ad97b63790a71ffff254f5a84e373d283ffd2",
+      "bytes": 4961
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M016/SUZ_M016.sp.gbw",
+      "sha256": "7120f8bf46a3c4cb4741a395a7e1e33c287070b6d4142290ac0b619af0d1ac9e",
+      "bytes": 9499652
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M016/SUZ_M016.sp.inp",
+      "sha256": "54bd4bbb980453360c9f9eadb2cd7874e103f30dd5f0ef9243d6ff917474cb4e",
+      "bytes": 255
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M016/SUZ_M016.sp.out",
+      "sha256": "f7594a0b41e7b8a63a162a3e4c28298841ad7506dede900c3a34354f934d147b",
+      "bytes": 127821
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M016/SUZ_M016.sp.property.txt",
+      "sha256": "8f1d2f0e8d6fcbb87ac88b3d18490f089d68d5444b106474a5e88efcc21d267a",
+      "bytes": 120041
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M020/calculation_override.json",
+      "sha256": "911e95e59c420c2a8d14c4e5e94be2aa0b9c720c3511b87cf4cd664a7ceab8d6",
+      "bytes": 363
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M020/metadata.json",
+      "sha256": "6cdd9379c6b277f2d73502293fdd3b28e82241cba8c370eb4ec49278f7e88fc3",
+      "bytes": 2201
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M020/optimized.xyz",
+      "sha256": "71de38502e6f6555d6b99e597724bf57d6fde7e7f4bf3f9d3850feaa6f48a142",
+      "bytes": 5564
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M020/SUZ_M020.sp.gbw",
+      "sha256": "fbb70431ba1d2c2f036b961789b39b4b59685df0eec8efb20ed74761a971a1f8",
+      "bytes": 8978500
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M020/SUZ_M020.sp.inp",
+      "sha256": "134aefd39b0ad2ff5a0990bb4ea4f3e65d5a0c8fc9ccf9f41857695fdc7ffd8e",
+      "bytes": 260
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M020/SUZ_M020.sp.out",
+      "sha256": "7c4a25a20eb274171a31526c5a3ea5b5b701169af7531bfdce12f0e402fba815",
+      "bytes": 129927
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M020/SUZ_M020.sp.property.txt",
+      "sha256": "94d8a37d54495ab5fe3ec5230f8464f86704fcd8d8b7ab6d6708d31260ddf35d",
+      "bytes": 124946
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M030/calculation_override.json",
+      "sha256": "c15424dcca90aa9c7e4a4507eccf8c170a8fbae18fa2f7bd3eb1d4c72dfa7709",
+      "bytes": 450
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M030/metadata.json",
+      "sha256": "faeaa9e85c2898b02d316806dde2c9673682052ff891d568275c5733e8d4ab24",
+      "bytes": 2261
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M030/optimized.xyz",
+      "sha256": "e5eb4dfd8b7f9e46540bc8c9a6083ae32a18bf27e14a8b15bfb2b5d350d3c7ec",
+      "bytes": 2795
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M030/SUZ_M030.sp.gbw",
+      "sha256": "386d392aa525a58ef170f40aca5ce91b9c37722a92a395aa45031c47d9fa3b14",
+      "bytes": 3895604
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M030/SUZ_M030.sp.inp",
+      "sha256": "9903b4af416ed11fa0e5d7f21fbe99f8eeb9f7722fc328dba9ad8a9fbd68714a",
+      "bytes": 318
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M030/SUZ_M030.sp.out",
+      "sha256": "dd41d215ce1814bc4e8211e35958df39aa43ac12990fe415496760ea7a5d16ed",
+      "bytes": 95923
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M030/SUZ_M030.sp.property.txt",
+      "sha256": "7403c0eeda9ec9d5ad8d5f2a4b77e18abcacc988d16ec45359a6dd743b5bddb6",
+      "bytes": 63425
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M031/calculation_override.json",
+      "sha256": "207a8aec6466dd719113d5946666e496150d8c5402533f0f145c5650c978ccbf",
+      "bytes": 447
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M031/metadata.json",
+      "sha256": "9c7fd6b6751d62784905caa05d2ea31360baaadd857886b6616d84e1c620b0df",
+      "bytes": 2187
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M031/optimized.xyz",
+      "sha256": "a81f983855a6901cffd5f523b24ea02c4ff09a7f21d21c4f6bffab05f1f8e091",
+      "bytes": 1671
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M031/SUZ_M031.sp.gbw",
+      "sha256": "b7adcde0d8bde0cfd48b1c26ed8e3e685d4db5e18d4acdd0d8ea86e2da54dd32",
+      "bytes": 2310084
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M031/SUZ_M031.sp.inp",
+      "sha256": "ee06d9fbec2f2278e49b77328052f0d2f179eb35eacbaead050b2f693bc69c68",
+      "bytes": 277
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M031/SUZ_M031.sp.out",
+      "sha256": "eccf7a1df2e4c1ae8236c150ad2106f7a23866ddee783c0020cb8b92a16e500d",
+      "bytes": 79812
+    },
+    {
+      "path": "dft/orca_electronic_structure_database/Suzuki/SUZ_M031/SUZ_M031.sp.property.txt",
+      "sha256": "9ac72ae75ebeaea4cb6159d29137bd9d7e06d574cbff4663db0f9f7ea5d08fb3",
+      "bytes": 40627
+    },
+    {
+      "path": "dft/README.md",
+      "sha256": "9db02ef919230d5913bef181bf68ab968f1bf1d528c3f5dbcb154e653335019e",
+      "bytes": 2272
+    },
+    {
+      "path": "doc/final_delivery_guide.md",
+      "sha256": "26554025168df92546572860180f0deb8f50d019b32ecc20f0163971b7dce347",
+      "bytes": 5662
+    },
+    {
+      "path": "doc/method_description.docx",
+      "sha256": "f6904622aa88199a7aa0255553318c11da960910f1d00d271a3126cd1399171c",
+      "bytes": 161791
+    },
+    {
+      "path": "doc/method_description.md",
+      "sha256": "43137fb54df197868451010aa6c6a8aa7d368e12cc7da3b849c0492f06795185",
+      "bytes": 30976
+    },
+    {
+      "path": "doc/method_description.pdf",
+      "sha256": "25b9b5d1c21ecdc509167adce254f4b2a3339996a86f13342fd17489839816c6",
+      "bytes": 356524
+    },
+    {
+      "path": "doc/README.md",
+      "sha256": "357166008fc2c11892b6896f4c9a356a2f646189d1861a90b6d05be95873bca8",
+      "bytes": 2239
+    },
+    {
+      "path": "doc/reproduction_guide.md",
+      "sha256": "f6dfa8d5005c2e687a5b6da88ef4f8b21111c7a49fd979d724e70cd7fd5fa72b",
+      "bytes": 12483
+    },
+    {
+      "path": "doc/resume.pdf",
+      "sha256": "51bfb1d8cfad58598211b98a881b6e81513d5f9c36acfd15ac8ef9b1e3d68c3e",
+      "bytes": 736641
+    },
+    {
+      "path": "openscience.json",
+      "sha256": "db4e6f1ba9d8df80d3adae54d6217154ed656ecc36b01ecb3a66cc61656a92f9",
+      "bytes": 1254
+    },
+    {
+      "path": "README.md",
+      "sha256": "5957fa3a218bdcc2177cd2ee7765743764e66766d25d835ef63c6676b4a669e9",
+      "bytes": 13268
+    },
+    {
+      "path": "results/audits/dft_boundary_audit.json",
+      "sha256": "56d8c528c82317d2f1ec168ce8b2e02fcce8fc024c271869483dc3b64dd4e760",
+      "bytes": 4843
+    },
+    {
+      "path": "results/audits/dft_component_features.csv",
+      "sha256": "6e2927ea86f7e92e0fd26369b25b7d22092871e2c1705b6c27ead1f00aa74902",
+      "bytes": 24837
+    },
+    {
+      "path": "results/audits/mechanistic_dft_boundary_audit.json",
+      "sha256": "2fe343378bbe21cf3393cbaef101c4fd3b413bb5f144c941d3c7179537478fed",
+      "bytes": 5564
+    },
+    {
+      "path": "results/audits/mechanistic_dft_component_features.csv",
+      "sha256": "7e09ae01811d7b04f8bdc2b5362cd779a9dd3f504b9a7fff6f126ed6fb1e45db",
+      "bytes": 19437
+    },
+    {
+      "path": "results/deepseek_database_enhanced_review.json",
+      "sha256": "a4e270c74f1988ef93fc7d648e4979fe56fe12d019180d86440a444472d113fa",
+      "bytes": 4278
+    },
+    {
+      "path": "results/dft_explanations/dft_coverage_summary.csv",
+      "sha256": "f91d4aa5d7a3c68780090fb973d3b93250ee6980138e921a5d295c5d358987d9",
+      "bytes": 514
+    },
+    {
+      "path": "results/dft_explanations/dft_explanation_examples.json",
+      "sha256": "a18cbd67796c10a84b7e4637d2109157580d3e2222604bafe6aaa7a9c0ca78ef",
+      "bytes": 157886
+    },
+    {
+      "path": "results/dft_explanations/dft_explanation_examples.md",
+      "sha256": "1c3aa10ad175441d929bbb079e0bde0d37e6d0d3a1d2bde42b2c45340fc90a36",
+      "bytes": 4252
+    },
+    {
+      "path": "results/dft_explanations/dft_posthoc_associations.csv",
+      "sha256": "3ba03e7060ff516bc2bac575f823535150c8503e3f6eb08e5f1cd9c0956f44b7",
+      "bytes": 3684
+    },
+    {
+      "path": "results/external_validation/external_az_eln_metadata.json",
+      "sha256": "cec67b80995f6191fb3834be69e893515e6b493d4478df82fc38bc22baf5ebad",
+      "bytes": 3139
+    },
+    {
+      "path": "results/external_validation/external_az_eln_summary.csv",
+      "sha256": "d93399bf10a26704edd905dc8bfd8d996230d1b238af3feaa73980a1fdcd0b0f",
+      "bytes": 2814
+    },
+    {
+      "path": "results/external_validation/external_reizman_suzuki_metadata.json",
+      "sha256": "f725774dfd3b7b4d235d51ef31d77f171a41ee4c37e23788190ac260f35ac257",
+      "bytes": 3318
+    },
+    {
+      "path": "results/external_validation/external_reizman_suzuki_summary.csv",
+      "sha256": "71766547050a99ce8dceb5dc15a98836d8d0aed24b74ab3db214c9cbfcafabfd",
+      "bytes": 1852
+    },
+    {
+      "path": "results/figures/core_metrics_confidence_intervals.pdf",
+      "sha256": "a3d4be96da09bff6b47397b2a216a2ce7229b1ca222cc09a788de6bd0cf5cf02",
+      "bytes": 201793
+    },
+    {
+      "path": "results/figures/core_metrics_confidence_intervals.png",
+      "sha256": "b3980c9869642896a858eadc25d7984158af8cb351e181fb2e2e2e77c684c484",
+      "bytes": 207821
+    },
+    {
+      "path": "results/figures/dataset_and_global_best_summary.csv",
+      "sha256": "f54135d4b86f6cd717732461574d38c262be31ed7013703ba5d3bcafe8ebab06",
+      "bytes": 387
+    },
+    {
+      "path": "results/figures/framework_overview.png",
+      "sha256": "d691bbd0dc24a8003c0c1934a9aaef73f9538dcef2f05568df61fc2fbfd95bd8",
+      "bytes": 154672
+    },
+    {
+      "path": "results/figures/model_progression_curves.csv",
+      "sha256": "d2c318e0a0cd3b50411c28269554be58a0ffddf6695ad2148974cce7b0ddac2f",
+      "bytes": 302894
+    },
+    {
+      "path": "results/figures/model_progression_metrics_per_seed.csv",
+      "sha256": "5cc63b50d7f27d9527640449bcf4b58d9b4d675f92f177f7278b3fbac0fbecd2",
+      "bytes": 10589
+    },
+    {
+      "path": "results/figures/model_progression_metrics_summary.csv",
+      "sha256": "d541f5ad35da5b8b1fe9ba729fb323dc3ac193847340afc87df75485c8927b88",
+      "bytes": 3330
+    },
+    {
+      "path": "results/figures/optimization_performance_overview.pdf",
+      "sha256": "4378b688ad21cadcbbd1ccf5c1e845ea93bdc8a8af1890871e3e78afcf7487eb",
+      "bytes": 345529
+    },
+    {
+      "path": "results/figures/optimization_performance_overview.png",
+      "sha256": "f874ea4b44cefa97c8b61d72d54af7d3b7868d458f4a8b6ce4902af91d9fe2ad",
+      "bytes": 346196
+    },
+    {
+      "path": "results/figures/per_seed_best_so_far_heatmaps.pdf",
+      "sha256": "a4347ae452d15911eefbb5878008171bf7c2816994d322a35343632e1d7d801b",
+      "bytes": 39111
+    },
+    {
+      "path": "results/figures/per_seed_best_so_far_heatmaps.png",
+      "sha256": "29938ac6df2d150ef3961d883ca9f16a48988c44861d69bdb9a6e4470829a401",
+      "bytes": 178567
+    },
+    {
+      "path": "results/figures/supplementary_metrics_per_seed.csv",
+      "sha256": "e3b140b05c3a3b578e85190c097183f92ee5a92a9e10b1ca89ce570c4fb1ad25",
+      "bytes": 8441
+    },
+    {
+      "path": "results/figures/supplementary_metrics_summary.csv",
+      "sha256": "755a91918037eb12da967ee81dc2dfb4aa03ca984ccbfae7bb891fd5e2150fff",
+      "bytes": 3217
+    },
+    {
+      "path": "results/figures/t95_attainment_curves.pdf",
+      "sha256": "23278f60acff0e826b85f8e16de743f58bfaa9a51eed83ddac2730ab7e9a3579",
+      "bytes": 31294
+    },
+    {
+      "path": "results/figures/t95_attainment_curves.png",
+      "sha256": "95491260086dd5746269c6b3c7a562834d6ecf75ed645ba0229ed9ee69dfb54f",
+      "bytes": 180260
+    },
+    {
+      "path": "results/figures/trajectory_field_audit.csv",
+      "sha256": "598ba95d74477ca07b3b980a34f3b04f4967805be2095f7891bc5957ab0ff940",
+      "bytes": 5749
+    },
+    {
+      "path": "results/figures/trajectory_schema.json",
+      "sha256": "1426713d70b3d755928d4060380c9c406b3fca93719f44ec63d0f170dde2bc1c",
+      "bytes": 1182
+    },
+    {
+      "path": "results/internal_external_metrics.csv",
+      "sha256": "218d5edc2d4626cf5d36d5dded77d261d1264727d98b5efcd931720e8f31e705",
+      "bytes": 2290
+    },
+    {
+      "path": "results/optimization_trajectories/Buchwald_sub4/seed_100.pt",
+      "sha256": "d699df7a078c7cd353745ceacafc6b84542f0315e2b144c0ce4894f559c818dc",
+      "bytes": 4895
+    },
+    {
+      "path": "results/optimization_trajectories/Buchwald_sub4/seed_1000.pt",
+      "sha256": "8f60df9a8dfc905b9f3e15f29069b04d4e33c9c9a1932ba1f4798da04ddff8fa",
+      "bytes": 4900
+    },
+    {
+      "path": "results/optimization_trajectories/Buchwald_sub4/seed_1100.pt",
+      "sha256": "d10a94e1ed7f5bd251fefa874aa1cc01839f44b647095c66065a8e6dc0319658",
+      "bytes": 4897
+    },
+    {
+      "path": "results/optimization_trajectories/Buchwald_sub4/seed_1200.pt",
+      "sha256": "0030c84d01db109db93191bb68ae7b05421ea0284387c5524900121ab7664bb0",
+      "bytes": 4897
+    },
+    {
+      "path": "results/optimization_trajectories/Buchwald_sub4/seed_1300.pt",
+      "sha256": "8b84c9b5c117816c5de4e44a43f40df4bd6fa92c1d3b5224c0baa0ccfece8029",
+      "bytes": 4896
+    },
+    {
+      "path": "results/optimization_trajectories/Buchwald_sub4/seed_1400.pt",
+      "sha256": "b9204d2e84e4aa42a08328fb378ceb634c9526efcee4aa46df7a681e5df15298",
+      "bytes": 4898
+    },
+    {
+      "path": "results/optimization_trajectories/Buchwald_sub4/seed_1500.pt",
+      "sha256": "2614fc8911936334ed47e9696a055e2aaac448c5ed9762e58256fd51e230330a",
+      "bytes": 4897
+    },
+    {
+      "path": "results/optimization_trajectories/Buchwald_sub4/seed_1600.pt",
+      "sha256": "bbdbb23885eb1e1c7c67712ccaff789f1e7c93706678541acfb9d3280ec31cf8",
+      "bytes": 4896
+    },
+    {
+      "path": "results/optimization_trajectories/Buchwald_sub4/seed_1700.pt",
+      "sha256": "7a16201d66cb4019932dc5aef8393ae7f32d750a6350c5f2e08bcce5399ed231",
+      "bytes": 5037
+    },
+    {
+      "path": "results/optimization_trajectories/Buchwald_sub4/seed_1800.pt",
+      "sha256": "7f979fb9f27cd06e43cda5498ae5e63fb67274ac415dac0c95f98608f02ea2d9",
+      "bytes": 4895
+    },
+    {
+      "path": "results/optimization_trajectories/Buchwald_sub4/seed_1900.pt",
+      "sha256": "733c58db0fabc98a414d0653854af504bbad246cf44b9e078ddf1a13aa0b8267",
+      "bytes": 4896
+    },
+    {
+      "path": "results/optimization_trajectories/Buchwald_sub4/seed_200.pt",
+      "sha256": "003786aeb5fe6d79b42450d7b321f814cfdb9674f868a3968bcbd45bb2979ff5",
+      "bytes": 4895
+    },
+    {
+      "path": "results/optimization_trajectories/Buchwald_sub4/seed_2000.pt",
+      "sha256": "54cb2e400afd1dd9eff58899d5117d535b1b69a0829844bf40ca6f84de70af07",
+      "bytes": 4896
+    },
+    {
+      "path": "results/optimization_trajectories/Buchwald_sub4/seed_300.pt",
+      "sha256": "9ddee56c6ff9245b8c3a0ff80c486b242524b70d00197bcadf1efa65ca1ad43b",
+      "bytes": 4898
+    },
+    {
+      "path": "results/optimization_trajectories/Buchwald_sub4/seed_400.pt",
+      "sha256": "d03a483baca08f20e60c776876eeab75c588d3f37b9f3c73b75c9caac58e6d64",
+      "bytes": 4898
+    },
+    {
+      "path": "results/optimization_trajectories/Buchwald_sub4/seed_500.pt",
+      "sha256": "cfe4e8b62561fc93a383f390440a6da94f8e3e6115f09a4ef12e6df488a85787",
+      "bytes": 4895
+    },
+    {
+      "path": "results/optimization_trajectories/Buchwald_sub4/seed_600.pt",
+      "sha256": "d757471739b3a3efa745c6b77368b97bda9678ba123e354c6218104ba3f9f1a8",
+      "bytes": 4899
+    },
+    {
+      "path": "results/optimization_trajectories/Buchwald_sub4/seed_700.pt",
+      "sha256": "4d4a04340fdf097d96397baf499e1a125eb2db036e303b7a4bb7511fbf6bdaa5",
+      "bytes": 4897
+    },
+    {
+      "path": "results/optimization_trajectories/Buchwald_sub4/seed_800.pt",
+      "sha256": "05130fcfb851e4c14e9d2b7a884ee573734338a0c94a94611d1fecac0272cc53",
+      "bytes": 4893
+    },
+    {
+      "path": "results/optimization_trajectories/Buchwald_sub4/seed_900.pt",
+      "sha256": "02cad802520074d2eece966a27d013da2a8189a916545189ed10e0501251505a",
+      "bytes": 4897
+    },
+    {
+      "path": "results/optimization_trajectories/Suzuki/seed_100.pt",
+      "sha256": "b2badb0d76f056f9036f5a2e84f3740afd6bf7c6164405ada5ada97fbd35b735",
+      "bytes": 5061
+    },
+    {
+      "path": "results/optimization_trajectories/Suzuki/seed_1000.pt",
+      "sha256": "5b074e1f3d6bcc8e096eec0764514143687416916ba277dbb0b99146070acff8",
+      "bytes": 5003
+    },
+    {
+      "path": "results/optimization_trajectories/Suzuki/seed_1100.pt",
+      "sha256": "efd40e1c762b674ba5fd23efb2e5f584a5fac3ae64a322f5df16b922f64e6eda",
+      "bytes": 5097
+    },
+    {
+      "path": "results/optimization_trajectories/Suzuki/seed_1200.pt",
+      "sha256": "72a274889b3830c44e47b1ce40d8689bb118a9b9ccad42bd69e12fa52f85d24c",
+      "bytes": 4970
+    },
+    {
+      "path": "results/optimization_trajectories/Suzuki/seed_1300.pt",
+      "sha256": "8f43cf8a999c95008f414ce9289c5382fe3f57ee2faa96db751bf9df2bb9f84a",
+      "bytes": 4945
+    },
+    {
+      "path": "results/optimization_trajectories/Suzuki/seed_1400.pt",
+      "sha256": "e49a19ca9315543d86cdf924290872884a98f08ab89c17444fd665354fb9c43b",
+      "bytes": 5180
+    },
+    {
+      "path": "results/optimization_trajectories/Suzuki/seed_1500.pt",
+      "sha256": "5d0c22935628e0b3a62403a1953ace8bd9e1d1cc4d82eedbecb1e3cc61abda69",
+      "bytes": 5062
+    },
+    {
+      "path": "results/optimization_trajectories/Suzuki/seed_1600.pt",
+      "sha256": "d87b1bde9b1ac6771c6b07cc53e2171794f2a57da3bdade4a3319d6ab0685281",
+      "bytes": 5016
+    },
+    {
+      "path": "results/optimization_trajectories/Suzuki/seed_1700.pt",
+      "sha256": "c27670865bd2ef0e75afff22aa17751360f114f87ce5b95b2bdad0f55615db06",
+      "bytes": 5012
+    },
+    {
+      "path": "results/optimization_trajectories/Suzuki/seed_1800.pt",
+      "sha256": "4635da51c77c81cb8825d647016774535b805204e40ec769903666e3c65a4b86",
+      "bytes": 5086
+    },
+    {
+      "path": "results/optimization_trajectories/Suzuki/seed_1900.pt",
+      "sha256": "5997cf9beb977aa8d45610fe239d4b3e8ee11d6e6147b48745fe18b9fb055dd4",
+      "bytes": 5114
+    },
+    {
+      "path": "results/optimization_trajectories/Suzuki/seed_200.pt",
+      "sha256": "bc744cb267065939b85bff6d2ba338e688c5473c6087d702d30e0e2e7d48d976",
+      "bytes": 5098
+    },
+    {
+      "path": "results/optimization_trajectories/Suzuki/seed_2000.pt",
+      "sha256": "caeac758de3fd251a58a3730fe0650f063946e2a348a294c333823c51ea8f190",
+      "bytes": 4994
+    },
+    {
+      "path": "results/optimization_trajectories/Suzuki/seed_300.pt",
+      "sha256": "026cf8c0fc30ba3001209dfd5023bcdec4a255e21f6b5b7580ca1a7a151e595e",
+      "bytes": 5064
+    },
+    {
+      "path": "results/optimization_trajectories/Suzuki/seed_400.pt",
+      "sha256": "7ed317afa3ef36f22b7c5d4fae979824e8f92df5970bf0404d23d58c33cda743",
+      "bytes": 5117
+    },
+    {
+      "path": "results/optimization_trajectories/Suzuki/seed_500.pt",
+      "sha256": "e7882ad69e9aa9928f00261749f1a413510ad61a1d731b8fb061656ea2ead732",
+      "bytes": 5114
+    },
+    {
+      "path": "results/optimization_trajectories/Suzuki/seed_600.pt",
+      "sha256": "270a17bc86c19504d148d62bde1636fae169778be0da9a31ace231b3cedecf0c",
+      "bytes": 4979
+    },
+    {
+      "path": "results/optimization_trajectories/Suzuki/seed_700.pt",
+      "sha256": "9d39f484ae36472c5b106e61252b7204fba31c171359d8834651d5ab45e49ae6",
+      "bytes": 5107
+    },
+    {
+      "path": "results/optimization_trajectories/Suzuki/seed_800.pt",
+      "sha256": "5a620969833c5d8d27788bac1d509ba8c78eda3e9b5d68ddd719b2c54e15d240",
+      "bytes": 5033
+    },
+    {
+      "path": "results/optimization_trajectories/Suzuki/seed_900.pt",
+      "sha256": "d5d466e43ae2de822e3370655bc8b7e5fb0a07e51b85498e99d873a442bb70f9",
+      "bytes": 5092
+    },
+    {
+      "path": "results/README.md",
+      "sha256": "fc3507eea74db3bf9d7e042afd0fdb314ff394821ad88930714042b167ac0799",
+      "bytes": 4453
+    },
+    {
+      "path": "results/results_and_analysis.docx",
+      "sha256": "c7fad41ede01a2dc661dc47600a07c8afcaed5f5265fa019592133d63f01e48a",
+      "bytes": 559945
+    },
+    {
+      "path": "results/results_and_analysis.json",
+      "sha256": "e380d0749cac8b021e035e0178f38412c5c0a16b468d19944be8314de9489e23",
+      "bytes": 71347
+    },
+    {
+      "path": "results/results_and_analysis.md",
+      "sha256": "f54150eba5ad6019c8b10b101100a79899e3d1417550b1dfe5a1c20d065c7ece",
+      "bytes": 30097
+    },
+    {
+      "path": "results/results_and_analysis.pdf",
+      "sha256": "27e31555cbb87746f5673660e9ee7f6660c2c17e91176479bd3215d184301b11",
+      "bytes": 886974
+    },
+    {
+      "path": "results/robustness_per_seed.csv",
+      "sha256": "0bf31ab9a9cf826097e397426742e3364c94bf2ca94a3b4c45fd19d87b9eaeed",
+      "bytes": 7720
+    },
+    {
+      "path": "results/robustness_summary.csv",
+      "sha256": "e4609aab4a63cdceb1dabe6971535b4b5a1f0f11974e268cae43105aa226b17f",
+      "bytes": 4556
+    },
+    {
+      "path": "results/summary_metrics.csv",
+      "sha256": "494aabc381a076962534f37577ea8b121d593d6222ebbe508f579742f5ebebf0",
+      "bytes": 822
+    },
+    {
+      "path": "results/top5_external_evidence.json",
+      "sha256": "a0b6fac7a9e00fa459ba6b833c30b0c5ebdbca0211023a329cd8d3b9769c232f",
+      "bytes": 10733
+    },
+    {
+      "path": "runtime/bootstrap/win-64/micromamba-2.8.1-0.tar.bz2",
+      "sha256": "8648c6d302bb6d7432e5d620bc862c2be14c00f39ddd7e10c5eb6d73250dbba1",
+      "bytes": 4469829
+    },
+    {
+      "path": "runtime/bootstrap_openscience.sh",
+      "sha256": "03b514f27b870fc30fe6677263a75395108906ddf5f441d005b1925f40eef0a2",
+      "bytes": 2295
+    },
+    {
+      "path": "runtime/bootstrap_portable_env.sh",
+      "sha256": "f5e7d507638c98bd24193b6f0f37d67805298432952bc358f938b075d28e0d09",
+      "bytes": 1155
+    },
+    {
+      "path": "runtime/catalystflow-linux-x86_64.tar.gz",
+      "sha256": "1e8474217f87bbc609c690cd9abdac5b80a4bdf10f34bcf6c8c10f5a574160c0",
+      "bytes": 289459487
+    },
+    {
+      "path": "runtime/configure_deepseek.sh",
+      "sha256": "135a227e8994c09ec576cb239f1920bf62fbb2e248c36f010869eb5688ce1e31",
+      "bytes": 901
+    },
+    {
+      "path": "runtime/openscience/LICENSE",
+      "sha256": "d8ac5e917b2099e5cbe2999f297b56e2cc946e545f39aebc1e1aa91dd5cb0e9f",
+      "bytes": 11363
+    },
+    {
+      "path": "runtime/openscience/NOTICE",
+      "sha256": "7632b32824f48bc3d5f0654cfa2370c1821fc0086349f1d331c9d27b8d66e960",
+      "bytes": 1489
+    },
+    {
+      "path": "runtime/openscience/openscience-linux-x64-2.0.23.tgz",
+      "sha256": "d3b0e541e2a08579243694509e2141eb56fee1825f33b7c6ecaf62a823b3278e",
+      "bytes": 64520989
+    },
+    {
+      "path": "runtime/openscience/README.md",
+      "sha256": "19ccf2d3685288fd5b5d32ca5c03ef519ef0f3adf4b943ca23f7708405f36a72",
+      "bytes": 1508
+    },
+    {
+      "path": "runtime/openscience/runtime.json",
+      "sha256": "bb22ddf9435c59c34fb5b510b4fed1c69c13f4d716c27fdb3efcff3def5c00f0",
+      "bytes": 879
+    },
+    {
+      "path": "runtime/openscience_cli.sh",
+      "sha256": "b75b1766e93675d6d6686fd76ae9d37189c2738dc10563587c5d409c66eba51d",
+      "bytes": 415
+    },
+    {
+      "path": "runtime/openscience_project_excludes",
+      "sha256": "cdbcae15105d6b781e620813c79c7e868740d4e9cc53ce6f5fcbbc12387adf4b",
+      "bytes": 2
+    },
+    {
+      "path": "runtime/portable_environment.json",
+      "sha256": "d836f20beda2cb21e26a0b9d24059e377533b888ac39a7ff23ee5316e8a9ba7c",
+      "bytes": 897
+    },
+    {
+      "path": "runtime/prepare_openscience_workspace.sh",
+      "sha256": "7138e7d46d54803688192e124a4c6494bbc5d682402466dbb91682808af005e5",
+      "bytes": 1129
+    },
+    {
+      "path": "runtime/README.md",
+      "sha256": "208f0047dfa24bbff4203338284781a9681eef1bd71d27803ebcdeffbcc45614",
+      "bytes": 8973
+    },
+    {
+      "path": "runtime/run_openscience.sh",
+      "sha256": "3149c36b222d2577536132fdc89b725ecec20495e6fa007c1afbb98c61bc5599",
+      "bytes": 633
+    },
+    {
+      "path": "runtime/run_reproduction.sh",
+      "sha256": "1f49145a0f722d364a4b375ce100efbed580fcba06260153ebdf2255c56e51aa",
+      "bytes": 3499
+    },
+    {
+      "path": "runtime/run_reproduction_linux_arm64.sh",
+      "sha256": "a6ec6670e73dfb352efaaa3f4e11e0fc57476fcf1f8fcef2bc6057e502c2927c",
+      "bytes": 3883
+    },
+    {
+      "path": "runtime/run_reproduction_macos.sh",
+      "sha256": "859d2cf10fdcc04e80c2a3cd157e8ad68b153fed0e07e321e0aadacfb6eb299b",
+      "bytes": 4065
+    },
+    {
+      "path": "runtime/run_reproduction_windows.ps1",
+      "sha256": "ff4941a86bb5d69f41ece6dc2dbec4afc7bf92d3f2df6238cbe7c78b5bc40d6f",
+      "bytes": 7812
+    },
+    {
+      "path": "runtime/smoke_test_environment.py",
+      "sha256": "f79e7f2cc645794e1bbfad11f37f509d3ecdf9f25bf8f59e6529ac2611c594a7",
+      "bytes": 838
+    },
+    {
+      "path": "runtime/verify_deepseek.sh",
+      "sha256": "7df80d030de0f75ab67aa23df6848823d222a7674a7d84e73b944c54d18413fc",
+      "bytes": 1038
+    },
+    {
+      "path": "runtime/verify_offline_bundle.sh",
+      "sha256": "62e2e6d1945d8d55536e707f0b3f7ac109c8c5a5f54f5507e12069689d38d9e4",
+      "bytes": 396
+    },
+    {
+      "path": "runtime/verify_openscience_runtime.sh",
+      "sha256": "554526caea2dad70f81bd48d2e833627ff47df1f3fcd308400d606977ad133e0",
+      "bytes": 2487
+    },
+    {
+      "path": "runtime/windows-x86_64/catalystflow-windows-x86_64.tar.gz",
+      "sha256": "306902550689722733b5f5df12ac595e514ad7ebc6971bdeb06a1c079c9d4117",
+      "bytes": 302428323
+    },
+    {
+      "path": "runtime/windows-x86_64/environment-lock.json",
+      "sha256": "1c2d272a109786f36ca0b073f4ef9947731a21c98068e051c8e7cb6d97ba322f",
+      "bytes": 646
+    },
+    {
+      "path": "runtime/windows-x86_64/README.md",
+      "sha256": "9879450c042d2797a57041d4c8639444b1c2a812732c1abe34fd9f1adca1ab8a",
+      "bytes": 1086
+    },
+    {
+      "path": "skill/catalystflow/agents/openai.yaml",
+      "sha256": "50867001880eddb0fb9a516314020e3a190839f9da459880ddafa0e8f3033bb5",
+      "bytes": 461
+    },
+    {
+      "path": "skill/catalystflow/assets/feasibility_assessment_template.json",
+      "sha256": "4f966286ae89ca089ca983876ec3b13e0602af719cb03da682e67c72b8c34152",
+      "bytes": 7849
+    },
+    {
+      "path": "skill/catalystflow/references/competition-protocol.md",
+      "sha256": "e0e4143b3f1f3e05ebdfab0002abb53ea366f65dcfe5f3024a1440d805094cb1",
+      "bytes": 1837
+    },
+    {
+      "path": "skill/catalystflow/references/evidence-policy.md",
+      "sha256": "6b58a58f23a7adc64cc9f163cf93b395c6647c92853e6c973b8a6bba07b77e9a",
+      "bytes": 5808
+    },
+    {
+      "path": "skill/catalystflow/references/input-contracts.md",
+      "sha256": "02092423e929323660b6dc73e699541499374276dd15cad09124d41af4678ff8",
+      "bytes": 3578
+    },
+    {
+      "path": "skill/catalystflow/references/new-dataset-routing.md",
+      "sha256": "68cc00a80f2fa5a39a5f2be00a548bdff68312d439b3a3867b2e1e2a4fa9ecab",
+      "bytes": 3075
+    },
+    {
+      "path": "skill/catalystflow/scripts/report_builder.py",
+      "sha256": "ac654227a9be91044928dff0b8d8b7aaeec2762948e0dcfbc16eb9b5b912e9d3",
+      "bytes": 23512
+    },
+    {
+      "path": "skill/catalystflow/scripts/reproduction_worker.py",
+      "sha256": "caff25c666b7eae793156d8132b4e2170a86b53adb801b10d3207f4d25dfc94d",
+      "bytes": 5623
+    },
+    {
+      "path": "skill/catalystflow/scripts/workflow_gateway.py",
+      "sha256": "51066efce88939be215006c7c0ea8e9dbb5ebf14c70fbd18fd8221a4a0d2c0f9",
+      "bytes": 113795
+    },
+    {
+      "path": "skill/catalystflow/SKILL.md",
+      "sha256": "f7231223c06ee98771a689f6310237ea95fecd7eb8c89c0a2ce5bc3b27457051",
+      "bytes": 13085
+    },
+    {
+      "path": "skill/catalystflow/tests/test_workflow_gateway.py",
+      "sha256": "37ab4706ad65ac443513d6cac6144e153ccc7bae966822092d6b9be179585bd0",
+      "bytes": 36392
+    },
+    {
+      "path": "skill/optimize-coupling-reactions/INTERNAL_ADAPTER.md",
+      "sha256": "ebff58d228c74c3cd674cfe403076eddd9a4fd085fb719576b088dffbb497b0a",
+      "bytes": 1093
+    },
+    {
+      "path": "skill/optimize-coupling-reactions/references/configuration-policy.md",
+      "sha256": "c9cf54f9a9ce13701d67d6b56cb35baceef8c2d2e070d394d67aae14fadd11f5",
+      "bytes": 3150
+    },
+    {
+      "path": "skill/optimize-coupling-reactions/references/model-routes.md",
+      "sha256": "e980b283bf2cd7d5fc1edc2625238c0f0e37a8d807e32d4bc196edfcc6fd1ced",
+      "bytes": 2776
+    },
+    {
+      "path": "skill/optimize-coupling-reactions/references/structure-resolution.md",
+      "sha256": "a4e6dc896bea73582f146f0302beea2d2c23c9370c1423f4e68bfc4f5f4cc54b",
+      "bytes": 1731
+    },
+    {
+      "path": "skill/optimize-coupling-reactions/scripts/preflight_reaction_data.py",
+      "sha256": "78bb59bc985c137704e83f4ec196314aa5b43f4c089555322725e304ae8a3340",
+      "bytes": 8490
+    },
+    {
+      "path": "skill/optimize-coupling-reactions/scripts/reaction_agent.py",
+      "sha256": "ffb6215db5bad63075adafe902b6f8ece7713b26a32997f22ca9e08620b8f162",
+      "bytes": 29502
+    },
+    {
+      "path": "skill/optimize-coupling-reactions/scripts/resolve_structures.py",
+      "sha256": "e1e9d7790aeb47a6742583e1b196f5db20b4c9972726e0419b27f8399c56dfaf",
+      "bytes": 11183
+    },
+    {
+      "path": "skill/optimize-coupling-reactions/scripts/select_fingerprint_config.py",
+      "sha256": "c88cb68a07ba261686d21bb8cddf9289c4f0eae789effb1dcd55cdad28ecbc12",
+      "bytes": 4884
+    },
+    {
+      "path": "skill/optimize-coupling-reactions/scripts/self_test.py",
+      "sha256": "155b63441dbb6c3eb45ad28e10bd37276fb678580feffd704e6613384c7a8f9a",
+      "bytes": 8259
+    },
+    {
+      "path": "skill/optimize-coupling-reactions/scripts/validate_trajectory.py",
+      "sha256": "c7d2e3ea80acc49c2555d865f80cbf4ee968ecf45fc0537977b81b1baad92ebd",
+      "bytes": 3921
+    }
+  ]
+}

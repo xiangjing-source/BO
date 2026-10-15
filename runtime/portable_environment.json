@@ -1,0 +1,22 @@
+{
+  "format": "conda-pack tar.gz",
+  "platform": "linux-x86_64",
+  "supported_launchers": {
+    "linux_x86_64": "runtime/run_reproduction.sh (offline)",
+    "linux_aarch64": "runtime/run_reproduction_linux_arm64.sh",
+    "macos_x86_64_or_arm64": "runtime/run_reproduction_macos.sh",
+    "windows_x86_64": "runtime/run_reproduction_windows.ps1"
+  },
+  "archive": "catalystflow-linux-x86_64.tar.gz",
+  "sha256": "1e8474217f87bbc609c690cd9abdac5b80a4bdf10f34bcf6c8c10f5a574160c0",
+  "bytes": 289459487,
+  "offline": true,
+  "activation": "bash runtime/bootstrap_portable_env.sh",
+  "one_command_reproduction": "bash runtime/run_reproduction.sh",
+  "one_command_openscience": "bash runtime/run_openscience.sh",
+  "openscience_runtime": {
+    "metadata": "runtime/openscience/runtime.json",
+    "offline_platform": "linux-x86_64",
+    "verification": "bash runtime/verify_openscience_runtime.sh"
+  }
+}

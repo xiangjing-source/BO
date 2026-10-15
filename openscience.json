@@ -1,0 +1,54 @@
+{
+  "$schema": "https://syntheticsciences.ai/config.json",
+  "default_agent": "catalystflow",
+  "provider": {
+    "deepseek": {
+      "whitelist": ["deepseek-v4-flash", "minimax-2.7"],
+      "options": {
+        "baseURL": "https://fxb.supa.net.cn:6443/v1",
+        "timeout": 3000000
+      },
+      "models": {
+        "deepseek-v4-flash": {
+          "name": "DeepSeek V4 Flash (competition gateway)",
+          "tool_call": true,
+          "reasoning": true,
+          "temperature": true,
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "limit": {
+            "context": 32768,
+            "output": 8192
+          }
+        },
+        "minimax-2.7": {
+          "name": "MiniMax 2.7 (competition gateway)",
+          "tool_call": true,
+          "reasoning": false,
+          "temperature": true,
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "limit": {
+            "context": 32768,
+            "output": 8192
+          }
+        }
+      }
+    }
+  },
+  "skills": {
+    "paths": ["./skill"]
+  },
+  "mcp": {
+    "catalystflow": {
+      "type": "local",
+      "command": ["bash", "agent/start_mcp.sh"],
+      "timeout": 3000000,
+      "enabled": true
+    }
+  }
+}

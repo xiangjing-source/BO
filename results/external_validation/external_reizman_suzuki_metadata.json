@@ -1,0 +1,96 @@
+{
+  "source_repository": "https://github.com/sustainable-processes/summit",
+  "source_doi": "10.1039/C6RE00153J",
+  "source_urls": [
+    "https://raw.githubusercontent.com/sustainable-processes/summit/main/summit/benchmarks/data/reizman_suzuki_case_1.csv",
+    "https://raw.githubusercontent.com/sustainable-processes/summit/main/summit/benchmarks/data/reizman_suzuki_case_2.csv",
+    "https://raw.githubusercontent.com/sustainable-processes/summit/main/summit/benchmarks/data/reizman_suzuki_case_3.csv",
+    "https://raw.githubusercontent.com/sustainable-processes/summit/main/summit/benchmarks/data/reizman_suzuki_case_4.csv"
+  ],
+  "source_sha256": {
+    "reizman_suzuki_case_1.csv": "346d976b89241662965f047b6725a9972941afb4c12105e82947cf9e2a27a450",
+    "reizman_suzuki_case_2.csv": "20f648b7e48a40059d4ba990161d0ad21cf255c45cdc90e6fa52a0e9b4150f3f",
+    "reizman_suzuki_case_3.csv": "cb57a2a8a4075ff312508e48673b3b4f22667b8fc609f7c60b57bb4f357a36b9",
+    "reizman_suzuki_case_4.csv": "fb2f2bd7eae04495f75a91996e309cc3f4f688a4fa02d7ef9e556246ce8bbf75"
+  },
+  "raw_rows": 385,
+  "yield_quality_filter": {
+    "policy": "retain only finite percentage yields in [0, 100]",
+    "rows_before_filter": 385,
+    "rows_after_filter": 385,
+    "excluded_rows": 0,
+    "excluded_non_finite_rows": 0,
+    "excluded_below_minimum_rows": 0,
+    "excluded_above_maximum_rows": 0,
+    "excluded_above_maximum_values": []
+  },
+  "condition_identity_audit": {
+    "condition_columns": [
+      "Case",
+      "Catalyst",
+      "ResidenceTime",
+      "Temperature",
+      "CatalystLoading"
+    ],
+    "represented_columns": [
+      "Case",
+      "Catalyst",
+      "ResidenceTime",
+      "Temperature",
+      "CatalystLoading"
+    ],
+    "omitted_condition_columns": [],
+    "unique_full_conditions": 349,
+    "unique_represented_conditions": 349,
+    "representation_collisions": 0
+  },
+  "unique_condition_rows": 349,
+  "duplicate_policy": "Exact public conditions are collapsed to their mean experimental yield before splitting.",
+  "split": "20%/80% case-stratified split",
+  "seeds": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000
+  ],
+  "rounds": 40,
+  "trees": 100,
+  "forest_weight": 0.75,
+  "gradient_boosting": {
+    "bootstrap_members": 12,
+    "n_estimators": 60,
+    "learning_rate": 0.05,
+    "max_depth": 2,
+    "min_samples_leaf": 2,
+    "loss": "huber"
+  },
+  "xgboost": {
+    "package": "xgboost-cpu",
+    "version": "3.2.0",
+    "bootstrap_members": 12,
+    "n_estimators": 100,
+    "learning_rate": 0.05,
+    "max_depth": 2,
+    "min_child_weight": 2,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.0,
+    "reg_lambda": 1.0,
+    "tree_method": "hist",
+    "device": "cpu"
+  },
+  "methods": [
+    "random_baseline",
+    "mixed_random_forest_EI",
+    "final_hybrid_rbf_gp_forest_EI"
+  ],
+  "trajectory_rows": 1200,
+  "leakage_boundary": "Splits use public conditions and Case only. Candidate yields remain in PseudoOracle and are released once, after selection.",
+  "scope_warning": "The source records were gathered adaptively and are not a factorial search space. The hybrid model uses the frozen Suzuki architecture with a mixed continuous/categorical adapter; the gradient-boosting route is a pre-formal-evaluation model-family stress test."
+}

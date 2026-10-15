@@ -1,0 +1,68 @@
+{
+  "configuration_status": "frozen_before_final_evaluation",
+  "information_boundary": "Model families and parameters were selected with train.csv labels, label-free molecular evidence, and independent compatibility checks. Unqueried candidate outcomes are never used for fitting, feature construction, parameter selection, prompting, or ranking.",
+  "shared_protocol": {
+    "rounds": 40,
+    "seeds": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900,
+      1000,
+      1100,
+      1200,
+      1300,
+      1400,
+      1500,
+      1600,
+      1700,
+      1800,
+      1900,
+      2000
+    ],
+    "batch_size": 1,
+    "acquisition": "expected_improvement",
+    "branch_selection": "fixed before round 1 from dataset identity and schema"
+  },
+  "datasets": {
+    "Suzuki": {
+      "display_name": "role-wise categorical-kernel ensemble",
+      "surrogate": "hybrid_gp_forest",
+      "kernel": "categorical_product",
+      "use_chemistry": false,
+      "use_dft": false,
+      "strategy": "expected_improvement",
+      "acquisition": "expected_improvement",
+      "epsilon_start": 0.15,
+      "epsilon_end": 0.01,
+      "forest_min_samples_leaf": 2,
+      "hybrid_forest_weight": 0.75,
+      "gp_restarts": 0,
+      "categorical_rho": 0.3,
+      "optimize_categorical_kernel": true,
+      "categorical_optimize_once": false,
+      "kernel_switch_rounds": 0
+    },
+    "Buchwald_sub4": {
+      "display_name": "identity-knowledge-structure forest",
+      "surrogate": "random_forest",
+      "kernel": "dot",
+      "use_chemistry": true,
+      "use_structure": true,
+      "use_dft": false,
+      "structure_map": "config/buchwald_structures.json",
+      "structure_fingerprint_bits": 32,
+      "include_categorical_identity": true,
+      "strategy": "expected_improvement",
+      "acquisition": "expected_improvement",
+      "epsilon_start": 0.0,
+      "epsilon_end": 0.0,
+      "forest_min_samples_leaf": 2
+    }
+  }
+}

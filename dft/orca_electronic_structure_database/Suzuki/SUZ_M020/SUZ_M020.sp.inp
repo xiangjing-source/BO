@@ -1,0 +1,14 @@
+! B3LYP D3BJ def2-SVPD def2/J RIJCOSX TightSCF DEFGRID3 SP Hirshfeld Mayer NoAutoStart
+
+%pal
+  nprocs 30
+end
+
+%maxcore 3500
+
+%scf
+  MaxIter 600
+end
+
+# 1,1'-bis(di-tert-butylphosphino)ferrocene | Suzuki-Miyaura | Ligand | C26H44FeP2
+* xyzfile 0 1 optimized.xyz

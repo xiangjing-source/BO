@@ -1,0 +1,25 @@
+{
+  "serialization": "Python standard-library pickle with .pt suffix; PyTorch is not required",
+  "top_level": {
+    "seed": "official independent-run random seed",
+    "dataset": "dataset identifier",
+    "trajectory": "ordered list of exactly 40 round records"
+  },
+  "round_fields": {
+    "step": "one-indexed optimization round",
+    "query_index": "row index in the public outcome-free candidate table",
+    "condition": "all public condition variables at query_index",
+    "observed_yield": "feedback released only after selection",
+    "best_so_far": "maximum observed yield through this round",
+    "predicted_yield": "pre-query surrogate mean for the selected candidate",
+    "uncertainty": "pre-query surrogate standard deviation",
+    "acquisition_value": "pre-query acquisition score",
+    "selection_mode": "expected improvement or frozen uniform exploration"
+  },
+  "metric_definitions": {
+    "initial_round_found_best": "best_so_far at step 1",
+    "best_found": "best_so_far at step 40",
+    "round_to_95_global_best": "first step with best_so_far >= 0.95*global_best; 41 if not reached",
+    "AUC_best_so_far": "arithmetic mean of the 40 best_so_far values"
+  }
+}

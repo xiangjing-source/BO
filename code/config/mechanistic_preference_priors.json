@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "purpose": "Label-independent, auditable mechanism weights for safe region-lifted BO. No candidate yield or global optimum was used.",
+  "datasets": {
+    "Suzuki": {
+      "base_confidence": 0.65,
+      "region_quantile": 0.90,
+      "kernel_bandwidth": 0.35,
+      "weights": [
+        {"variable": "Electrophile", "feature": "leaving_group_activation", "weight": 1.00},
+        {"variable": "Electrophile", "feature": "coordination_propensity", "weight": -0.30},
+        {"variable": "Nucleophile", "feature": "boron_transferability", "weight": 0.90},
+        {"variable": "Nucleophile", "feature": "stability", "weight": 0.25},
+        {"variable": "Ligand", "feature": "electron_donation", "weight": 0.55},
+        {"variable": "Ligand", "feature": "steric_bulk", "weight": 0.25},
+        {"variable": "Base", "feature": "base_strength", "weight": 0.35},
+        {"variable": "Base", "feature": "coordination_propensity", "weight": -0.20},
+        {"variable": "Solvent", "feature": "solvent_polarity", "weight": 0.15}
+      ],
+      "rationale": [
+        "Oxidative addition is favored by a more activated leaving group and an electron-rich ligand.",
+        "Transmetalation benefits from transferable organoboron partners and an effective base.",
+        "Strongly coordinating components receive a conservative penalty because they may inhibit palladium turnover."
+      ],
+      "sources": [
+        "Mechanistic Suzuki coupling roles encoded in the repository's pre-existing label-independent descriptor schema."
+      ]
+    },
+    "Buchwald_sub4": {
+      "base_confidence": 0.65,
+      "region_quantile": 0.90,
+      "kernel_bandwidth": 0.35,
+      "knowledge_cards": "buchwald_literature_knowledge_cards.json",
+      "weights": [
+        {"variable": "Reactant2", "feature": "leaving_group_activation", "weight": 0.85},
+        {"variable": "Reactant2", "feature": "coordination_propensity", "weight": -0.45},
+        {"variable": "Ligand", "feature": "electron_donation", "weight": 0.75},
+        {"variable": "Ligand", "feature": "steric_bulk", "weight": 0.55},
+        {"variable": "Ligand", "feature": "coordination_propensity", "weight": -0.20},
+        {"variable": "Base", "feature": "base_strength", "weight": 0.65},
+        {"variable": "Base", "feature": "coordination_propensity", "weight": -0.35},
+        {"variable": "Additive", "feature": "stability", "weight": 0.15},
+        {"variable": "Additive", "feature": "coordination_propensity", "weight": -0.20}
+      ],
+      "rationale": [
+        "Electron-rich bulky monophosphines promote oxidative addition and productive reductive elimination.",
+        "A strong, weakly coordinating base supports amine deprotonation without strongly binding palladium.",
+        "Heteroaryl and additive coordination are treated as risks, while the online alignment gate can reject this coarse prior."
+      ],
+      "sources": [
+        "Sigma-Aldrich Buchwald phosphine ligand guide",
+        "Wiley Angewandte Chemie 2019 review cited in buchwald_literature_knowledge_cards.json"
+      ]
+    }
+  }
+}

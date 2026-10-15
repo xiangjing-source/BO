@@ -1,0 +1,22 @@
+{
+  "platform": "win-64",
+  "archive": "catalystflow-windows-x86_64.tar.gz",
+  "sha256": "306902550689722733b5f5df12ac595e514ad7ebc6971bdeb06a1c079c9d4117",
+  "bytes": 302428323,
+  "python": "3.11.15",
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "pandas": "2.1.4",
+    "scikit-learn": "1.3.2",
+    "rdkit": "2026.03.4",
+    "libblas": "3.9.0 20_win64_openblas",
+    "libopenblas": "0.3.25 pthreads_hc140b1d_0"
+  },
+  "validated": {
+    "numpy_linalg": true,
+    "rdkit_import": true,
+    "unit_tests": "25 passed",
+    "official_trajectories": "40 of 40 decision-and-feedback trajectories identical to Linux baseline"
+  }
+}

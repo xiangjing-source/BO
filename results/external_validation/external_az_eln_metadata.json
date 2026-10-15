@@ -1,0 +1,108 @@
+{
+  "source_url": "https://github.com/open-reaction-database/ord-data/blob/main/data/00/ord_dataset-00005539a1e04c809a9a78647bea649c.parquet",
+  "source_doi": "10.1039/D2SC06041H",
+  "source_sha256": "bf1686ca6edac300a61acb5a5ee006ab5fd61007962ae19062b3d3c7879f84a9",
+  "source_rows_raw": 750,
+  "source_rows": 744,
+  "yield_quality_filter": {
+    "policy": "retain only finite percentage yields in [0, 100]",
+    "rows_before_filter": 750,
+    "rows_after_filter": 744,
+    "excluded_rows": 6,
+    "excluded_non_finite_rows": 0,
+    "excluded_below_minimum_rows": 0,
+    "excluded_above_maximum_rows": 6,
+    "excluded_above_maximum_values": [
+      100.27999877929688,
+      100.30000305175781,
+      100.37999725341797,
+      100.61000061035156,
+      101.52999877929688,
+      102.97000122070312
+    ]
+  },
+  "condition_identity_audit": {
+    "condition_columns": [
+      "ArylHalide",
+      "Amine",
+      "Ligand",
+      "Catalyst",
+      "Base",
+      "Solvent"
+    ],
+    "represented_columns": [
+      "ArylHalide",
+      "Amine",
+      "Ligand",
+      "Catalyst",
+      "Base",
+      "Solvent"
+    ],
+    "omitted_condition_columns": [],
+    "unique_full_conditions": 558,
+    "unique_represented_conditions": 558,
+    "representation_collisions": 0
+  },
+  "invalid_smiles_component_count": 11,
+  "split": "70/30 exact-condition-group split",
+  "seeds": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000
+  ],
+  "rounds": 40,
+  "methods": [
+    "random_baseline",
+    "identity_random_forest_EI",
+    "structural_fingerprint_random_forest_EI",
+    "fused_identity_knowledge_structure_random_forest_EI"
+  ],
+  "trajectory_rows": 1600,
+  "trees": 50,
+  "fingerprint": {
+    "type": "Morgan",
+    "radius": 2,
+    "bits_per_component": 128,
+    "components": [
+      "ArylHalide",
+      "Amine",
+      "Ligand",
+      "Catalyst",
+      "Base",
+      "Solvent"
+    ]
+  },
+  "fusion": {
+    "identity_components": [
+      "ArylHalide",
+      "Amine",
+      "Ligand",
+      "Catalyst",
+      "Base",
+      "Solvent"
+    ],
+    "structure_components": [
+      "ArylHalide",
+      "Amine",
+      "Ligand",
+      "Catalyst",
+      "Base",
+      "Solvent"
+    ],
+    "morgan_bits_per_component": 32,
+    "physicochemical_descriptors_per_component": 8,
+    "role_knowledge_descriptors_per_component": 9,
+    "invalid_smiles_component_count": 11,
+    "selection_note": "Fusion representation and fixed role rules were specified before this run; candidate yields were not used to construct features or choose parameters."
+  },
+  "leakage_boundary": "Candidate yields remain in PseudoOracle and are released only after one row is selected. Exact duplicate conditions are kept on one side of each split.",
+  "scope_warning": "The ELN pool spans heterogeneous substrate pairs and is not one factorial reaction landscape; these metrics are an external ranking/generalization stress test, not official competition scores.",
+  "paired_difference_note": "Paired differences are method minus reference on identical splits. Higher is better for initial/best/AUC/R2; lower is better for round-to-95 and MAE."
+}

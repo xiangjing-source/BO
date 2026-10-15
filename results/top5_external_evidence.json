@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0",
+  "retrieved_at": "2026-08-14",
+  "scope": "post-selection evidence for queried Top-5 only",
+  "ranking_effect": "none",
+  "retrieval_policy": "external database and primary-source retrieval before LLM fallback",
+  "live_values_notice": "Prices, inventory and lead times are region- and time-specific snapshots and must be rechecked before purchase.",
+  "sources": [
+    {
+      "source_id": "LIT-SUZ-001",
+      "type": "primary_literature",
+      "title": "Suzuki-Miyaura cross-coupling optimization enabled by automated feedback",
+      "locator": "https://pubmed.ncbi.nlm.nih.gov/27928513/",
+      "retrieved_at": "2026-08-14",
+      "claim": "Primary report of automated-feedback Suzuki-Miyaura condition optimization; DOI 10.1039/C6RE00153J."
+    },
+    {
+      "source_id": "LIT-BCH-001",
+      "type": "primary_literature",
+      "title": "Predicting reaction performance in C-N cross-coupling using machine learning",
+      "locator": "https://pubmed.ncbi.nlm.nih.gov/29449509/",
+      "retrieved_at": "2026-08-14",
+      "claim": "Primary report of the palladium-catalyzed Buchwald-Hartwig high-throughput experiment; DOI 10.1126/science.aar5169."
+    },
+    {
+      "source_id": "CAT-SUZ-ELEC-001",
+      "type": "supplier_catalog",
+      "title": "TCI I0931: 6-Iodoquinoline",
+      "locator": "https://www.tcichemicals.com/OP/en/p/I0931",
+      "retrieved_at": "2026-08-14",
+      "claim": "The APAC page listed 1 g at USD 49, seven same-day units, refrigerated storage and inert-gas storage."
+    },
+    {
+      "source_id": "CAT-SUZ-ESTER-001",
+      "type": "supplier_catalog",
+      "title": "VWR: protected indazole boronic ester, catalog 76942-268",
+      "locator": "https://www.vwr.com/us/en/product/43236631/5-methyl-1-oxan-2-yl-4-4455-tetramethyl-132-dioxaborolan-2-yl-1h-indazole-97",
+      "retrieved_at": "2026-08-14",
+      "claim": "The page listed 1 g at USD 93, refrigerated/temperature-controlled delivery and login-required availability."
+    },
+    {
+      "source_id": "CAT-SUZ-ACID-001",
+      "type": "supplier_catalog",
+      "title": "Apollo OR83819: protected indazole boronic acid",
+      "locator": "https://store.apolloscientific.co.uk/product/5-methyl-1-oxan-2-yl-1h-indazol-4-ylboronic-acid",
+      "retrieved_at": "2026-08-14",
+      "claim": "The page listed 1 g at GBP 127, a 2-3 week UK lead time and US out-of-stock status."
+    },
+    {
+      "source_id": "CAT-APHOS-001",
+      "type": "supplier_catalog",
+      "title": "Sigma-Aldrich PMC2010: APhos",
+      "locator": "https://www.sigmaaldrich.com/US/en/product/sial/pmc2010",
+      "retrieved_at": "2026-08-14",
+      "claim": "The catalog identifies APhos and its use as a cross-coupling ligand; public price requires sign-in."
+    },
+    {
+      "source_id": "CAT-LIOTBU-001",
+      "type": "supplier_catalog",
+      "title": "Sigma-Aldrich 400173: Lithium tert-butoxide",
+      "locator": "https://www.sigmaaldrich.com/US/en/product/aldrich/400173",
+      "retrieved_at": "2026-08-14",
+      "claim": "The US page listed 25 g at USD 144.50 and available for same-day shipment."
+    },
+    {
+      "source_id": "SDS-LIOTBU-001",
+      "type": "official_sds_or_ghs",
+      "title": "Sigma-Aldrich 400173 Safety Data Sheet, version 7.3",
+      "locator": "https://www.sigmaaldrich.com/sds/aldrich/400173",
+      "retrieved_at": "2026-08-14",
+      "claim": "Revision 2026-03-18 classifies the supplied solid as Self-heating Category 1, Acute Toxicity Category 4 and Skin Corrosion Category 1B."
+    },
+    {
+      "source_id": "CAT-MEOH-001",
+      "type": "supplier_catalog",
+      "title": "Sigma-Aldrich 322415: Methanol",
+      "locator": "https://www.sigmaaldrich.com/US/en/product/sial/322415",
+      "retrieved_at": "2026-08-14",
+      "claim": "The US page listed 1 L at USD 111 and available for same-day shipment."
+    },
+    {
+      "source_id": "SDS-MEOH-001",
+      "type": "official_sds_or_ghs",
+      "title": "Sigma-Aldrich 322415 Safety Data Sheet, version 6.16",
+      "locator": "https://www.sigmaaldrich.com/US/en/sds/SIAL/322415",
+      "retrieved_at": "2026-08-14",
+      "claim": "The SDS classifies methanol as Flammable Liquid Category 2, Acute Toxicity Category 3 and STOT SE Category 1."
+    },
+    {
+      "source_id": "SDS-ACN-001",
+      "type": "official_sds_or_ghs",
+      "title": "Sigma-Aldrich 34851 Acetonitrile Safety Data Sheet, version 6.18",
+      "locator": "https://www.sigmaaldrich.com/US/en/sds/sigald/34851",
+      "retrieved_at": "2026-08-14",
+      "claim": "Revision 2026-07-15 classifies acetonitrile as Flammable Liquid Category 2 and Acute Toxicity Category 4."
+    },
+    {
+      "source_id": "SDS-KOH-001",
+      "type": "official_sds_or_ghs",
+      "title": "Sigma-Aldrich P5958 Potassium hydroxide Safety Data Sheet, version 6.10",
+      "locator": "https://www.sigmaaldrich.com/US/en/sds/sigald/p5958",
+      "retrieved_at": "2026-08-14",
+      "claim": "The SDS classifies potassium hydroxide as corrosive to metals, Acute Toxicity Category 4 and Skin Corrosion Category 1A."
+    },
+    {
+      "source_id": "SDS-TEA-001",
+      "type": "official_sds_or_ghs",
+      "title": "Sigma-Aldrich 471283 Triethylamine Safety Data Sheet",
+      "locator": "https://www.sigmaaldrich.com/US/en/sds/sial/471283",
+      "retrieved_at": "2026-08-14",
+      "claim": "The SDS classifies triethylamine as Flammable Liquid Category 2, Acute Toxicity Category 3 and Skin Corrosion Category 1A."
+    },
+    {
+      "source_id": "CAT-TBUXPHOS-001",
+      "type": "supplier_catalog",
+      "title": "Sigma-Aldrich 901904: tBuXPhos",
+      "locator": "https://www.sigmaaldrich.com/US/en/product/aldrich/901904",
+      "retrieved_at": "2026-08-14",
+      "claim": "The US page listed 1 g at USD 68.70 list price and same-day availability."
+    },
+    {
+      "source_id": "CAT-ADBRETTPHOS-001",
+      "type": "supplier_catalog",
+      "title": "Sigma-Aldrich 768154: AdBrettPhos",
+      "locator": "https://www.sigmaaldrich.com/US/en/product/aldrich/768154",
+      "retrieved_at": "2026-08-14",
+      "claim": "The US page listed 1 g at USD 986 and same-day availability."
+    },
+    {
+      "source_id": "CAT-TBUBRETTPHOS-001",
+      "type": "supplier_catalog",
+      "title": "Sigma-Aldrich 730998: tBuBrettPhos",
+      "locator": "https://www.sigmaaldrich.com/US/en/product/aldrich/730998",
+      "retrieved_at": "2026-08-14",
+      "claim": "The US page listed 1 g at USD 323 and same-day availability."
+    },
+    {
+      "source_id": "CAT-MTBD-001",
+      "type": "supplier_catalog",
+      "title": "TCI M1443: MTBD",
+      "locator": "https://www.tcichemicals.com/DE/en/p/M1443",
+      "retrieved_at": "2026-08-14",
+      "claim": "The page listed 1 g at EUR 50 and inventory in Belgium and Japan."
+    },
+    {
+      "source_id": "SDS-MTBD-001",
+      "type": "official_sds_or_ghs",
+      "title": "TCI M1443 MTBD Safety Data Sheet, version 1.1",
+      "locator": "https://www.tcichemicals.com/BE/en/sds/M1443_EU_6N.pdf",
+      "retrieved_at": "2026-08-14",
+      "claim": "Revision 2026-02-13 reports corrosive effects and UN3267, Class 8, Packing Group II."
+    },
+    {
+      "source_id": "DFT-SUZ-001",
+      "type": "primary_literature",
+      "title": "A DFT Study of the Full Catalytic Cycle of the Suzuki-Miyaura Cross-Coupling on a Model System",
+      "locator": "https://doi.org/10.1021/om060380i",
+      "retrieved_at": "2026-08-14",
+      "claim": "The model study explicitly analyzes oxidative addition, isomerization, transmetalation and reductive elimination; it supplies general mechanistic context only."
+    },
+    {
+      "source_id": "DFT-BCH-001",
+      "type": "primary_literature",
+      "title": "How bulky ligands control the chemoselectivity of Pd-catalyzed N-arylation of ammonia",
+      "locator": "https://doi.org/10.1039/C9SC03095F",
+      "retrieved_at": "2026-08-14",
+      "claim": "Experimental and DFT analysis shows that ligand steric response can affect Buchwald-Hartwig chemoselectivity; it does not validate candidate-specific yields."
+    }
+  ],
+  "dft_post_interpretation": {
+    "policy": "computed project DFT first, external database or primary literature second, explicitly labelled LLM inference only when direct evidence is absent",
+    "ranking_effect": "none",
+    "datasets": {
+      "Suzuki": {
+        "source_ids": ["DFT-SUZ-001"],
+        "supported_scope": "general catalytic-cycle context for interpreting role-specific frontier-orbital and charge descriptors",
+        "limitation": "the paper uses a model system and does not establish a causal yield effect for the submitted candidates"
+      },
+      "Buchwald_sub4": {
+        "source_ids": ["DFT-BCH-001"],
+        "supported_scope": "general steric/electronic ligand context for interpreting post-selection ligand descriptors",
+        "limitation": "the paper studies a different substrate system and does not validate the submitted candidate ranking"
+      }
+    }
+  },
+  "candidate_source_map": {
+    "Suzuki": {
+      "1": ["LIT-SUZ-001", "CAT-SUZ-ELEC-001", "CAT-SUZ-ESTER-001", "CAT-APHOS-001", "CAT-LIOTBU-001", "SDS-LIOTBU-001", "CAT-MEOH-001", "SDS-MEOH-001"],
+      "2": ["LIT-SUZ-001", "CAT-SUZ-ELEC-001", "CAT-SUZ-ESTER-001", "CAT-APHOS-001", "CAT-LIOTBU-001", "SDS-LIOTBU-001", "SDS-ACN-001"],
+      "3": ["LIT-SUZ-001", "CAT-SUZ-ELEC-001", "CAT-SUZ-ESTER-001", "CAT-APHOS-001", "SDS-KOH-001", "SDS-ACN-001"],
+      "4": ["LIT-SUZ-001", "CAT-SUZ-ELEC-001", "CAT-SUZ-ACID-001", "CAT-LIOTBU-001", "SDS-LIOTBU-001", "CAT-MEOH-001", "SDS-MEOH-001"],
+      "5": ["LIT-SUZ-001", "CAT-SUZ-ELEC-001", "CAT-SUZ-ESTER-001", "CAT-APHOS-001", "SDS-TEA-001", "SDS-ACN-001"]
+    },
+    "Buchwald_sub4": {
+      "1": ["LIT-BCH-001", "CAT-TBUXPHOS-001", "CAT-MTBD-001", "SDS-MTBD-001"],
+      "2": ["LIT-BCH-001", "CAT-ADBRETTPHOS-001", "CAT-MTBD-001", "SDS-MTBD-001"],
+      "3": ["LIT-BCH-001", "CAT-TBUXPHOS-001", "CAT-MTBD-001", "SDS-MTBD-001"],
+      "4": ["LIT-BCH-001", "CAT-TBUBRETTPHOS-001", "CAT-MTBD-001", "SDS-MTBD-001"],
+      "5": ["LIT-BCH-001", "CAT-TBUBRETTPHOS-001", "CAT-MTBD-001", "SDS-MTBD-001"]
+    }
+  },
+  "limitations": [
+    "Target scale, location and required purity were not provided, so catalog prices do not establish a reaction budget.",
+    "Supplier pages are snapshots and do not guarantee China-region stock, import eligibility or delivery time.",
+    "Not every component has a current SDS in this snapshot; the report is not an EHS approval.",
+    "The cited primary studies are small-scale or high-throughput studies and do not establish scale-up safety.",
+    "External mechanistic papers provide general DFT interpretation context and do not validate candidate-specific descriptor-yield causality."
+  ]
+}

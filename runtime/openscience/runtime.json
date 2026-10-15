@@ -1,0 +1,18 @@
+{
+  "name": "@synsci/openscience-linux-x64",
+  "version": "2.0.23",
+  "platform": "linux-x86_64",
+  "archive": "openscience-linux-x64-2.0.23.tgz",
+  "archive_format": "official npm package tarball",
+  "archive_bytes": 64520989,
+  "archive_sha256": "d3b0e541e2a08579243694509e2141eb56fee1825f33b7c6ecaf62a823b3278e",
+  "npm_integrity": "sha512-9V0yxSAaWAr9+v3cHEd7R3+QMdNWmsmXkiIec5GJ4fPMoSIuAcOX+XBEd7juB5qj26O4+rv6si65F4CBkmtVCw==",
+  "binary_member": "package/bin/openscience",
+  "binary_bytes": 158742656,
+  "binary_sha256": "733132330d9e0e7e48ca93bc370b7734e7c1920e5773e8514c690753cc65836e",
+  "license": "Apache-2.0",
+  "source_repository": "https://github.com/synthetic-sciences/openscience",
+  "official_package": "https://registry.npmjs.org/@synsci/openscience-linux-x64/-/openscience-linux-x64-2.0.23.tgz",
+  "offline_bootstrap": true,
+  "minimum_linux_kernel": "5.1"
+}

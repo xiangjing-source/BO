@@ -1,0 +1,13 @@
+dataset,role,unique_queried_conditions,covered_conditions,coverage_fraction
+Suzuki,complete_condition,357,321,0.8991596638655462
+Suzuki,Electrophile,357,357,1.0
+Suzuki,Nucleophile,357,357,1.0
+Suzuki,Ligand,357,337,0.9439775910364145
+Suzuki,Base,357,341,0.9551820728291317
+Suzuki,Solvent,357,357,1.0
+Buchwald_sub4,complete_condition,97,97,1.0
+Buchwald_sub4,Product,97,97,1.0
+Buchwald_sub4,Reactant2,97,97,1.0
+Buchwald_sub4,Ligand,97,97,1.0
+Buchwald_sub4,Additive,97,97,1.0
+Buchwald_sub4,Base,97,97,1.0

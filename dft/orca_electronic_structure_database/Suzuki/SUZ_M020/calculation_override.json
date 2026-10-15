@@ -1,0 +1,8 @@
+{
+  "source_case_id": "bis_ditertbutylphosphino_ferrocene",
+  "calculated_species_formula": "C26H44FeP2",
+  "representation": "reviewed_molecular_metal_complex",
+  "solvent_model": "none",
+  "source_job": "optimization array 240849; single-point array 241695",
+  "representation_note": "采用人工复核后的完整二茂铁双膦配体三维配位结构。"
+}

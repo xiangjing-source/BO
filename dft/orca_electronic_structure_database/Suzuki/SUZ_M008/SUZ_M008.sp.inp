@@ -1,0 +1,14 @@
+! B3LYP D3BJ def2-SVPD def2/J RIJCOSX TightSCF DEFGRID3 SP Hirshfeld Mayer NoAutoStart SMD(Water)
+
+%pal
+  nprocs 30
+end
+
+%maxcore 3500
+
+%scf
+  MaxIter 600
+end
+
+# tripotassium phosphate | Suzuki-Miyaura | Base | K3O4P
+* xyzfile 0 1 optimized.xyz

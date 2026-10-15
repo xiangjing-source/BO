@@ -1,0 +1,24 @@
+{
+  "snapshot_date": "2026-07-30",
+  "completed_total": 86,
+  "completed_by_dataset": {
+    "Buchwald_sub4": 52,
+    "Suzuki": 34
+  },
+  "pending": [],
+  "method": "B3LYP-D3(BJ)/def2-SVPD",
+  "leak_safe_source_files": {
+    "Buchwald_sub4": [
+      "buchwald_sub4_train.csv",
+      "buchwald_sub4_test_features.csv",
+      "options.json",
+      "README.md"
+    ],
+    "Suzuki": [
+      "suzuki_train.csv",
+      "suzuki_test_features.csv",
+      "options.json",
+      "README.md"
+    ]
+  }
+}

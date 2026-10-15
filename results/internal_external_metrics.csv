@@ -1,0 +1,17 @@
+scope,dataset,method,metric,n,mean,std,ci95_lower,ci95_upper,competition_official
+internal,Buchwald_sub4,identity_knowledge_structure_BO,initial_round_found_best,20,74.3877100650,1.7672791130,73.6131658435,75.1622542865,true
+internal,Buchwald_sub4,identity_knowledge_structure_BO,best_found,20,86.0669561300,1.2051682296,85.5387678652,86.5951443948,true
+internal,Buchwald_sub4,identity_knowledge_structure_BO,round_to_95_global_best,20,12.5000000000,5.1350190898,10.2494786569,14.7505213431,true
+internal,Buchwald_sub4,identity_knowledge_structure_BO,AUC_best_so_far,20,82.5350451012,1.4948030338,81.8799187866,83.1901714157,true
+internal,Suzuki,role_wise_categorical_kernel_BO,initial_round_found_best,20,84.0425000000,8.6936757867,80.2323285935,87.8526714065,true
+internal,Suzuki,role_wise_categorical_kernel_BO,best_found,20,97.3625000000,1.3957260891,96.7507960710,97.9742039290,true
+internal,Suzuki,role_wise_categorical_kernel_BO,round_to_95_global_best,20,4.4000000000,8.7322752808,0.5729116193,8.2270883807,true
+internal,Suzuki,role_wise_categorical_kernel_BO,AUC_best_so_far,20,95.8839750000,1.1439740747,95.3826062561,96.3853437439,true
+external,AstraZeneca_Buchwald_ELN,structure_only_fp128_random_forest_EI,initial_round_found_best,10,46.7619993210,37.4531447146,23.5482997255,69.9756989165,false
+external,AstraZeneca_Buchwald_ELN,structure_only_fp128_random_forest_EI,best_found,10,98.3729995728,2.5619098945,96.7851113691,99.9608877764,false
+external,AstraZeneca_Buchwald_ELN,structure_only_fp128_random_forest_EI,round_to_95_global_best,10,14.6000000000,9.7319633739,8.5680666081,20.6319333919,false
+external,AstraZeneca_Buchwald_ELN,structure_only_fp128_random_forest_EI,AUC_best_so_far,10,92.0298495412,4.2518509388,89.3945250265,94.6651740559,false
+external,Reizman_Suzuki,hybrid_rbf_gp_forest_EI,initial_round_found_best,10,86.3100000000,8.2855228495,81.1745797333,91.4454202667,false
+external,Reizman_Suzuki,hybrid_rbf_gp_forest_EI,best_found,10,99.7700000000,0.0948683298,99.7112000000,99.8288000000,false
+external,Reizman_Suzuki,hybrid_rbf_gp_forest_EI,round_to_95_global_best,10,8.9000000000,10.3971149845,2.4558013687,15.3441986313,false
+external,Reizman_Suzuki,hybrid_rbf_gp_forest_EI,AUC_best_so_far,10,97.6060000000,2.1464771526,96.2755996774,98.9364003226,false

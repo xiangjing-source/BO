@@ -1,0 +1,444 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-07-26T17:04:02.707624+00:00",
+  "purpose": "Label-independent molecular structures for Buchwald feature construction; no candidate yields were read.",
+  "sources": {
+    "pubchem_pug_rest": "https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest",
+    "opsin": "https://opsin.ch.cam.ac.uk/"
+  },
+  "records": [
+    {
+      "variable": "Product",
+      "value": "4-methyl-N-[4-(trifluoromethyl)phenyl]aniline",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "Cc1ccc(Nc2ccc(C(F)(F)F)cc2)cc1",
+      "cid": 18712799,
+      "title": "4-methyl-N-(4-(trifluoromethyl)phenyl)aniline",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/4-methyl-N-%5B4-%28trifluoromethyl%29phenyl%5Daniline/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Product",
+      "value": "N-(4-ethylphenyl)-4-methylaniline",
+      "status": "resolved_opsin",
+      "canonical_smiles": "CCc1ccc(Nc2ccc(C)cc2)cc1",
+      "source_url": "https://opsin.ch.cam.ac.uk/opsin/N-%284-ethylphenyl%29-4-methylaniline.json"
+    },
+    {
+      "variable": "Product",
+      "value": "N-(4-methoxyphenyl)-4-methylaniline",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "COc1ccc(Nc2ccc(C)cc2)cc1",
+      "cid": 11435828,
+      "title": "4-Methoxy-4'-methyldiphenylamine",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/N-%284-methoxyphenyl%29-4-methylaniline/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Product",
+      "value": "N-(4-methylphenyl)pyridin-2-amine",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "Cc1ccc(Nc2ccccn2)cc1",
+      "cid": 2786419,
+      "title": "2-Pyridinamine, N-(4-methylphenyl)-",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/N-%284-methylphenyl%29pyridin-2-amine/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Product",
+      "value": "N-(4-methylphenyl)pyridin-3-amine",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "Cc1ccc(Nc2cccnc2)cc1",
+      "cid": 603589,
+      "title": "3-Pyridinamine, N-(4-methylphenyl)-",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/N-%284-methylphenyl%29pyridin-3-amine/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Reactant2",
+      "value": "1-bromo-4-(trifluoromethyl)benzene",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "FC(F)(F)c1ccc(Br)cc1",
+      "cid": 67872,
+      "title": "Benzene, 1-bromo-4-(trifluoromethyl)-",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/1-bromo-4-%28trifluoromethyl%29benzene/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Reactant2",
+      "value": "1-bromo-4-ethylbenzene",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "CCc1ccc(Br)cc1",
+      "cid": 15313,
+      "title": "1-Bromo-4-ethylbenzene",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/1-bromo-4-ethylbenzene/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Reactant2",
+      "value": "1-bromo-4-methoxybenzene",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "COc1ccc(Br)cc1",
+      "cid": 7730,
+      "title": "4-Bromoanisole",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/1-bromo-4-methoxybenzene/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Reactant2",
+      "value": "1-chloro-4-(trifluoromethyl)benzene",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "FC(F)(F)c1ccc(Cl)cc1",
+      "cid": 7394,
+      "title": "1-Chloro-4-(trifluoromethyl)benzene",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/1-chloro-4-%28trifluoromethyl%29benzene/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Reactant2",
+      "value": "1-chloro-4-ethylbenzene",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "CCc1ccc(Cl)cc1",
+      "cid": 69330,
+      "title": "1-Chloro-4-ethylbenzene",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/1-chloro-4-ethylbenzene/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Reactant2",
+      "value": "1-chloro-4-methoxybenzene",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "COc1ccc(Cl)cc1",
+      "cid": 12167,
+      "title": "4-Chloroanisole",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/1-chloro-4-methoxybenzene/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Reactant2",
+      "value": "1-ethyl-4-iodobenzene",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "CCc1ccc(I)cc1",
+      "cid": 141189,
+      "title": "1-Ethyl-4-iodobenzene",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/1-ethyl-4-iodobenzene/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Reactant2",
+      "value": "1-iodo-4-(trifluoromethyl)benzene",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "FC(F)(F)c1ccc(I)cc1",
+      "cid": 67993,
+      "title": "Benzene, 1-iodo-4-(trifluoromethyl)-",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/1-iodo-4-%28trifluoromethyl%29benzene/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Reactant2",
+      "value": "1-iodo-4-methoxybenzene",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "COc1ccc(I)cc1",
+      "cid": 69676,
+      "title": "4-Iodoanisole",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/1-iodo-4-methoxybenzene/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Reactant2",
+      "value": "2-bromopyridine",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "Brc1ccccn1",
+      "cid": 7973,
+      "title": "2-Bromopyridine",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/2-bromopyridine/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Reactant2",
+      "value": "2-chloropyridine",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "Clc1ccccn1",
+      "cid": 7977,
+      "title": "2-Chloropyridine",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/2-chloropyridine/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Reactant2",
+      "value": "2-iodopyridine",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "Ic1ccccn1",
+      "cid": 221126,
+      "title": "2-Iodopyridine",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/2-iodopyridine/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Reactant2",
+      "value": "3-bromopyridine",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "Brc1cccnc1",
+      "cid": 12286,
+      "title": "3-Bromopyridine",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/3-bromopyridine/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Reactant2",
+      "value": "3-chloropyridine",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "Clc1cccnc1",
+      "cid": 12287,
+      "title": "3-Chloropyridine",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/3-chloropyridine/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Reactant2",
+      "value": "3-iodopyridine",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "Ic1cccnc1",
+      "cid": 70714,
+      "title": "3-Iodopyridine",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/3-iodopyridine/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Ligand",
+      "value": "bis(1-adamantyl)-[3,6-dimethoxy-2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "COc1ccc(OC)c(P(C23CC4CC(CC(C4)C2)C3)C23CC4CC(CC(C4)C2)C3)c1-c1c(C(C)C)cc(C(C)C)cc1C(C)C",
+      "cid": 60144828,
+      "title": "AdBrettPhos",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/bis%281-adamantyl%29-%5B3%2C6-dimethoxy-2-%5B2%2C4%2C6-tri%28propan-2-yl%29phenyl%5Dphenyl%5Dphosphane/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Ligand",
+      "value": "dicyclohexyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "CC(C)c1cc(C(C)C)c(-c2ccccc2P(C2CCCCC2)C2CCCCC2)c(C(C)C)c1",
+      "cid": 11155794,
+      "title": "2-Dicyclohexylphosphino-2',4',6'-triisoprophylbiphenyl",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/dicyclohexyl-%5B2-%5B2%2C4%2C6-tri%28propan-2-yl%29phenyl%5Dphenyl%5Dphosphane/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Ligand",
+      "value": "ditert-butyl-[2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "CC(C)c1cc(C(C)C)c(-c2ccccc2P(C(C)(C)C)C(C)(C)C)c(C(C)C)c1",
+      "cid": 11618717,
+      "title": "Di-tert-butyl(2',4',6'-tris(propan-2-yl)-(1,1'-biphenyl)-2-yl)phosphane",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/ditert-butyl-%5B2-%5B2%2C4%2C6-tri%28propan-2-yl%29phenyl%5Dphenyl%5Dphosphane/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Ligand",
+      "value": "ditert-butyl-[3,6-dimethoxy-2-[2,4,6-tri(propan-2-yl)phenyl]phenyl]phosphane",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "COc1ccc(OC)c(P(C(C)(C)C)C(C)(C)C)c1-c1c(C(C)C)cc(C(C)C)cc1C(C)C",
+      "cid": 44233348,
+      "title": "Di-tert-butyl(2',4',6'-triisopropyl-3,6-dimethoxy-(1,1'-biphenyl)-2-yl)phosphine",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/ditert-butyl-%5B3%2C6-dimethoxy-2-%5B2%2C4%2C6-tri%28propan-2-yl%29phenyl%5Dphenyl%5Dphosphane/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Additive",
+      "value": "1,2-benzoxazole",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "c1ccc2oncc2c1",
+      "cid": 71073,
+      "title": "1,2-Benzisoxazole",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/1%2C2-benzoxazole/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Additive",
+      "value": "2,1-benzoxazole",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "c1ccc2nocc2c1",
+      "cid": 67498,
+      "title": "2,1-Benzisoxazole",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/2%2C1-benzoxazole/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Additive",
+      "value": "3,5-dimethyl-1,2-oxazole",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "Cc1cc(C)on1",
+      "cid": 9312,
+      "title": "3,5-Dimethylisoxazole",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/3%2C5-dimethyl-1%2C2-oxazole/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Additive",
+      "value": "3-methyl-1,2-oxazole",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "Cc1ccon1",
+      "cid": 96098,
+      "title": "3-Methylisoxazole",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/3-methyl-1%2C2-oxazole/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Additive",
+      "value": "3-methyl-5-phenyl-1,2-oxazole",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "Cc1cc(-c2ccccc2)on1",
+      "cid": 136804,
+      "title": "3-Methyl-5-phenylisoxazole",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/3-methyl-5-phenyl-1%2C2-oxazole/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Additive",
+      "value": "3-phenyl-1,2-oxazole",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "c1ccc(-c2ccon2)cc1",
+      "cid": 136798,
+      "title": "3-Phenylisoxazole",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/3-phenyl-1%2C2-oxazole/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Additive",
+      "value": "4-phenyl-1,2-oxazole",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "c1ccc(-c2cnoc2)cc1",
+      "cid": 2750134,
+      "title": "4-Phenylisoxazole",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/4-phenyl-1%2C2-oxazole/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Additive",
+      "value": "5-(2,6-difluorophenyl)-1,2-oxazole",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "Fc1cccc(F)c1-c1ccno1",
+      "cid": 2774714,
+      "title": "5-(2,6-Difluorophenyl)isoxazole",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/5-%282%2C6-difluorophenyl%29-1%2C2-oxazole/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Additive",
+      "value": "5-methyl-1,2-oxazole",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "Cc1ccno1",
+      "cid": 79833,
+      "title": "5-Methylisoxazole",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/5-methyl-1%2C2-oxazole/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Additive",
+      "value": "5-methyl-3-pyrrol-1-yl-1,2-oxazole",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "Cc1cc(-n2cccc2)no1",
+      "cid": 298678,
+      "title": "5-Methyl-3-(1H-pyrrol-1-YL)-isoxazole",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/5-methyl-3-pyrrol-1-yl-1%2C2-oxazole/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Additive",
+      "value": "5-phenyl-1,2-oxazole",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "c1ccc(-c2ccno2)cc1",
+      "cid": 136800,
+      "title": "Isoxazole, 5-phenyl-",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/5-phenyl-1%2C2-oxazole/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Additive",
+      "value": "c1ccc(CN(Cc2ccccc2)c2ccno2)cc1",
+      "status": "resolved_direct_smiles",
+      "canonical_smiles": "c1ccc(CN(Cc2ccccc2)c2ccno2)cc1",
+      "source_url": null
+    },
+    {
+      "variable": "Additive",
+      "value": "c1ccc(CN(Cc2ccccc2)c2ccon2)cc1",
+      "status": "resolved_direct_smiles",
+      "canonical_smiles": "c1ccc(CN(Cc2ccccc2)c2ccon2)cc1",
+      "source_url": null
+    },
+    {
+      "variable": "Additive",
+      "value": "ethyl 1,2-oxazole-3-carboxylate",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "CCOC(=O)c1ccon1",
+      "cid": 10034712,
+      "title": "Ethyl 1,2-oxazole-3-carboxylate",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/ethyl%201%2C2-oxazole-3-carboxylate/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Additive",
+      "value": "ethyl 1,2-oxazole-4-carboxylate",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "CCOC(=O)c1cnoc1",
+      "cid": 15590757,
+      "title": "Ethyl 1,2-oxazole-4-carboxylate",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/ethyl%201%2C2-oxazole-4-carboxylate/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Additive",
+      "value": "ethyl 3-methoxy-1,2-oxazole-5-carboxylate",
+      "status": "resolved_opsin",
+      "canonical_smiles": "CCOC(=O)c1cc(OC)no1",
+      "source_url": "https://opsin.ch.cam.ac.uk/opsin/ethyl%203-methoxy-1%2C2-oxazole-5-carboxylate.json"
+    },
+    {
+      "variable": "Additive",
+      "value": "ethyl 3-methyl-1,2-oxazole-5-carboxylate",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "CCOC(=O)c1cc(C)no1",
+      "cid": 10329487,
+      "title": "3-Methylisoxazole-5-carboxylic acid ethyl ester",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/ethyl%203-methyl-1%2C2-oxazole-5-carboxylate/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Additive",
+      "value": "ethyl 5-methyl-1,2-oxazole-3-carboxylate",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "CCOC(=O)c1cc(C)on1",
+      "cid": 76677,
+      "title": "Ethyl 5-methylisoxazole-3-carboxylate",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/ethyl%205-methyl-1%2C2-oxazole-3-carboxylate/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Additive",
+      "value": "ethyl 5-methyl-1,2-oxazole-4-carboxylate",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "CCOC(=O)c1cnoc1C",
+      "cid": 7009317,
+      "title": "Ethyl 5-methylisoxazole-4-carboxylate",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/ethyl%205-methyl-1%2C2-oxazole-4-carboxylate/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Additive",
+      "value": "methyl 1,2-oxazole-5-carboxylate",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "COC(=O)c1ccno1",
+      "cid": 2736892,
+      "title": "Methyl isoxazole-5-carboxylate",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/methyl%201%2C2-oxazole-5-carboxylate/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Additive",
+      "value": "methyl 5-(furan-2-yl)-1,2-oxazole-3-carboxylate",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "COC(=O)c1cc(-c2ccco2)on1",
+      "cid": 5214769,
+      "title": "Methyl 5-(2-furyl)isoxazole-3-carboxylate",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/methyl%205-%28furan-2-yl%29-1%2C2-oxazole-3-carboxylate/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Additive",
+      "value": "methyl 5-thiophen-2-yl-1,2-oxazole-3-carboxylate",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "COC(=O)c1cc(-c2cccs2)on1",
+      "cid": 1256578,
+      "title": "Methyl 5-(2-thienyl)isoxazole-3-carboxylate",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/methyl%205-thiophen-2-yl-1%2C2-oxazole-3-carboxylate/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Base",
+      "value": "1-methyl-2,3,4,6,7,8-hexahydropyrimido[1,2-a]pyrimidine",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "CN1CCCN2CCCN=C12",
+      "cid": 123583,
+      "title": "7-Methyl-1,5,7-triazabicyclo[4.4.0]dec-5-ene",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/1-methyl-2%2C3%2C4%2C6%2C7%2C8-hexahydropyrimido%5B1%2C2-a%5Dpyrimidine/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Base",
+      "value": "2-tert-butyl-1,1,3,3-tetramethylguanidine",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "CN(C)C(=NC(C)(C)C)N(C)C",
+      "cid": 3571581,
+      "title": "2-tert-Butyl-1,1,3,3-tetramethylguanidine",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/2-tert-butyl-1%2C1%2C3%2C3-tetramethylguanidine/property/ConnectivitySMILES,SMILES,Title/JSON"
+    },
+    {
+      "variable": "Base",
+      "value": "N-[dimethylamino-ethylimino-[[tris(dimethylamino)-lambda5-phosphanylidene]amino]-lambda5-phosphanyl]-N-methylmethanamine",
+      "status": "resolved_pubchem",
+      "canonical_smiles": "CCN=P(N=P(N(C)C)(N(C)C)N(C)C)(N(C)C)N(C)C",
+      "cid": 3393106,
+      "title": "2,N'3,N'3,N3,N3,N'5,N'5,N5,N5-nonamethyl-2,4,6-triaza-3lambda5,5lambda5-diphosphaocta-3,5-diene-3,3,5,5-tetramine",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/N-%5Bdimethylamino-ethylimino-%5B%5Btris%28dimethylamino%29-lambda5-phosphanylidene%5Damino%5D-lambda5-phosphanyl%5D-N-methylmethanamine/property/ConnectivitySMILES,SMILES,Title/JSON"
+    }
+  ]
+}
